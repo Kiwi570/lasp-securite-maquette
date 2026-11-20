@@ -1,0 +1,257 @@
+{
+ "explication": "Maquettes favorites de l'utilisateur : le niveau et le style visés, sur l'accueil ET les pages intérieures. Jamais à copier (ni leur idée, ni leur mise en page) : même harmonie, même fluidité, même soin.",
+ "activite": [
+  "services-b2b"
+ ],
+ "metier": "sécurité privée gardiennage",
+ "besoin": [
+  "devis"
+ ],
+ "ton": [
+  "sobre"
+ ],
+ "univers": [],
+ "ambiance": [],
+ "concept": [],
+ "depot": "lasp-securite-maquette",
+ "favorites_dans_la_bibliotheque": 22,
+ "favorites": [
+  {
+   "rang": 1,
+   "maquette": "skapelys-maquette",
+   "client": "agence web indépendante à Bourg-en-Bresse : création, refonte, référencement, maintenance et dépannage de sites WordPress pour artisans et commerçants",
+   "metier": "agence web",
+   "pourquoi": "Agence web : bleu nuit et jaune, net et efficace.",
+   "proche": [
+    "même activité",
+    "besoin devis"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 80,
+   "en_ligne": "https://skapelys-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "skapelys-maquette/ouverture",
+     "note_section": 3,
+     "titre": "Agence web à Bourg-en-Bresse",
+     "capture": "medias/skapelys-maquette/ouverture-p1440.jpg",
+     "video": null,
+     "fiche": "sections/skapelys-maquette/ouverture.json",
+     "en_ligne": "https://skapelys-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "étapes",
+     "id": "skapelys-maquette/methode",
+     "note_section": 3,
+     "titre": "Comment se passe votre projet ?",
+     "capture": "medias/skapelys-maquette/methode-p1440.jpg",
+     "video": null,
+     "fiche": "sections/skapelys-maquette/methode.json",
+     "en_ligne": "https://skapelys-maquette.vercel.app"
+    },
+    {
+     "page": "creation-site-web-bourg-en-bresse",
+     "role": "ouverture",
+     "id": "skapelys-maquette/creation-site-web-bourg-en-bresse-ouverture",
+     "note_section": 3,
+     "titre": "Création de site internet à Bourg-en-Bresse",
+     "capture": "medias/skapelys-maquette/creation-site-web-bourg-en-bresse-ouverture-p1440.jpg",
+     "video": null,
+     "fiche": "sections/skapelys-maquette/creation-site-web-bourg-en-bresse-ouverture.json",
+     "en_ligne": "https://skapelys-maquette.vercel.app/creation-site-web-bourg-en-bresse"
+    },
+    {
+     "page": "refonte-site-internet-bourg-en-bresse",
+     "role": "outil-interactif",
+     "id": "skapelys-maquette/refonte-site-internet-bourg-en-bresse-avant-apres",
+     "note_section": 4,
+     "titre": "Site vieillissant : ce que la refonte change.",
+     "capture": "medias/skapelys-maquette/refonte-site-internet-bourg-en-bresse-avant-apres-p1440.jpg",
+     "video": null,
+     "fiche": "sections/skapelys-maquette/refonte-site-internet-bourg-en-bresse-avant-apres.json",
+     "en_ligne": "https://skapelys-maquette.vercel.app/refonte-site-internet-bourg-en-bresse"
+    }
+   ]
+  },
+  {
+   "rang": 2,
+   "maquette": "bvcomm-maquette",
+   "client": "fournisseur de téléphonie IP, internet d'affaires et câblage pour les entreprises au Québec, site bilingue",
+   "metier": "opérateur télécom pour entreprises",
+   "pourquoi": "Télécom pour entreprises : net et contrasté, un seul fil de cuivre rouge relie tout, faisceau de fibres WebGL, comparateur.",
+   "proche": [
+    "même activité",
+    "besoin devis"
+   ],
+   "lumiere": "mixte",
+   "note_maquette": 84,
+   "en_ligne": "https://bvcomm-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "bvcomm-maquette/debut",
+     "note_section": 5,
+     "titre": "Un fournisseur.Une facture.Une équipe.",
+     "capture": "medias/bvcomm-maquette/debut-p1440.jpg",
+     "video": "medias/bvcomm-maquette/debut-p720.mp4",
+     "fiche": "sections/bvcomm-maquette/debut.json",
+     "en_ligne": "https://bvcomm-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "bvcomm-maquette/un-seul-fournisseur",
+     "note_section": 5,
+     "titre": "Plus personne ne se renvoie la balle.",
+     "capture": "medias/bvcomm-maquette/un-seul-fournisseur-p1440.jpg",
+     "video": "medias/bvcomm-maquette/un-seul-fournisseur-p720.mp4",
+     "fiche": "sections/bvcomm-maquette/un-seul-fournisseur.json",
+     "en_ligne": "https://bvcomm-maquette.vercel.app"
+    },
+    {
+     "page": "en/evaluation",
+     "role": "ouverture",
+     "id": "bvcomm-maquette/en-evaluation-debut",
+     "note_section": 3,
+     "titre": "Free technical assessment.",
+     "capture": "medias/bvcomm-maquette/en-evaluation-debut-p1440.jpg",
+     "video": null,
+     "fiche": "sections/bvcomm-maquette/en-evaluation-debut.json",
+     "en_ligne": "https://bvcomm-maquette.vercel.app/en/evaluation"
+    },
+    {
+     "page": "en/telephonie",
+     "role": "manifeste",
+     "id": "bvcomm-maquette/en-telephonie-voip",
+     "note_section": 3,
+     "titre": "What is VoIP?",
+     "capture": "medias/bvcomm-maquette/en-telephonie-voip-p1440.jpg",
+     "video": null,
+     "fiche": "sections/bvcomm-maquette/en-telephonie-voip.json",
+     "en_ligne": "https://bvcomm-maquette.vercel.app/en/telephonie"
+    }
+   ]
+  },
+  {
+   "rang": 3,
+   "maquette": "nolanis-maquette",
+   "client": "Agence de communication visuelle à Strasbourg : print et web, espaces publicitaires, publipostage, photo et vidéo, objets publicitaires, sauvegarde en ligne, formation photo",
+   "metier": "agence de communication visuelle",
+   "pourquoi": "Agence de communication : beige, éventail de couleurs, cartes nettes, sommaire des métiers.",
+   "proche": [
+    "même activité",
+    "besoin devis"
+   ],
+   "lumiere": "clair",
+   "note_maquette": 86,
+   "en_ligne": "https://nolanis-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "nolanis-maquette/debut",
+     "note_section": 5,
+     "titre": "Votre agence de communication visuelle à Strasbourg",
+     "capture": "medias/nolanis-maquette/debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "services",
+     "id": "nolanis-maquette/services",
+     "note_section": 4,
+     "titre": "La liasse des épreuves",
+     "capture": "medias/nolanis-maquette/services-p1440.jpg",
+     "video": "medias/nolanis-maquette/services-p720.mp4",
+     "fiche": "sections/nolanis-maquette/services.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app"
+    },
+    {
+     "page": "formations",
+     "role": "ouverture",
+     "id": "nolanis-maquette/formations-debut",
+     "note_section": 4,
+     "titre": "Choisir l’image juste",
+     "capture": "medias/nolanis-maquette/formations-debut-p1440.jpg",
+     "video": "medias/nolanis-maquette/formations-debut-p720.mp4",
+     "fiche": "sections/nolanis-maquette/formations-debut.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/formations"
+    },
+    {
+     "page": "contact",
+     "role": "outil-interactif",
+     "id": "nolanis-maquette/contact-devis",
+     "note_section": 4,
+     "titre": "Votre demande, en trois étapes",
+     "capture": "medias/nolanis-maquette/contact-devis-p1440.jpg",
+     "video": "medias/nolanis-maquette/contact-devis-p720.mp4",
+     "fiche": "sections/nolanis-maquette/contact-devis.json",
+     "en_ligne": "https://nolanis-maquette.vercel.app/contact"
+    }
+   ]
+  },
+  {
+   "rang": 4,
+   "maquette": "les-plus-hautes-eaux-maquette",
+   "client": "compagnie de théâtre gestuel et clown pour tous publics, tournée dans le Grand Ouest",
+   "metier": "compagnie de théâtre",
+   "pourquoi": "Compagnie de théâtre : nuit bleue, photos bichromes qui reprennent couleur sous une nappe d'eau WebGL, échelle de crue.",
+   "proche": [],
+   "lumiere": "sombre",
+   "note_maquette": 90,
+   "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app",
+   "vues": [
+    {
+     "page": "accueil",
+     "role": "ouverture",
+     "id": "les-plus-hautes-eaux-maquette/haut",
+     "note_section": 5,
+     "titre": "Héros sous la montée des eaux",
+     "capture": "medias/les-plus-hautes-eaux-maquette/haut-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/haut-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/haut.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app"
+    },
+    {
+     "page": "accueil",
+     "role": "manifeste",
+     "id": "les-plus-hautes-eaux-maquette/crue-1910",
+     "note_section": 4,
+     "titre": "L'origine du nom, 1910",
+     "capture": "medias/les-plus-hautes-eaux-maquette/crue-1910-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/crue-1910-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/crue-1910.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app"
+    },
+    {
+     "page": "spectacles/carnet-de-routes",
+     "role": "ouverture",
+     "id": "les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero",
+     "note_section": 4,
+     "titre": "Tête de fiche spectacle",
+     "capture": "medias/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/spectacles-carnet-de-routes-f-hero.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app/spectacles/carnet-de-routes"
+    },
+    {
+     "page": "agenda",
+     "role": "agenda",
+     "id": "les-plus-hautes-eaux-maquette/agenda-t-venir",
+     "note_section": 4,
+     "titre": "Prochaines représentations",
+     "capture": "medias/les-plus-hautes-eaux-maquette/agenda-t-venir-p1440.jpg",
+     "video": "medias/les-plus-hautes-eaux-maquette/agenda-t-venir-p720.mp4",
+     "fiche": "sections/les-plus-hautes-eaux-maquette/agenda-t-venir.json",
+     "en_ligne": "https://les-plus-hautes-eaux-maquette.vercel.app/agenda"
+    }
+   ]
+  }
+ ]
+}

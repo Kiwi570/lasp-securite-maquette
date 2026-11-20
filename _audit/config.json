@@ -1,0 +1,6 @@
+{
+  "siteActuel": "www.laspsecurite.fr",
+  "pagesTypes": ["/", "/prestations", "/secteurs", "/agence", "/devis"],
+  "effets": ["faisceau", "sceau", "cadran", "allumage", "rangee", "dispositif", "pointage", "carte", "balayage", "point-de-fuite", "vue-descend", "radar", "valeurs", "gestes", "trace-ville"],
+  "grille": { "dispenses": {} }
+}

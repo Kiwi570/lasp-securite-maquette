@@ -1,0 +1,20 @@
+{
+  "nom": "LASP Sécurité",
+  "nomComplet": "Lion Agence Sécurité Privée",
+  "adresse": "https://lasp-securite-maquette.vercel.app",
+  "siteActuel": "www.laspsecurite.fr",
+  "version": 1,
+  "langues": ["fr"],
+  "navigation": ["accueil", "prestations", "secteurs", "agence", "devis"],
+  "actionEntete": { "page": "devis" },
+  "couleurs": { "fond": "#0A0F1C", "texte": "#EEF0F3", "voile": "#0A0F1C", "ouverture": "#0A0F1C", "menu": "#0A0F1C", "theme": "#0A0F1C" },
+  "formeVoile": "iris",
+  "contact": {
+    "telephone": "04 82 333 999", "telephoneLien": "+33482333999",
+    "telephone2": "07 74 34 25 35", "telephone2Lien": "+33774342535",
+    "email": "lasp@laspsecurite.fr",
+    "adresse": "203 rue Marcel Cerdan, 69009 Lyon"
+  },
+  "polices": ["/assets/fonts/archivo-titres.woff2", "/assets/fonts/instrument-sans.woff2"],
+  "curseur": false
+}

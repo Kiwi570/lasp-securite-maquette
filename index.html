@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="fr" data-v="1">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LASP Sécurité · Sécurité privée à Lyon, 24h/24</title>
+<meta name="description" content="Lion Agence Sécurité Privée : agents de sécurité, maîtres-chiens, sécurité incendie SSIAP, événementiel, magasins, rondes et interventions à Lyon, 24h/24 et 7j/7.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://lasp-securite-maquette.vercel.app/">
+<style>:root{--fond:#0A0F1C;--texte:#EEF0F3;--voile-fond:#0A0F1C;--ouverture-fond:#0A0F1C;--menu-fond:#0A0F1C}:root { --entete-h: 72px; --barres-h: 0px; } html { background: var(--fond); color: var(--texte); scrollbar-gutter: stable; } body { margin: 0; background: var(--fond); } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime] { opacity: 0; } html.js:not(.secours):not([data-arrivee="retour"]) [data-anime].vu { opacity: 1; } [data-voile] { position: fixed; inset: 0; z-index: 900; background: var(--voile-fond); transform: translateY(100%); visibility: hidden; pointer-events: none; } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) [data-voile] { transform: none; visibility: visible; } html.secours [data-voile] { visibility: hidden !important; } .ouverture-panneau { position: fixed; inset: 0; z-index: 850; display: none; place-content: center; justify-items: center; background: var(--ouverture-fond, var(--voile-fond)); color: var(--fond); text-align: center; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) .ouverture-panneau { display: grid; } html.defilement-bloque, html.defilement-bloque body, html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie), html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) body, html[data-arrivee="voile"]:not(.voile-leve):not(.secours), html[data-arrivee="voile"]:not(.voile-leve):not(.secours) body { overflow: hidden; } html.js[data-arrivee="intro"]:not(.secours):not(.intro-finie) { background-color: var(--ouverture-fond, var(--voile-fond)); } html[data-arrivee="voile"]:not(.voile-leve):not(.secours) { background-color: var(--voile-fond); }</style>
+<script>(function () {
+var d = document.documentElement, ss = null, ls = null;
+try { ss = window.sessionStorage; ls = window.localStorage; } catch (e) {}
+d.classList.add('js');
+var nav = performance.getEntriesByType ? performance.getEntriesByType('navigation')[0] : null;
+var type = nav ? nav.type : 'navigate';
+var depart = null;
+try { depart = JSON.parse(ss.getItem('socle:depart') || 'null'); ss.removeItem('socle:depart'); } catch (e) {}
+if (depart && !(Date.now() - depart.t < 15000)) depart = null;
+var mode = type === 'back_forward' ? 'retour' : type === 'reload' ? 'intro' : depart ? 'voile' : 'intro';
+d.setAttribute('data-arrivee', mode);
+if (mode === 'voile' && depart.couleur) d.style.setProperty('--voile-fond', depart.couleur);
+if (type === 'reload' && 'scrollRestoration' in history) {
+history.scrollRestoration = 'manual';
+}
+try {
+var choisie = ls && ls.getItem('socle:langue');
+var langue = (d.lang || '').slice(0, 2);
+if (choisie && choisie !== langue && type === 'navigate' && !depart) {
+var alt = document.querySelector('link[rel="alternate"][hreflang="' + choisie + '"]');
+if (alt) location.replace(new URL(alt.href).pathname + location.search + location.hash);
+}
+} catch (e) {}
+setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('secours'); }, 2000);
+})();</script>
+<link rel="preload" href="/assets/fonts/archivo-titres.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/socle.css?v=1">
+<link rel="stylesheet" href="/assets/css/site.css?v=1">
+<link rel="modulepreload" href="/assets/js/site.js?v=1">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<script src="/assets/vendor/gsap.min.js" defer></script>
+<script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
+<script src="/assets/vendor/SplitText.min.js" defer></script>
+<script type="module" src="/assets/js/site.js?v=1"></script>
+<meta name="theme-color" content="#0A0F1C">
+<link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LASP Sécurité">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="LASP Sécurité · Sécurité privée à Lyon, 24h/24">
+<meta property="og:description" content="Lion Agence Sécurité Privée : agents de sécurité, maîtres-chiens, sécurité incendie SSIAP, événementiel, magasins, rondes et interventions à Lyon, 24h/24 et 7j/7.">
+<meta property="og:url" content="https://lasp-securite-maquette.vercel.app/">
+<meta property="og:image" content="https://lasp-securite-maquette.vercel.app/assets/partage/accueil-fr.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="LASP Sécurité : jour et nuit, on veille sur vos sites">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","additionalType":"https://schema.org/ProfessionalService","name":"Lion Agence Sécurité Privée (LASP)","url":"https://lasp-securite-maquette.vercel.app/","telephone":["+33482333999","+33774342535"],"email":"lasp@laspsecurite.fr","address":{"@type":"PostalAddress","streetAddress":"203 rue Marcel Cerdan","postalCode":"69009","addressLocality":"Lyon","addressCountry":"FR"},"areaServed":"Lyon","slogan":"Votre sécurité, notre priorité.","description":"Sécurité privée à Lyon : agents de sécurité, maîtres-chiens, sécurité incendie SSIAP, événementiel, prévention des vols en magasin, rondes et interventions, 24h/24 et 7j/7."}</script>
+</head>
+<body id="haut">
+<div data-voile data-forme="iris" aria-hidden="true"><div class="voile-contenu"><svg class="monogramme voile-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span data-voile-libelle>Accueil</span></div></div>
+<div class="ouverture-panneau" data-ouverture aria-hidden="true">
+  <div class="ouverture-objet" data-ouverture-objet><svg class="monogramme ouverture-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg></div>
+  <span class="ouverture-trait"></span>
+  <p class="ouverture-ligne">Lion Agence Sécurité Privée</p>
+</div>
+<a class="evitement" href="#contenu">Aller au contenu</a>
+<header data-entete>
+  <div class="entete-rangee">
+    <a class="entete-logo" href="/" data-libelle="Accueil" aria-current="page">
+      <img src="/assets/images/logo-lasp.png" alt="" width="61" height="44"><span class="visuellement-cache">LASP Sécurité, retour à l&#39;accueil</span>
+    </a>
+    <nav data-nav aria-label="Navigation principale">
+      <ul><li><a href="/prestations" data-libelle="Prestations">Prestations</a></li><li><a href="/secteurs" data-libelle="Secteurs">Secteurs</a></li><li><a href="/agence" data-libelle="L&#39;agence">L&#39;agence</a></li><li><a href="/devis" data-libelle="Devis &amp; contact">Devis &amp; contact</a></li></ul>
+    </nav>
+    <div class="entete-actions">
+      <a class="bouton" href="/devis" data-libelle="Devis &amp; contact">Demander un devis</a>
+      <button type="button" data-menu-bouton aria-controls="menu" aria-expanded="false" data-libelle-ouvrir="Menu" data-libelle-fermer="Fermer"><span data-libelle-bouton>Menu</span></button>
+      <a class="menu-sansjs" href="#menu" data-menu-lien>Menu</a>
+    </div>
+  </div>
+</header>
+<script>/* Avant le premier affichage : rangées de la navigation (même règle que ajusterNav dans assets/js/socle/entete.js)
+   et hauteur réelle de l'en-tête, pour que rien ne saute quand le JavaScript du site prend la main. */
+(function () {
+  var h = document.documentElement, u = document.querySelector('[data-nav] ul'), e = document.querySelector('[data-entete]');
+  if (u) {
+    var deborde = function () { return u.scrollWidth > u.clientWidth + 1; }, c = deborde();
+    if (c && window.matchMedia('(min-width: 900px)').matches) {
+      h.classList.add('nav-deux-rangees'); c = deborde();
+      if (c) { h.classList.add('nav-deux-lignes'); var a = u.querySelector('a'); c = !a || u.getBoundingClientRect().height > a.getBoundingClientRect().height * 2.5; }
+      if (c) h.classList.remove('nav-deux-rangees', 'nav-deux-lignes');
+    }
+    if (c) h.classList.add('nav-compacte');
+  }
+  if (e) h.style.setProperty('--entete-h', Math.round(e.getBoundingClientRect().height) + 'px');
+})();</script>
+<span id="menu-ferme" aria-hidden="true"></span>
+<div id="menu" data-menu role="dialog" aria-modal="true" aria-label="Menu">
+  <p class="menu-sansjs-fermer"><a href="#menu-ferme">Fermer</a></p>
+  <ul><li style="--i:0"><a href="/" class="menu-lien" data-libelle="Accueil" aria-current="page">Accueil</a></li><li style="--i:1"><a href="/prestations" class="menu-lien" data-libelle="Prestations">Prestations</a></li><li style="--i:2"><a href="/secteurs" class="menu-lien" data-libelle="Secteurs">Secteurs</a></li><li style="--i:3"><a href="/agence" class="menu-lien" data-libelle="L&#39;agence">L&#39;agence</a></li><li style="--i:4"><a href="/devis" class="menu-lien" data-libelle="Devis &amp; contact">Devis &amp; contact</a></li></ul>
+  <p class="menu-tel"><a class="bouton" href="tel:+33482333999">Appeler 04 82 333 999</a> <a class="bouton bouton--contour" href="tel:+33774342535">07 74 34 25 35</a></p>
+  <p class="menu-dispo">Réactifs 24h/24 et 7j/7</p>
+</div>
+<main id="contenu" tabindex="-1">
+<section class="hero s-nuit" id="debut" data-plein-ecran>
+  <div class="apercu-flou" aria-hidden="true" data-audit-ignorer style="--flou:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAASACADASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDzdRz+FTRHDc4POMGoEHHSrFuQJVzjrVEmmCL6QsbV87UUGEfdAGOnvWXcqu4YJI5xkYzziunn1JbdiUYHdDH+Y5NcxM/mEseuacmKKIE6U5fvUUUDJ5iSByelQH7pooqZBE//2Q==);--flou-m:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAA0JCgsKCA0LCgsODg0PEyAVExISEyccHhcgLikxMC4pLSwzOko+MzZGNywtQFdBRkxOUlNSMj5aYVpQYEpRUk//2wBDAQ4ODhMREyYVFSZPNS01T09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0//wAARCAAgABIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDz5UUjIIpGj9BRaiPdulLqpU428844zU2x2QEFWJHOO1aqSZm00UyOaKlMDZOSPzoqOZGnKyfTYFuJkjJJyGJA9hV5hbLa2vyLvcgk9+rDn9KybK4a3mEikggEce9IZySvPC9KOgnuDja7KR0OKKjL5Yk9zRUjP//Z);--cadrage:64% 55%"></div>
+  <figure class="media hero-media" data-grok style="--cadrage:64% 55%;--cadrage-mobile:62% 50%">
+  <picture><source media="(max-width: 760px) and (orientation: portrait)" srcset="/assets/images/grok/accueil-ouverture-mobile-640.webp 640w, /assets/images/grok/accueil-ouverture-mobile-1080.webp 1080w" sizes="100vw">
+    <img src="/assets/images/grok/accueil-ouverture-1280.webp" srcset="/assets/images/grok/accueil-ouverture-640.webp 640w, /assets/images/grok/accueil-ouverture-1280.webp 1280w, /assets/images/grok/accueil-ouverture-1920.webp 1920w" sizes="100vw" alt="Cour de chargement d&#39;un entrepôt la nuit, un agent au loin" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+  <div class="hero-nuit" aria-hidden="true" data-audit-ignorer></div>
+  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-audit-ignorer><span></span></div>
+  <div class="conteneur hero-contenu">
+    <p class="surtitre hero-surtitre">Sécurité privée · Lyon</p>
+    <h1 class="hero-titre" data-anime="gsap"><span class="hero-masque"><span class="hero-ligne">Jour et nuit,</span></span><span class="hero-masque"><span class="hero-ligne">on veille sur</span></span><span class="hero-masque"><span class="hero-ligne"><em>vos sites.</em></span></span></h1>
+    <p class="hero-texte masque-ecran-bas" data-anime="gsap">Agents de sécurité, maîtres-chiens, sécurité incendie et événementiel : des prestations sur mesure pour les entreprises, les sites industriels, les événements et les collectivités.</p>
+    <div class="hero-actions" data-anime="gsap">
+      <a href="/devis#demande" class="bouton" data-libelle="Devis &amp; contact" data-action-principale data-survol="magnetique">Demander un devis</a>
+      <a href="/prestations" class="lien-fleche masque-ecran-tres-bas" data-libelle="Prestations">Nos prestations <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <p class="hero-info" data-info-cle data-anime="gsap"><span class="pastille-live" aria-hidden="true"></span>Réactifs 24h/24 et 7j/7</p>
+  </div>
+  <div class="sceau" data-iris-centre="disque">
+    <svg class="sceau-texte" viewBox="0 0 200 200" aria-hidden="true" focusable="false" data-effet="sceau" data-audit-ignorer>
+      <defs><path id="sceau-cercle" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+      <text><textPath href="#sceau-cercle" textLength="482">24h/24 · 7j/7 · Lyon · 24h/24 · 7j/7 · Lyon · </textPath></text>
+    </svg>
+    <span class="sceau-coeur"><svg class="monogramme sceau-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg></span>
+  </div>
+</section>
+<section class="engagements s-nuit" id="engagements">
+  <div class="conteneur engagements-grille">
+    <div class="cadran-bloc" data-visuel>
+      <svg class="cadran" viewBox="0 0 200 200" data-effet="cadran" role="img" aria-label="Les 24 heures d&#39;une journée de garde"><path class="cadran-seg" d="M102.76 8.04 A92 92 0 0 1 121.14 10.46 L117.92 24.09 A78 78 0 0 0 102.34 22.04 Z"/><path class="cadran-seg" d="M126.47 11.89 A92 92 0 0 1 143.59 18.98 L136.96 31.31 A78 78 0 0 0 122.44 25.30 Z"/><path class="cadran-seg" d="M148.37 21.74 A92 92 0 0 1 163.07 33.02 L153.48 43.22 A78 78 0 0 0 141.01 33.65 Z"/><path class="cadran-seg" d="M166.98 36.93 A92 92 0 0 1 178.26 51.63 L166.35 58.99 A78 78 0 0 0 156.78 46.52 Z"/><path class="cadran-seg" d="M181.02 56.41 A92 92 0 0 1 188.11 73.53 L174.70 77.56 A78 78 0 0 0 168.69 63.04 Z"/><path class="cadran-seg" d="M189.54 78.86 A92 92 0 0 1 191.96 97.24 L177.96 97.66 A78 78 0 0 0 175.91 82.08 Z"/><path class="cadran-seg" d="M191.96 102.76 A92 92 0 0 1 189.54 121.14 L175.91 117.92 A78 78 0 0 0 177.96 102.34 Z"/><path class="cadran-seg" d="M188.11 126.47 A92 92 0 0 1 181.02 143.59 L168.69 136.96 A78 78 0 0 0 174.70 122.44 Z"/><path class="cadran-seg" d="M178.26 148.37 A92 92 0 0 1 166.98 163.07 L156.78 153.48 A78 78 0 0 0 166.35 141.01 Z"/><path class="cadran-seg" d="M163.07 166.98 A92 92 0 0 1 148.37 178.26 L141.01 166.35 A78 78 0 0 0 153.48 156.78 Z"/><path class="cadran-seg" d="M143.59 181.02 A92 92 0 0 1 126.47 188.11 L122.44 174.70 A78 78 0 0 0 136.96 168.69 Z"/><path class="cadran-seg" d="M121.14 189.54 A92 92 0 0 1 102.76 191.96 L102.34 177.96 A78 78 0 0 0 117.92 175.91 Z"/><path class="cadran-seg" d="M97.24 191.96 A92 92 0 0 1 78.86 189.54 L82.08 175.91 A78 78 0 0 0 97.66 177.96 Z"/><path class="cadran-seg" d="M73.53 188.11 A92 92 0 0 1 56.41 181.02 L63.04 168.69 A78 78 0 0 0 77.56 174.70 Z"/><path class="cadran-seg" d="M51.63 178.26 A92 92 0 0 1 36.93 166.98 L46.52 156.78 A78 78 0 0 0 58.99 166.35 Z"/><path class="cadran-seg" d="M33.02 163.07 A92 92 0 0 1 21.74 148.37 L33.65 141.01 A78 78 0 0 0 43.22 153.48 Z"/><path class="cadran-seg" d="M18.98 143.59 A92 92 0 0 1 11.89 126.47 L25.30 122.44 A78 78 0 0 0 31.31 136.96 Z"/><path class="cadran-seg" d="M10.46 121.14 A92 92 0 0 1 8.04 102.76 L22.04 102.34 A78 78 0 0 0 24.09 117.92 Z"/><path class="cadran-seg" d="M8.04 97.24 A92 92 0 0 1 10.46 78.86 L24.09 82.08 A78 78 0 0 0 22.04 97.66 Z"/><path class="cadran-seg" d="M11.89 73.53 A92 92 0 0 1 18.98 56.41 L31.31 63.04 A78 78 0 0 0 25.30 77.56 Z"/><path class="cadran-seg" d="M21.74 51.63 A92 92 0 0 1 33.02 36.93 L43.22 46.52 A78 78 0 0 0 33.65 58.99 Z"/><path class="cadran-seg" d="M36.93 33.02 A92 92 0 0 1 51.63 21.74 L58.99 33.65 A78 78 0 0 0 46.52 43.22 Z"/><path class="cadran-seg" d="M56.41 18.98 A92 92 0 0 1 73.53 11.89 L77.56 25.30 A78 78 0 0 0 63.04 31.31 Z"/><path class="cadran-seg" d="M78.86 10.46 A92 92 0 0 1 97.24 8.04 L97.66 22.04 A78 78 0 0 0 82.08 24.09 Z"/></svg>
+      <p class="cadran-grand" aria-hidden="true">24/7</p>
+    </div>
+    <div class="engagements-texte">
+      <p class="surtitre ">Pourquoi LASP</p>
+      <h2 data-anime="lignes">Une présence continue, des agents qui savent quoi faire.</h2>
+      <p class="intro" data-anime>Jour, nuit, week-end : l&#39;agence répond et les agents tiennent leur poste.</p>
+      <ul class="engagements-liste" data-anime="cascade"><li><strong>Agents qualifiés et opérationnels</strong><span>Agents de sécurité, agents SSIAP et agents cynophiles.</span></li><li><strong>Réactivité 24h/24 et 7j/7</strong><span>Jour, nuit et week-end.</span></li><li><strong>Environnements industriels et sensibles</strong><span>Des sites que nous savons protéger.</span></li><li><strong>PTI, radios, véhicules</strong><span>Des agents équipés, joignables et mobiles.</span></li><li><strong>Suivi et qualité de service</strong><span>Une qualité constante, mission après mission.</span></li></ul>
+    </div>
+  </div>
+</section>
+<section class="prestations-accueil s-clair" id="prestations">
+  <div class="conteneur">
+    <div class="tete-section">
+      <p class="surtitre ">Prestations</p>
+      <h2 data-anime="lignes">Six métiers,<br><em>un seul niveau d&#39;exigence.</em></h2>
+      <p class="intro" data-anime>Chaque prestation se combine avec les autres pour former le dispositif qui convient à votre site.</p>
+    </div>
+    <ul class="cartes-prestations"><li class="carte-prestation">
+      <a href="/prestations#agent" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:55% 50%">
+  <picture>
+    <img src="/assets/images/grok/prestation-agent-1168.webp" srcset="/assets/images/grok/prestation-agent-640.webp 640w, /assets/images/grok/prestation-agent-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Agent de sécurité</span><span class="carte-court">Gardiennage, accueil et contrôle d&#39;accès</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-prestation">
+      <a href="/prestations#maitre-chien" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:50% 55%">
+  <picture>
+    <img src="/assets/images/grok/prestation-maitre-chien-1168.webp" srcset="/assets/images/grok/prestation-maitre-chien-640.webp 640w, /assets/images/grok/prestation-maitre-chien-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">Agents cynophiles</span><span class="carte-titre">Maître-chien</span><span class="carte-court">Agent cynophile et son chien</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-prestation">
+      <a href="/prestations#incendie" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/prestation-incendie-1168.webp" srcset="/assets/images/grok/prestation-incendie-640.webp 640w, /assets/images/grok/prestation-incendie-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">SSIAP 1, 2 et 3</span><span class="carte-titre">Sécurité incendie</span><span class="carte-court">Agents SSIAP 1, 2 et 3</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-prestation">
+      <a href="/prestations#evenementiel" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/prestation-evenementiel-1168.webp" srcset="/assets/images/grok/prestation-evenementiel-640.webp 640w, /assets/images/grok/prestation-evenementiel-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Événementiel</span><span class="carte-court">Accès, filtrage et flux du public</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-prestation">
+      <a href="/prestations#magasin" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/prestation-magasin-1168.webp" srcset="/assets/images/grok/prestation-magasin-640.webp 640w, /assets/images/grok/prestation-magasin-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Magasin</span><span class="carte-court">Prévention des vols</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-prestation">
+      <a href="/prestations#rondes" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+        <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/prestation-rondier-1168.webp" srcset="/assets/images/grok/prestation-rondier-640.webp 640w, /assets/images/grok/prestation-rondier-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="carte-corps"><span class="carte-qualif">Rondiers, intervenants</span><span class="carte-titre">Intervention et rondes</span><span class="carte-court">Rondier, intervenant</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li></ul>
+    <p class="centre" data-anime><a href="/prestations" class="bouton bouton--contour" data-libelle="Prestations">Toutes les prestations</a></p>
+  </div>
+</section>
+<section class="secteurs-accueil s-nuit" id="secteurs">
+  <div class="conteneur tete-section tete-section--ligne">
+    <div>
+      <p class="surtitre ">Où nous intervenons</p>
+      <h2 data-anime="lignes">Du quai de chargement à la scène de concert.</h2>
+    </div>
+    <p class="intro" data-anime>Entreprises, sites industriels, événements et collectivités : un dispositif pour chaque environnement.</p>
+  </div>
+  <div class="rangee-fenetre" tabindex="0" role="region" aria-label="Secteurs, défilement horizontal">
+    <ul class="rangee" data-galerie data-effet="rangee"><li class="carte-secteur">
+      <a href="/secteurs#industrie" data-libelle="Secteurs">
+        <figure class="media secteur-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/secteur-industrie-1600.webp" srcset="/assets/images/grok/secteur-industrie-640.webp 640w, /assets/images/grok/secteur-industrie-1024.webp 1024w, /assets/images/grok/secteur-industrie-1600.webp 1600w" sizes="(max-width: 760px) 78vw, 30vw" alt="" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="secteur-corps"><span class="secteur-titre">Industrie et logistique</span><span class="secteur-court">Usines, entrepôts, plateformes</span><span class="carte-voir">Voir le secteur <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-secteur">
+      <a href="/secteurs#commerces" data-libelle="Secteurs">
+        <figure class="media secteur-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/secteur-commerce-1600.webp" srcset="/assets/images/grok/secteur-commerce-640.webp 640w, /assets/images/grok/secteur-commerce-1024.webp 1024w, /assets/images/grok/secteur-commerce-1600.webp 1600w" sizes="(max-width: 760px) 78vw, 30vw" alt="" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="secteur-corps"><span class="secteur-titre">Commerces</span><span class="secteur-court">Magasins, galeries, enseignes</span><span class="carte-voir">Voir le secteur <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-secteur">
+      <a href="/secteurs#evenements" data-libelle="Secteurs">
+        <figure class="media secteur-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/secteur-evenement-1600.webp" srcset="/assets/images/grok/secteur-evenement-640.webp 640w, /assets/images/grok/secteur-evenement-1024.webp 1024w, /assets/images/grok/secteur-evenement-1600.webp 1600w" sizes="(max-width: 760px) 78vw, 30vw" alt="" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="secteur-corps"><span class="secteur-titre">Événements</span><span class="secteur-court">Concerts, salons, manifestations</span><span class="carte-voir">Voir le secteur <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li><li class="carte-secteur">
+      <a href="/secteurs#entreprises" data-libelle="Secteurs">
+        <figure class="media secteur-media" data-grok data-fx="parallaxe" data-fx-force="8" style="--cadrage:50% 50%">
+  <picture>
+    <img src="/assets/images/grok/secteur-entreprise-1600.webp" srcset="/assets/images/grok/secteur-entreprise-640.webp 640w, /assets/images/grok/secteur-entreprise-1024.webp 1024w, /assets/images/grok/secteur-entreprise-1600.webp 1600w" sizes="(max-width: 760px) 78vw, 30vw" alt="" width="1600" height="2000" loading="lazy" decoding="async">
+  </picture><figcaption class="mention-ia">Illustration générée</figcaption>
+</figure>
+        <span class="secteur-corps"><span class="secteur-titre">Entreprises et collectivités</span><span class="secteur-court">Bureaux, bâtiments, sites sensibles</span><span class="carte-voir">Voir le secteur <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+      </a>
+    </li></ul>
+  </div>
+</section>
+<section class="dispositif s-clair" id="dispositif">
+  <div class="conteneur dispositif-grille">
+    <div class="dispositif-questions">
+      <p class="surtitre ">Votre dispositif</p>
+      <h2 data-anime="lignes">Trois questions, une première idée.</h2>
+      <p class="intro" data-anime>Choisissez votre site et vos horaires : les prestations qui y répondent s&#39;allument. Le dispositif définitif se construit avec vous.</p>
+      <form class="dispositif-form" data-dispositif action="/devis#demande" method="get">
+        <fieldset><legend>Votre site</legend><div class="puces"><label class="puce"><input type="radio" name="site" value="industrie" checked><span>Entrepôt ou usine</span></label><label class="puce"><input type="radio" name="site" value="commerces"><span>Magasin</span></label><label class="puce"><input type="radio" name="site" value="evenements"><span>Événement</span></label><label class="puce"><input type="radio" name="site" value="entreprises"><span>Bureaux ou bâtiment public</span></label></div></fieldset>
+        <fieldset><legend>Quand ?</legend><div class="puces"><label class="puce"><input type="radio" name="plage" value="jour"><span>En journée</span></label><label class="puce"><input type="radio" name="plage" value="nuit" checked><span>La nuit</span></label><label class="puce"><input type="radio" name="plage" value="continu"><span>24h/24</span></label></div></fieldset>
+        <fieldset><legend>Votre priorité</legend><div class="puces"><label class="puce"><input type="radio" name="priorite" value="acces"><span>Contrôler les accès</span></label><label class="puce"><input type="radio" name="priorite" value="perimetre" checked><span>Surveiller le périmètre</span></label><label class="puce"><input type="radio" name="priorite" value="incendie"><span>Sécurité incendie</span></label><label class="puce"><input type="radio" name="priorite" value="vols"><span>Prévenir les vols</span></label></div></fieldset>
+      </form>
+    </div>
+    <div class="dispositif-resultat" data-visuel data-effet="dispositif">
+      <p class="dispositif-titre">Prestations conseillées</p>
+      <ul class="dispositif-liste" aria-live="polite"><li data-prestation="agent"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Agent de sécurité</span><span class="dl-etat"></span></li><li data-prestation="maitre-chien"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Maître-chien</span><span class="dl-etat"></span></li><li data-prestation="incendie"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Sécurité incendie</span><span class="dl-etat"></span></li><li data-prestation="evenementiel"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Événementiel</span><span class="dl-etat"></span></li><li data-prestation="magasin"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Magasin</span><span class="dl-etat"></span></li><li data-prestation="rondes"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Intervention et rondes</span><span class="dl-etat"></span></li></ul>
+      <p class="dispositif-note">Suggestion indicative, établie à partir de vos réponses.</p>
+      <a class="bouton" href="/devis#demande" data-libelle="Devis &amp; contact" data-dispositif-lien>Demander un devis pour ce dispositif</a>
+    </div>
+  </div>
+</section>
+<section class="etapes s-nuit" id="etapes">
+  <div class="conteneur">
+    <div class="tete-section">
+      <p class="surtitre ">Comment ça se passe</p>
+      <h2 data-anime="lignes">Quatre temps, une seule équipe.</h2>
+    </div>
+    <div class="ronde" data-effet="pointage">
+      <svg class="ronde-trace" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true" data-visuel><path class="ronde-base" d="M0 34.0 L25 35.3 L50 39.0 L75 44.7 L100 52.0 L125 60.0 L150 68.0 L175 75.3 L200 81.0 L225 84.7 L250 86.0 L275 84.7 L300 81.0 L325 75.3 L350 68.0 L375 60.0 L400 52.0 L425 44.7 L450 39.0 L475 35.3 L500 34.0 L525 35.3 L550 39.0 L575 44.7 L600 52.0 L625 60.0 L650 68.0 L675 75.3 L700 81.0 L725 84.7 L750 86.0 L775 84.7 L800 81.0 L825 75.3 L850 68.0 L875 60.0 L900 52.0 L925 44.7 L950 39.0 L975 35.3 L1000 34.0"/><path class="ronde-progres" d="M0 34.0 L25 35.3 L50 39.0 L75 44.7 L100 52.0 L125 60.0 L150 68.0 L175 75.3 L200 81.0 L225 84.7 L250 86.0 L275 84.7 L300 81.0 L325 75.3 L350 68.0 L375 60.0 L400 52.0 L425 44.7 L450 39.0 L475 35.3 L500 34.0 L525 35.3 L550 39.0 L575 44.7 L600 52.0 L625 60.0 L650 68.0 L675 75.3 L700 81.0 L725 84.7 L750 86.0 L775 84.7 L800 81.0 L825 75.3 L850 68.0 L875 60.0 L900 52.0 L925 44.7 L950 39.0 L975 35.3 L1000 34.0" pathLength="1"/></svg>
+      <ol class="ronde-points" data-visuel><li class="ronde-point" style="--i:0"><span class="ronde-pastille" aria-hidden="true"><span>1</span></span><h3>Vous décrivez votre site</h3><p>Par téléphone ou par le formulaire : le lieu, les horaires, ce qui vous inquiète.</p></li><li class="ronde-point" style="--i:1"><span class="ronde-pastille" aria-hidden="true"><span>2</span></span><h3>Nous proposons un dispositif</h3><p>Sur mesure : quelles prestations, combien d&#39;agents, à quelles heures.</p></li><li class="ronde-point" style="--i:2"><span class="ronde-pastille" aria-hidden="true"><span>3</span></span><h3>Les agents prennent leur poste</h3><p>Qualifiés et équipés : PTI, radios et véhicules selon la mission.</p></li><li class="ronde-point" style="--i:3"><span class="ronde-pastille" aria-hidden="true"><span>4</span></span><h3>Nous suivons la prestation</h3><p>Un suivi régulier, pour une qualité de service constante.</p></li></ol>
+    </div>
+  </div>
+</section>
+<section class="confiance s-clair" id="confiance">
+  <div class="conteneur confiance-grille">
+    <div>
+      <p class="surtitre ">Ils nous font confiance</p>
+      <h2 data-anime="lignes">Des entreprises qui nous confient leurs sites.</h2>
+      <ul class="refs " data-anime="cascade"><li>SERIS</li><li>JTEKT</li><li>APR</li><li>STEF</li></ul>
+    </div>
+    <div class="confiance-zone">
+      <figure class="plan " data-visuel role="img" aria-label="Plan schématique de Lyon, agence dans le 9e arrondissement">
+  <svg viewBox="0 0 400 300" aria-hidden="true" focusable="false" data-fx="trace">
+    <rect class="plan-fond" x="0" y="0" width="400" height="300" rx="14"/>
+    <g class="plan-grille"><line x1="40" y1="0" x2="40" y2="300"/><line x1="80" y1="0" x2="80" y2="300"/><line x1="120" y1="0" x2="120" y2="300"/><line x1="160" y1="0" x2="160" y2="300"/><line x1="200" y1="0" x2="200" y2="300"/><line x1="240" y1="0" x2="240" y2="300"/><line x1="280" y1="0" x2="280" y2="300"/><line x1="320" y1="0" x2="320" y2="300"/><line x1="360" y1="0" x2="360" y2="300"/><line x1="0" y1="43" x2="400" y2="43"/><line x1="0" y1="86" x2="400" y2="86"/><line x1="0" y1="129" x2="400" y2="129"/><line x1="0" y1="172" x2="400" y2="172"/><line x1="0" y1="215" x2="400" y2="215"/><line x1="0" y1="258" x2="400" y2="258"/></g>
+    <path class="plan-zone" d="M44 52 L132 34 L150 92 L138 150 L104 176 L52 160 L30 104 Z"/>
+    <path class="plan-eau" data-fx-trait d="M128 6 C 136 46, 112 78, 140 118 S 176 200, 196 262 L 204 300"/>
+    <path class="plan-eau" data-fx-trait d="M394 34 C 330 70, 268 104, 240 156 S 210 236, 196 262"/>
+    <path class="plan-route" data-fx-trait d="M96 128 C 150 140, 190 150, 236 168"/>
+    <text class="plan-nom" x="148" y="44">Saône</text>
+    <text class="plan-nom" x="318" y="118">Rhône</text>
+    <text class="plan-nom plan-nom--zone" x="50" y="196">Lyon 9e</text>
+  </svg>
+  <span class="plan-point" style="left:24%;top:42.6%"><span class="plan-onde" data-effet="carte"></span><span class="plan-onde plan-onde--2"></span><svg class="monogramme plan-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg></span>
+  <figcaption class="plan-legende"><strong>LASP</strong> · 203 rue Marcel Cerdan</figcaption>
+</figure>
+      <h3 data-anime>Basés à Lyon 9e</h3>
+      <p data-anime>203 rue Marcel Cerdan, 69009 Lyon. Un appel suffit pour organiser une mission.</p>
+      <p data-anime><a href="/devis#agence" class="lien-fleche" data-libelle="Devis &amp; contact">Voir le contact <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></p>
+    </div>
+  </div>
+</section>
+<section class="fin s-nuit" id="fin">
+  <div class="fin-decor" data-visuel aria-hidden="true"><svg class="monogramme fin-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span class="fin-faisceau" data-effet="balayage"></span></div>
+  <div class="conteneur fin-contenu">
+    <h2 class="fin-titre" data-anime="lignes">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+    <p class="fin-texte" data-anime>Décrivez votre besoin : nous vous proposons un dispositif sur mesure.</p>
+    <div class="fin-actions" data-anime>
+      <a href="/devis#demande" class="bouton" data-libelle="Devis &amp; contact" data-survol="magnetique">Demander un devis</a>
+      <p class="fin-tel">ou appelez le <a href="tel:+33482333999">04 82 333 999</a> · <a href="tel:+33774342535">07 74 34 25 35</a></p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="pied" id="pied">
+  <div class="conteneur pied-grille">
+    <div class="pied-marque">
+      <img src="/assets/images/logo-lasp.png" alt="L.A.S.P. sécurité privée" width="100" height="72" loading="lazy">
+      <p class="pied-slogan">Votre sécurité, notre priorité.</p>
+      <p class="pied-dispo">Réactifs 24h/24 et 7j/7</p>
+    </div>
+    <div>
+      <p class="pied-titre">Contact</p>
+      <p>Lion Agence Sécurité Privée<br>203 rue Marcel Cerdan, 69009 Lyon</p>
+      <p><a href="tel:+33482333999">04 82 333 999</a><br><a href="tel:+33774342535">07 74 34 25 35</a><br><span class="email-texte">lasp@laspsecurite.fr</span></p>
+    </div>
+    <nav aria-label="Sommaire">
+      <p class="pied-titre">Sommaire</p>
+      <ul><li><a href="/" data-libelle="Accueil" aria-current="page">Accueil</a></li><li><a href="/prestations" data-libelle="Prestations">Prestations</a></li><li><a href="/secteurs" data-libelle="Secteurs">Secteurs</a></li><li><a href="/agence" data-libelle="L&#39;agence">L&#39;agence</a></li><li><a href="/devis" data-libelle="Devis &amp; contact">Devis &amp; contact</a></li><li><a href="#haut" data-sans-transition>Retour en haut</a></li></ul>
+    </nav>
+  </div>
+  <div class="conteneur pied-bas">
+    <p class="pied-legal"><span>Mentions légales (à compléter)</span><span>Politique de confidentialité (à compléter)</span></p>
+    <p class="pied-cnaps">Autorisation d&#39;exercice délivrée par le CNAPS n° à compléter. « L&#39;autorisation d&#39;exercice ne confère aucune prérogative de puissance publique à l&#39;entreprise ou aux personnes qui en bénéficient. » (art. L612-14 du Code de la sécurité intérieure)</p>
+    <p>Maquette de démonstration : formulaire et outil simulés, rien n&#39;est envoyé.</p>
+    <p>© Lion Agence Sécurité Privée</p>
+  </div>
+</footer>
+<div data-barre-fixe>
+  <a class="bouton bouton--contour" href="tel:+33482333999">Appeler</a>
+  <a class="bouton" href="/devis" data-libelle="Devis &amp; contact">Demander un devis</a>
+</div>
+</body>
+</html>

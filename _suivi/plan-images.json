@@ -1,0 +1,296 @@
+[
+ {
+  "source": "recu/logo.png",
+  "nom": "logo",
+  "role": "logo",
+  "page": "Toutes",
+  "emplacement": "en-tête, pied, intro",
+  "alt": "L.A.S.P. sécurité privée",
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/accueil-ouverture.jpg",
+  "nom": "grok/accueil-ouverture",
+  "role": "ouverture",
+  "page": "Accueil",
+  "emplacement": "ouverture plein cadre (le faisceau de lampe la révèle)",
+  "priorite": "Indispensable",
+  "ratio": "16:9",
+  "consigne_scene": "A wide empty loading yard of a modern logistics warehouse at night after rain, a row of closed grey roller doors along the dock, wet asphalt reflecting cold floodlights, a tall wire mesh fence on the far right, one small red warning light near a door, a single lone security guard standing far away on the right third of the frame, small in the image, holding an unlit flashlight. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. The left half of the frame is dark, calm and empty. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Cour de chargement d'un entrepôt la nuit, un agent au loin",
+  "zone_texte": "gauche",
+  "mobile": true,
+  "source_mobile": "recu/grok/accueil-ouverture-mobile.jpg",
+  "beaute": 4,
+  "cadrage": [
+   64,
+   55
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-agent.jpg",
+  "nom": "grok/prestation-agent",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Agent de sécurité (gardiennage)",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "A security guard standing at the vehicle entrance barrier of an industrial site at dusk, seen from behind at three-quarters, the raised striped barrier arm and a small gatehouse with warm light inside, the site's buildings softly blurred in the background. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Agent de sécurité au poste d'entrée d'un site industriel",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-maitre-chien.jpg",
+  "nom": "grok/prestation-maitre-chien",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Maître-chien",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "A dog handler and a calm Belgian Malinois on a short leash walking along a tall wire mesh perimeter fence of an industrial site at night, seen from behind, the dog in sharp focus, wet ground reflecting cold lights. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. The dog wears a plain black harness with no text. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Maître-chien et son chien le long d'une clôture, la nuit",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-incendie.jpg",
+  "nom": "grok/prestation-incendie",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Sécurité incendie (SSIAP)",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "A fire safety officer seen from behind walking down a long, clean corridor of a large modern building at night, a red fire extinguisher and a red fire hose reel cabinet mounted on the wall in the foreground, soft emergency lighting, glossy floor. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Agent de sécurité incendie dans le couloir d'un grand bâtiment",
+  "beaute": 4,
+  "cadrage": [
+   50,
+   50
+  ],
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-evenementiel.jpg",
+  "nom": "grok/prestation-evenementiel",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Événementiel",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "Two event security staff seen from behind standing at a crowd barrier in front of a concert stage, the audience a soft blur of silhouettes far away, warm stage lights and haze in the background. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Agents de sécurité devant la barrière d'une scène de concert",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-magasin.jpg",
+  "nom": "grok/prestation-magasin",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Magasin (prévention des vols)",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "A security guard seen from behind standing just inside the glass entrance of a bright modern retail store in the evening, two plain anti-theft gate pillars at the entrance, softly blurred shelves and warm shop lighting, the dark street visible through the glass. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No product packaging, no brand. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Agent de prévention des vols à l'entrée d'un magasin",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/prestation-rondier.jpg",
+  "nom": "grok/prestation-rondier",
+  "role": "carte-service",
+  "page": "Accueil et Prestations",
+  "emplacement": "carte Intervention et rondes",
+  "priorite": "Indispensable",
+  "ratio": "4:3",
+  "consigne_scene": "A security guard on a night round inside a dark warehouse, seen from behind between tall pallet racks, the beam of his flashlight cutting through faint dust in the air and lighting the floor ahead, everything else in deep blue shadow. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Ronde de nuit à la lampe entre les rayonnages d'un entrepôt",
+  "beaute": 5,
+  "largeurs": [
+   640,
+   1168
+  ]
+ },
+ {
+  "source": "recu/grok/secteur-industrie.jpg",
+  "nom": "grok/secteur-industrie",
+  "role": "galerie",
+  "page": "Accueil et Secteurs",
+  "emplacement": "carte Industrie et logistique",
+  "priorite": "Conseillée",
+  "ratio": "4:5",
+  "consigne_scene": "Low-angle view of a large modern industrial plant at blue hour, steel cladding, pipes and a tall chimney, floodlights switching on, wet concrete yard in the foreground, nobody.",
+  "alt": "Site industriel à l'heure bleue",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1024,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/secteur-commerce.jpg",
+  "nom": "grok/secteur-commerce",
+  "role": "galerie",
+  "page": "Accueil et Secteurs",
+  "emplacement": "carte Commerces",
+  "priorite": "Conseillée",
+  "ratio": "4:5",
+  "consigne_scene": "A covered shopping arcade at closing time, warm shop windows with blurred interiors and no readable sign, glossy stone floor reflecting the lights, a few distant blurred passers-by, nobody close.",
+  "alt": "Galerie commerçante à l'heure de la fermeture",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1024,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/secteur-evenement.jpg",
+  "nom": "grok/secteur-evenement",
+  "role": "galerie",
+  "page": "Accueil et Secteurs",
+  "emplacement": "carte Événements",
+  "priorite": "Conseillée",
+  "ratio": "4:5",
+  "consigne_scene": "An empty concert arena just before the doors open, rows of metal crowd barriers lined up in the foreground, stage lights being tested with soft beams in the haze, nobody.",
+  "alt": "Salle de concert vide avant l'ouverture des portes, barrières en place",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1024,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/secteur-entreprise.jpg",
+  "nom": "grok/secteur-entreprise",
+  "role": "galerie",
+  "page": "Accueil et Secteurs",
+  "emplacement": "carte Entreprises et collectivités",
+  "priorite": "Conseillée",
+  "ratio": "4:5",
+  "consigne_scene": "The glass lobby of a modern office building at night seen from the outside, a lit empty reception desk inside, clean lines, reflections of street lights on the glass, nobody.",
+  "alt": "Hall d'un immeuble de bureaux la nuit",
+  "beaute": 4,
+  "largeurs": [
+   640,
+   1024,
+   1600
+  ]
+ },
+ {
+  "source": "recu/grok/prestations-ouverture.jpg",
+  "nom": "grok/prestations-ouverture",
+  "role": "ouverture",
+  "page": "Prestations",
+  "emplacement": "ouverture plein cadre",
+  "priorite": "Indispensable",
+  "ratio": "16:9",
+  "consigne_scene": "Symmetrical view down a long empty underground car park at night, rows of concrete pillars, cold strip lights, a lone security guard walking away from the camera exactly in the centre of the frame, small, the vanishing point in the middle. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Agent de sécurité qui s'éloigne dans un parking souterrain",
+  "zone_texte": "bas",
+  "mobile": true,
+  "beaute": 5,
+  "cadrage": [
+   50,
+   47
+  ]
+ },
+ {
+  "source": "recu/grok/secteurs-ouverture.jpg",
+  "nom": "grok/secteurs-ouverture",
+  "role": "ouverture",
+  "page": "Secteurs",
+  "emplacement": "ouverture plein cadre",
+  "priorite": "Indispensable",
+  "ratio": "16:9",
+  "consigne_scene": "Elevated view at blue hour over a vast logistics and industrial zone on the edge of a large French city, warehouses with flat roofs, lit truck docks, a ring road with light trails, a hill with city lights far in the background, nobody.",
+  "alt": "Zone logistique et industrielle à l'heure bleue",
+  "zone_texte": "haut",
+  "mobile": true,
+  "beaute": 4
+ },
+ {
+  "source": "recu/grok/agence-ouverture.jpg",
+  "nom": "grok/agence-ouverture",
+  "role": "ouverture",
+  "page": "L'agence",
+  "emplacement": "ouverture plein cadre",
+  "priorite": "Indispensable",
+  "ratio": "16:9",
+  "consigne_scene": "Two security guards seen from behind walking side by side across the top level of an empty open-air car park at dusk, the lights of a large city spreading in the distance under a deep blue sky with a last line of orange on the horizon. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. Both guards are on the right half of the frame. No blue flashing lights, no police car, no weapon, no handcuffs.",
+  "alt": "Deux agents au crépuscule sur le toit d'un parking",
+  "zone_texte": "gauche",
+  "mobile": true,
+  "source_mobile": "recu/grok/agence-ouverture-mobile.jpg",
+  "beaute": 4,
+  "cadrage": [
+   72,
+   52
+  ]
+ },
+ {
+  "source": "recu/grok/404.jpg",
+  "nom": "grok/404",
+  "role": "404",
+  "page": "Page 404",
+  "emplacement": "ouverture de la page introuvable",
+  "priorite": "Conseillée",
+  "ratio": "16:9",
+  "consigne_scene": "Close-up of a heavy closed padlock on a locked metal gate at night, caught in the round spot of a flashlight beam, everything around in deep blue darkness, a gentle touch of humour: a single autumn leaf caught on the gate.",
+  "alt": "Cadenas sur un portail fermé, dans le faisceau d'une lampe",
+  "mobile": true,
+  "beaute": 4,
+  "cadrage": [
+   70,
+   55
+  ]
+ },
+ {
+  "source": "recu/lasp-securite-incendie.png",
+  "nom": "lasp-incendie",
+  "role": "vignette",
+  "page": "L'agence",
+  "emplacement": "trio « En tenue LASP »",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Agent LASP en polo rouge de sécurité incendie"
+ },
+ {
+  "source": "recu/lasp-evenementiel.png",
+  "nom": "lasp-evenementiel",
+  "role": "vignette",
+  "page": "L'agence",
+  "emplacement": "trio « En tenue LASP »",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Agent LASP face au public d'un concert"
+ },
+ {
+  "source": "recu/lasp-maitre-chien.png",
+  "nom": "lasp-maitre-chien",
+  "role": "vignette",
+  "page": "L'agence",
+  "emplacement": "trio « En tenue LASP »",
+  "ratio": "4:3",
+  "beaute": 3,
+  "alt": "Maître-chien LASP et son chien, la nuit"
+ }
+]

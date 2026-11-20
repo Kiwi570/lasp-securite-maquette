@@ -1,0 +1,1094 @@
+{
+  "dossier": "/home/claude/lasp-securite-maquette/_suivi/recu/grok",
+  "date": "2026-11-20T21:00:49.235Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "404.jpg",
+      "nom": "404",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 332263,
+      "transparence": false,
+      "sujet": {
+        "x": 46.9,
+        "y": 31.8,
+        "l": 18.8,
+        "h": 36.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        54,
+        52
+      ],
+      "cadrage_css": "54% 52%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.83,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "bas",
+          "score": 0.71,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "droite",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.05
+        }
+      ],
+      "qualite": {
+        "nettete": 41.4,
+        "bruit": 0.82,
+        "compression": 1.05,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c2c6d01030321c58",
+      "drapeaux": [
+        "calme gauche/haut/bas"
+      ]
+    },
+    {
+      "fichier": "accueil-ouverture-mobile.jpg",
+      "nom": "accueil-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 470854,
+      "transparence": false,
+      "sujet": {
+        "x": 40.9,
+        "y": 34.4,
+        "l": 50,
+        "h": 46.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        61
+      ],
+      "cadrage_css": "62% 61%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.91,
+          "ton": "sombre",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "gauche",
+          "score": 0.9,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.23
+        },
+        {
+          "cote": "droite",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        }
+      ],
+      "qualite": {
+        "nettete": 42.5,
+        "bruit": 0.63,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "c0e8f4f4fcf4f172",
+      "drapeaux": [
+        "calme haut/gauche"
+      ]
+    },
+    {
+      "fichier": "accueil-ouverture.jpg",
+      "nom": "accueil-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 364804,
+      "transparence": false,
+      "sujet": {
+        "x": 50,
+        "y": 13.6,
+        "l": 28.1,
+        "h": 68.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        62,
+        53
+      ],
+      "cadrage_css": "62% 53%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.92,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.69,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "haut",
+          "score": 0.66,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "droite",
+          "score": 0.46,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        }
+      ],
+      "qualite": {
+        "nettete": 32.2,
+        "bruit": 0.82,
+        "compression": 1.14,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d8f0fcfcf8f8d898",
+      "drapeaux": [
+        "calme gauche/bas/haut"
+      ]
+    },
+    {
+      "fichier": "agence-ouverture-mobile.jpg",
+      "nom": "agence-ouverture-mobile",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 366948,
+      "transparence": false,
+      "sujet": {
+        "x": 18.2,
+        "y": 43.8,
+        "l": 72.7,
+        "h": 43.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        64
+      ],
+      "cadrage_css": "45% 64%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.95,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.62,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "droite",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.34
+        },
+        {
+          "cote": "bas",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 32.3,
+        "bruit": 0.45,
+        "compression": 1.23,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f0e0e0f0b29393c2",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "agence-ouverture.jpg",
+      "nom": "agence-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 289869,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 27.3,
+        "l": 43.8,
+        "h": 59.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        44,
+        50
+      ],
+      "cadrage_css": "44% 50%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.73,
+          "ton": "sombre",
+          "recouvre_sujet": 0.1
+        },
+        {
+          "cote": "droite",
+          "score": 0.68,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "bas",
+          "score": 0.56,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "gauche",
+          "score": 0.42,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        }
+      ],
+      "qualite": {
+        "nettete": 22,
+        "bruit": 0.55,
+        "compression": 1.21,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f0f0d0c0f3f2d0f0",
+      "drapeaux": [
+        "calme haut/droite"
+      ]
+    },
+    {
+      "fichier": "prestation-agent.jpg",
+      "nom": "prestation-agent",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 279383,
+      "transparence": false,
+      "sujet": {
+        "x": 9.4,
+        "y": 22.7,
+        "l": 87.5,
+        "h": 40.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        39
+      ],
+      "cadrage_css": "53% 39%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.67,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "droite",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 12.7,
+        "bruit": 0.42,
+        "compression": 1.29,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d0e88e9c9c9e9e9e",
+      "drapeaux": [
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "prestation-evenementiel.jpg",
+      "nom": "prestation-evenementiel",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 207235,
+      "transparence": false,
+      "sujet": {
+        "x": 40.6,
+        "y": 18.2,
+        "l": 34.4,
+        "h": 27.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        60,
+        35
+      ],
+      "cadrage_css": "60% 35%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.76,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.7,
+          "ton": "sombre",
+          "recouvre_sujet": 0.17
+        },
+        {
+          "cote": "bas",
+          "score": 0.7,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.1
+        }
+      ],
+      "qualite": {
+        "nettete": 8.6,
+        "bruit": 0.37,
+        "compression": 1.36,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "f0d8f8f8b4b4b4b4",
+      "drapeaux": [
+        "calme gauche/haut/bas"
+      ]
+    },
+    {
+      "fichier": "prestation-incendie.jpg",
+      "nom": "prestation-incendie",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 254037,
+      "transparence": false,
+      "sujet": {
+        "x": 15.6,
+        "y": 4.5,
+        "l": 81.3,
+        "h": 90.9,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        41
+      ],
+      "cadrage_css": "46% 41%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.52,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        },
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "haut",
+          "score": 0.36,
+          "ton": "sombre",
+          "recouvre_sujet": 0.71
+        },
+        {
+          "cote": "droite",
+          "score": 0.27,
+          "ton": "sombre",
+          "recouvre_sujet": 0.84
+        }
+      ],
+      "qualite": {
+        "nettete": 13.1,
+        "bruit": 0.45,
+        "compression": 1.13,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9cdc525252da9898",
+      "drapeaux": []
+    },
+    {
+      "fichier": "prestation-magasin.jpg",
+      "nom": "prestation-magasin",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 249494,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 0,
+        "l": 75,
+        "h": 86.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        78,
+        42
+      ],
+      "cadrage_css": "78% 42%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.39
+        },
+        {
+          "cote": "bas",
+          "score": 0.45,
+          "ton": "sombre",
+          "recouvre_sujet": 0.46
+        },
+        {
+          "cote": "haut",
+          "score": 0.23,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "droite",
+          "score": 0.08,
+          "ton": "sombre",
+          "recouvre_sujet": 0.8
+        }
+      ],
+      "qualite": {
+        "nettete": 16.9,
+        "bruit": 0.39,
+        "compression": 1.28,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "9c94cdcdcc4ccccc",
+      "drapeaux": []
+    },
+    {
+      "fichier": "prestation-maitre-chien.jpg",
+      "nom": "prestation-maitre-chien",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 421049,
+      "transparence": false,
+      "sujet": {
+        "x": 62.5,
+        "y": 27.3,
+        "l": 34.4,
+        "h": 63.6,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        77,
+        60
+      ],
+      "cadrage_css": "77% 60%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.77,
+          "ton": "sombre",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "bas",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.25
+        },
+        {
+          "cote": "droite",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.55
+        }
+      ],
+      "qualite": {
+        "nettete": 30,
+        "bruit": 0.9,
+        "compression": 1.07,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "b0f8cdcccecceded",
+      "drapeaux": [
+        "calme gauche/haut"
+      ]
+    },
+    {
+      "fichier": "prestation-rondier.jpg",
+      "nom": "prestation-rondier",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 271073,
+      "transparence": false,
+      "sujet": {
+        "x": 50,
+        "y": 59.1,
+        "l": 12.5,
+        "h": 36.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        55,
+        79
+      ],
+      "cadrage_css": "55% 79%",
+      "zones_calmes": [
+        {
+          "cote": "gauche",
+          "score": 0.87,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "haut",
+          "score": 0.84,
+          "ton": "sombre",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "droite",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.02
+        },
+        {
+          "cote": "bas",
+          "score": 0.71,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        }
+      ],
+      "qualite": {
+        "nettete": 13.4,
+        "bruit": 0.51,
+        "compression": 1.23,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "55b0f0f3dad0d8da",
+      "drapeaux": [
+        "calme gauche/haut/droite/bas"
+      ]
+    },
+    {
+      "fichier": "prestations-ouverture.jpg",
+      "nom": "prestations-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 282245,
+      "transparence": false,
+      "sujet": {
+        "x": 18.8,
+        "y": 13.6,
+        "l": 59.4,
+        "h": 59.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        47
+      ],
+      "cadrage_css": "50% 47%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.69,
+          "ton": "sombre",
+          "recouvre_sujet": 0.13
+        },
+        {
+          "cote": "droite",
+          "score": 0.51,
+          "ton": "sombre",
+          "recouvre_sujet": 0.27
+        },
+        {
+          "cote": "gauche",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.31
+        },
+        {
+          "cote": "haut",
+          "score": 0.32,
+          "ton": "sombre",
+          "recouvre_sujet": 0.36
+        }
+      ],
+      "qualite": {
+        "nettete": 25.1,
+        "bruit": 0.52,
+        "compression": 1.2,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d4d470f0b2e8e8d4",
+      "drapeaux": [
+        "calme bas"
+      ]
+    },
+    {
+      "fichier": "secteur-commerce.jpg",
+      "nom": "secteur-commerce",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 412480,
+      "transparence": false,
+      "sujet": {
+        "x": 18.2,
+        "y": 31.3,
+        "l": 77.3,
+        "h": 59.4,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        58
+      ],
+      "cadrage_css": "56% 58%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.74,
+          "ton": "sombre",
+          "recouvre_sujet": 0.08
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.32
+        },
+        {
+          "cote": "bas",
+          "score": 0.31,
+          "ton": "sombre",
+          "recouvre_sujet": 0.57
+        },
+        {
+          "cote": "droite",
+          "score": 0.24,
+          "ton": "sombre",
+          "recouvre_sujet": 0.53
+        }
+      ],
+      "qualite": {
+        "nettete": 14.3,
+        "bruit": 0.39,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "3971534a68d8d3d3",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "secteur-entreprise.jpg",
+      "nom": "secteur-entreprise",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 455507,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 34.4,
+        "l": 68.2,
+        "h": 50,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        53,
+        55
+      ],
+      "cadrage_css": "53% 55%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.81,
+          "ton": "sombre",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.48,
+          "ton": "sombre",
+          "recouvre_sujet": 0.16
+        },
+        {
+          "cote": "gauche",
+          "score": 0.43,
+          "ton": "sombre",
+          "recouvre_sujet": 0.44
+        },
+        {
+          "cote": "bas",
+          "score": 0.4,
+          "ton": "sombre",
+          "recouvre_sujet": 0.38
+        }
+      ],
+      "qualite": {
+        "nettete": 26.8,
+        "bruit": 0.51,
+        "compression": 1.24,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "8cbaf858381818bc",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "secteur-evenement.jpg",
+      "nom": "secteur-evenement",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 491542,
+      "transparence": false,
+      "sujet": {
+        "x": 4.5,
+        "y": 28.1,
+        "l": 90.9,
+        "h": 53.1,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        51,
+        51
+      ],
+      "cadrage_css": "51% 51%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.73,
+          "ton": "sombre",
+          "recouvre_sujet": 0.18
+        },
+        {
+          "cote": "gauche",
+          "score": 0.47,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "droite",
+          "score": 0.42,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        },
+        {
+          "cote": "bas",
+          "score": 0.42,
+          "ton": "sombre",
+          "recouvre_sujet": 0.42
+        }
+      ],
+      "qualite": {
+        "nettete": 36.5,
+        "bruit": 0.63,
+        "compression": 1.09,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "e0d42969e86969e8",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "secteur-industrie.jpg",
+      "nom": "secteur-industrie",
+      "drapeau": null,
+      "largeur": 1344,
+      "hauteur": 2002,
+      "ratio": "2:3",
+      "ratio_valeur": 0.671,
+      "orientation": "portrait",
+      "format": "jpeg",
+      "poids": 374296,
+      "transparence": false,
+      "sujet": {
+        "x": 13.6,
+        "y": 34.4,
+        "l": 63.6,
+        "h": 56.3,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        64
+      ],
+      "cadrage_css": "45% 64%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.9,
+          "ton": "sombre",
+          "recouvre_sujet": 0.01
+        },
+        {
+          "cote": "droite",
+          "score": 0.58,
+          "ton": "sombre",
+          "recouvre_sujet": 0.24
+        },
+        {
+          "cote": "gauche",
+          "score": 0.49,
+          "ton": "sombre",
+          "recouvre_sujet": 0.37
+        },
+        {
+          "cote": "bas",
+          "score": 0.34,
+          "ton": "sombre",
+          "recouvre_sujet": 0.47
+        }
+      ],
+      "qualite": {
+        "nettete": 33.7,
+        "bruit": 0.56,
+        "compression": 1.08,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "d0e860b09298b0b4",
+      "drapeaux": [
+        "calme haut"
+      ]
+    },
+    {
+      "fichier": "secteurs-ouverture.jpg",
+      "nom": "secteurs-ouverture",
+      "drapeau": null,
+      "largeur": 1600,
+      "hauteur": 1074,
+      "ratio": "3:2",
+      "ratio_valeur": 1.49,
+      "orientation": "paysage",
+      "format": "jpeg",
+      "poids": 457316,
+      "transparence": false,
+      "sujet": {
+        "x": 0,
+        "y": 9.1,
+        "l": 96.9,
+        "h": 81.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        46,
+        44
+      ],
+      "cadrage_css": "46% 44%",
+      "zones_calmes": [
+        {
+          "cote": "haut",
+          "score": 0.29,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "droite",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "bas",
+          "score": 0.25,
+          "ton": "sombre",
+          "recouvre_sujet": 0.72
+        },
+        {
+          "cote": "gauche",
+          "score": 0.08,
+          "ton": "sombre",
+          "recouvre_sujet": 0.82
+        }
+      ],
+      "qualite": {
+        "nettete": 51.1,
+        "bruit": 1.01,
+        "compression": 1.11,
+        "faible": false,
+        "raisons": []
+      },
+      "lisible": null,
+      "empreinte": "60f010e8d899c9e0",
+      "drapeaux": []
+    }
+  ]
+}

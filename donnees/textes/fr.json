@@ -1,0 +1,264 @@
+{
+ "commun": {
+  "navigation": "Navigation principale",
+  "menu": "Menu",
+  "fermer": "Fermer",
+  "langueAutre": "English version",
+  "actionEntete": "Demander un devis",
+  "appeler": "Appeler",
+  "sommaire": "Sommaire",
+  "confort": "Sur cette page",
+  "retourHaut": "Retour en haut",
+  "maquette": "Maquette de démonstration : formulaire et outil simulés, rien n'est envoyé.",
+  "evitement": "Aller au contenu",
+  "mentionIa": "Illustration générée",
+  "pause": "Pause",
+  "lecture": "Lecture",
+  "introLigne": "Sécurité privée · Lyon",
+  "accueilLogo": "LASP Sécurité, retour à l'accueil",
+  "nomComplet": "Lion Agence Sécurité Privée",
+  "slogan": "Votre sécurité, notre priorité.",
+  "disponible": "Réactifs 24h/24 et 7j/7",
+  "mentions": "Mentions légales",
+  "confidentialite": "Politique de confidentialité",
+  "aCompleter": "à compléter",
+  "cnaps": "Autorisation d'exercice délivrée par le CNAPS n° à compléter. « L'autorisation d'exercice ne confère aucune prérogative de puissance publique à l'entreprise ou aux personnes qui en bénéficient. » (art. L612-14 du Code de la sécurité intérieure)",
+  "contactTitre": "Contact",
+  "adresseTitre": "Agence",
+  "emailTitre": "E-mail",
+  "copier": "Copier",
+  "copie": "Copié",
+  "plan": "Plan schématique de Lyon, agence dans le 9e arrondissement",
+  "finTitre1": "Un site à protéger ?",
+  "finTitre2": "Parlons-en maintenant.",
+  "finTexte": "Décrivez votre besoin : nous vous proposons un dispositif sur mesure.",
+  "finDevis": "Demander un devis",
+  "ou": "ou appelez le"
+ },
+ "pages": {
+  "accueil": {
+   "titre": "LASP Sécurité · Sécurité privée à Lyon, 24h/24",
+   "description": "Lion Agence Sécurité Privée : agents de sécurité, maîtres-chiens, sécurité incendie SSIAP, événementiel, magasins, rondes et interventions à Lyon, 24h/24 et 7j/7.",
+   "nav": "Accueil",
+   "partageAlt": "LASP Sécurité : jour et nuit, on veille sur vos sites",
+   "accroche": "Jour et nuit, on veille sur vos sites."
+  },
+  "prestations": {
+   "titre": "Prestations · LASP Sécurité",
+   "description": "Agent de sécurité, maître-chien, sécurité incendie SSIAP 1 à 3, événementiel, prévention des vols en magasin, intervention et rondes à Lyon.",
+   "nav": "Prestations",
+   "partageAlt": "Les six prestations de LASP Sécurité",
+   "accroche": "Six métiers, un seul niveau d'exigence."
+  },
+  "secteurs": {
+   "titre": "Secteurs · LASP Sécurité",
+   "description": "Industrie et logistique, commerces, événements, entreprises et collectivités : les dispositifs de LASP Sécurité selon votre site.",
+   "nav": "Secteurs",
+   "partageAlt": "Les secteurs protégés par LASP Sécurité",
+   "accroche": "Chaque site a ses risques."
+  },
+  "agence": {
+   "titre": "L'agence · LASP Sécurité",
+   "description": "Lion Agence Sécurité Privée, à Lyon 9e : nos valeurs, nos engagements, nos moyens et nos qualifications.",
+   "nav": "L'agence",
+   "partageAlt": "L'agence LASP Sécurité à Lyon",
+   "accroche": "Une agence lyonnaise, sur le terrain."
+  },
+  "devis": {
+   "titre": "Devis et contact · LASP Sécurité",
+   "description": "Demandez un devis de sécurité privée à Lyon en trois étapes, ou appelez LASP Sécurité, 24h/24 et 7j/7.",
+   "nav": "Devis & contact",
+   "partageAlt": "Demander un devis à LASP Sécurité",
+   "accroche": "Votre devis en trois étapes."
+  },
+  "404": {
+   "titre": "Accès non autorisé · LASP Sécurité",
+   "description": "Cette page n'existe pas ou plus.",
+   "nav": "Page introuvable",
+   "partageAlt": "Page introuvable",
+   "accroche": "Accès non autorisé"
+  }
+ },
+ "accueil": {
+  "hero": {
+   "surtitre": "Sécurité privée · Lyon",
+   "ligne1": "Jour et nuit,",
+   "ligne2": "on veille sur",
+   "ligne3": "vos sites.",
+   "texte": "Agents de sécurité, maîtres-chiens, sécurité incendie et événementiel : des prestations sur mesure pour les entreprises, les sites industriels, les événements et les collectivités.",
+   "action": "Demander un devis",
+   "voir": "Nos prestations",
+   "sceau": "24h/24 · 7j/7 · Lyon · ",
+   "info": "Réactifs 24h/24 et 7j/7",
+   "alt": "Cour de chargement d'un entrepôt la nuit, un agent au loin"
+  },
+  "engagements": {
+   "surtitre": "Pourquoi LASP",
+   "titre": "Une présence continue, des agents qui savent quoi faire.",
+   "grand": "24/7",
+   "grandTexte": "Jour, nuit, week-end : l'agence répond et les agents tiennent leur poste.",
+   "cadran": "Les 24 heures d'une journée de garde"
+  },
+  "prestations": {
+   "surtitre": "Prestations",
+   "titre1": "Six métiers,",
+   "titre2": "un seul niveau d'exigence.",
+   "texte": "Chaque prestation se combine avec les autres pour former le dispositif qui convient à votre site.",
+   "voir": "Voir le détail",
+   "tout": "Toutes les prestations"
+  },
+  "secteurs": {
+   "surtitre": "Où nous intervenons",
+   "titre": "Du quai de chargement à la scène de concert.",
+   "texte": "Entreprises, sites industriels, événements et collectivités : un dispositif pour chaque environnement.",
+   "voir": "Voir le secteur",
+   "region": "Secteurs, défilement horizontal"
+  },
+  "dispositif": {
+   "surtitre": "Votre dispositif",
+   "titre": "Trois questions, une première idée.",
+   "texte": "Choisissez votre site et vos horaires : les prestations qui y répondent s'allument. Le dispositif définitif se construit avec vous.",
+   "q1": "Votre site",
+   "q2": "Quand ?",
+   "q3": "Votre priorité",
+   "site": {
+    "industrie": "Entrepôt ou usine",
+    "commerces": "Magasin",
+    "evenements": "Événement",
+    "entreprises": "Bureaux ou bâtiment public"
+   },
+   "plage": {
+    "jour": "En journée",
+    "nuit": "La nuit",
+    "continu": "24h/24"
+   },
+   "priorite": {
+    "acces": "Contrôler les accès",
+    "perimetre": "Surveiller le périmètre",
+    "incendie": "Sécurité incendie",
+    "vols": "Prévenir les vols"
+   },
+   "resultat": "Prestations conseillées",
+   "note": "Suggestion indicative, établie à partir de vos réponses.",
+   "action": "Demander un devis pour ce dispositif"
+  },
+  "etapes": {
+   "surtitre": "Comment ça se passe",
+   "titre": "Quatre temps, une seule équipe."
+  },
+  "confiance": {
+   "surtitre": "Ils nous font confiance",
+   "titre": "Des entreprises qui nous confient leurs sites.",
+   "zoneTitre": "Basés à Lyon 9e",
+   "zoneTexte": "203 rue Marcel Cerdan, 69009 Lyon. Un appel suffit pour organiser une mission.",
+   "itineraire": "Voir le contact"
+  }
+ },
+ "prestations": {
+  "surtitre": "Prestations",
+  "titre1": "Six métiers,",
+  "titre2": "un seul niveau",
+  "titre3": "d'exigence.",
+  "texte": "Des agents qualifiés pour chaque mission, qui se combinent en un dispositif sur mesure.",
+  "info": "ADS · SSIAP 1, 2 et 3 · agents cynophiles",
+  "alt": "Agent de sécurité qui s'éloigne dans un parking souterrain",
+  "sommaire": "Aller à une prestation",
+  "devis": "Demander un devis",
+  "missions": "Missions",
+  "dispositifsTitre": "Dans chaque dispositif",
+  "dispositifsTexte": "Les prestations de LASP reposent sur ces cinq gestes, du poste d'entrée à la ronde de nuit."
+ },
+ "secteurs": {
+  "surtitre": "Secteurs",
+  "titre1": "Chaque site",
+  "titre2": "a ses risques.",
+  "texte": "Industrie, commerces, événements, bâtiments : choisissez votre environnement, nous vous disons ce qui le protège.",
+  "info": "Entreprises, sites industriels, événements, collectivités",
+  "alt": "Zone logistique et industrielle à l'heure bleue",
+  "onglets": "Choisir un secteur",
+  "besoins": "Ce qu'il faut protéger",
+  "conseille": "Prestations conseillées",
+  "devis": "Devis pour ce secteur",
+  "refsTitre": "Ils nous font confiance",
+  "refsTexte": "Des entreprises qui nous confient leurs sites et leurs équipes."
+ },
+ "agence": {
+  "surtitre": "L'agence",
+  "titre1": "Une agence lyonnaise,",
+  "titre2": "sur le terrain.",
+  "texte": "Lion Agence Sécurité Privée est installée à Lyon 9e. Nos agents protègent entreprises, sites industriels, événements et collectivités, de jour comme de nuit.",
+  "info": "Lyon 9e · 24h/24, 7j/7",
+  "alt": "Deux agents au crépuscule sur le toit d'un parking",
+  "valeursTitre": "Ce qui nous guide",
+  "valeursTexte": "Le professionnalisme, la responsabilité et l'efficacité dans chaque mission ; l'honnêteté et la confiance avec chaque client.",
+  "engagementsTitre": "Nos engagements",
+  "moyensTitre": "Des agents équipés",
+  "moyensTexte": "Sur le terrain, chaque agent reste joignable et protégé.",
+  "moyens": {
+   "pti": {
+    "titre": "PTI",
+    "texte": "Protection du travailleur isolé : l'agent seul peut donner l'alerte à tout moment."
+   },
+   "radio": {
+    "titre": "Radios",
+    "texte": "Les agents d'un même dispositif restent en liaison."
+   },
+   "vehicule": {
+    "titre": "Véhicules",
+    "texte": "Pour les rondes sur plusieurs sites et les interventions rapides."
+   }
+  },
+  "qualifsTitre": "Des qualifications reconnues",
+  "tenueTitre": "En tenue LASP",
+  "tenueTexte": "Les couleurs de l'agence, du poste incendie à la ronde de nuit.",
+  "lieuTitre": "Où nous trouver",
+  "qualifsSurtitre": "Qualifications",
+  "moyensSurtitre": "Moyens",
+  "tenueSurtitre": "Sur le terrain"
+ },
+ "devis": {
+  "surtitre": "Devis & contact",
+  "titre1": "Parlons",
+  "titre2": "de votre site.",
+  "texte": "Trois étapes pour décrire votre besoin, ou un appel pour aller plus vite.",
+  "info": "Réactifs 24h/24 et 7j/7",
+  "telFixe": "Agence",
+  "telMobile": "Portable",
+  "formTitre": "Votre demande de devis",
+  "simule": "Maquette : l'envoi est simulé, rien n'est transmis.",
+  "etape1": "Votre site",
+  "etape2": "La prestation",
+  "etape3": "Vos coordonnées",
+  "etape4": "Récapitulatif",
+  "q1": "Quel type de site faut-il protéger ?",
+  "lieu": "Ville ou adresse du site",
+  "q2": "De quoi avez-vous besoin ?",
+  "prestationsGroupe": "Prestations",
+  "quand": "Quand ?",
+  "debut": "À partir du",
+  "q3": "Comment vous joindre ?",
+  "nom": "Nom et prénom",
+  "societe": "Société ou organisme",
+  "tel": "Téléphone",
+  "email": "E-mail",
+  "message": "Précisions (horaires, nombre d'accès, contraintes…)",
+  "q4": "Tout est juste ?",
+  "retour": "Retour",
+  "continuer": "Continuer",
+  "envoyer": "Envoyer la demande",
+  "merci": "Demande prête",
+  "merciTexte": "Dans la version en ligne, l'agence vous rappelle pour construire le dispositif. Ici, rien n'a été envoyé.",
+  "recommencer": "Nouvelle demande",
+  "donnees": "Vos données servent seulement à répondre à votre demande de devis. Politique de confidentialité : à compléter.",
+  "accord": "J'accepte d'être recontacté au sujet de ma demande.",
+  "carteTitre": "L'agence",
+  "acces": "Lyon 9e arrondissement"
+ },
+ "introuvable": {
+  "surtitre": "Erreur 404",
+  "titre": "Accès non autorisé.",
+  "texte": "Cette page n'existe pas ou plus. Pas de panique : la ronde continue à l'accueil.",
+  "retour": "Revenir à l'accueil",
+  "alt": "Cadenas sur un portail fermé, dans le faisceau d'une lampe"
+ }
+}

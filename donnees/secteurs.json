@@ -1,0 +1,18 @@
+[
+  { "id": "industrie", "titre": "Industrie et logistique", "court": "Usines, entrepôts, plateformes",
+    "texte": "Des environnements industriels et sensibles que nous connaissons : accès des camions et des visiteurs, quais, périmètres, rondes de nuit et sécurité incendie.",
+    "besoins": ["Accès des véhicules et des visiteurs", "Quais et zones de stockage", "Périmètre et clôtures la nuit", "Risque incendie"],
+    "prestations": ["agent", "maitre-chien", "rondes", "incendie"], "image": "grok/secteur-industrie" },
+  { "id": "commerces", "titre": "Commerces", "court": "Magasins, galeries, enseignes",
+    "texte": "Prévenir les vols sans gêner les clients : une présence en entrée et dans les rayons, et un agent qui sait désamorcer les situations.",
+    "besoins": ["Prévention des vols", "Accueil des clients", "Ouverture et fermeture", "Situations tendues"],
+    "prestations": ["magasin", "agent"], "image": "grok/secteur-commerce" },
+  { "id": "evenements", "titre": "Événements", "court": "Concerts, salons, manifestations",
+    "texte": "Un événement se prépare : accès, filtrage, flux du public, scène et coulisses, sécurité incendie selon le lieu.",
+    "besoins": ["Contrôle des accès et filtrage", "Flux du public", "Scène et coulisses", "Sécurité incendie du lieu"],
+    "prestations": ["evenementiel", "agent", "incendie"], "image": "grok/secteur-evenement" },
+  { "id": "entreprises", "titre": "Entreprises et collectivités", "court": "Bureaux, bâtiments, sites sensibles",
+    "texte": "Accueil, contrôle d'accès, rondes après la fermeture et sécurité incendie : la tranquillité de vos bâtiments et de ceux qui y travaillent.",
+    "besoins": ["Accueil et contrôle d'accès", "Rondes après la fermeture", "Sécurité incendie", "Sites sensibles"],
+    "prestations": ["agent", "incendie", "rondes"], "image": "grok/secteur-entreprise" }
+]

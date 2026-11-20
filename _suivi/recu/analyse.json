@@ -1,0 +1,277 @@
+{
+  "dossier": "/home/claude/lasp-securite-maquette/_suivi/recu",
+  "date": "2026-11-20T19:51:13.546Z",
+  "detection": "mesures sharp seulement",
+  "planches": [
+    "planche.jpg"
+  ],
+  "legende_planche": "cadre jaune : sujet ; croix rouge : cadrage ; fond rose : à vérifier",
+  "doublons": [],
+  "images": [
+    {
+      "fichier": "lasp-evenementiel.png",
+      "nom": "lasp-evenementiel",
+      "drapeau": null,
+      "largeur": 652,
+      "hauteur": 482,
+      "ratio": "4:3",
+      "ratio_valeur": 1.353,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 399384,
+      "transparence": false,
+      "sujet": {
+        "x": 3.1,
+        "y": 0,
+        "l": 68.8,
+        "h": 70.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        34,
+        22
+      ],
+      "cadrage_css": "34% 22%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.61,
+          "ton": "sombre",
+          "recouvre_sujet": 0.11
+        },
+        {
+          "cote": "droite",
+          "score": 0.57,
+          "ton": "sombre",
+          "recouvre_sujet": 0.21
+        },
+        {
+          "cote": "gauche",
+          "score": 0.13,
+          "ton": "sombre",
+          "recouvre_sujet": 0.65
+        },
+        {
+          "cote": "haut",
+          "score": 0.03,
+          "ton": "sombre",
+          "recouvre_sujet": 0.69
+        }
+      ],
+      "qualite": {
+        "nettete": 24.3,
+        "bruit": 0.71,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "652 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "9394d5e4c699d9a2",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "lasp-maitre-chien.png",
+      "nom": "lasp-maitre-chien",
+      "drapeau": null,
+      "largeur": 655,
+      "hauteur": 474,
+      "ratio": "1.38",
+      "ratio_valeur": 1.382,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 415726,
+      "transparence": false,
+      "sujet": {
+        "x": 21.9,
+        "y": 4.2,
+        "l": 46.9,
+        "h": 91.7,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        45,
+        40
+      ],
+      "cadrage_css": "45% 40%",
+      "zones_calmes": [
+        {
+          "cote": "droite",
+          "score": 0.59,
+          "ton": "sombre",
+          "recouvre_sujet": 0.2
+        },
+        {
+          "cote": "bas",
+          "score": 0.41,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "haut",
+          "score": 0.39,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        },
+        {
+          "cote": "gauche",
+          "score": 0.34,
+          "ton": "sombre",
+          "recouvre_sujet": 0.41
+        }
+      ],
+      "qualite": {
+        "nettete": 27.3,
+        "bruit": 0.78,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "655 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "f2f2c8c8cccceca8",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "lasp-securite-incendie.png",
+      "nom": "lasp-securite-incendie",
+      "drapeau": null,
+      "largeur": 652,
+      "hauteur": 482,
+      "ratio": "4:3",
+      "ratio_valeur": 1.353,
+      "orientation": "paysage",
+      "format": "png",
+      "poids": 382934,
+      "transparence": false,
+      "sujet": {
+        "x": 12.5,
+        "y": 0,
+        "l": 75,
+        "h": 79.2,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        56,
+        41
+      ],
+      "cadrage_css": "56% 41%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.3,
+          "ton": "sombre",
+          "recouvre_sujet": 0.3
+        },
+        {
+          "cote": "gauche",
+          "score": 0.22,
+          "ton": "sombre",
+          "recouvre_sujet": 0.54
+        },
+        {
+          "cote": "haut",
+          "score": 0.14,
+          "ton": "sombre",
+          "recouvre_sujet": 0.75
+        },
+        {
+          "cote": "droite",
+          "score": 0.09,
+          "ton": "moyen",
+          "recouvre_sujet": 0.54
+        }
+      ],
+      "qualite": {
+        "nettete": 21.8,
+        "bruit": 0.7,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "652 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "d81898984c4c4e5c",
+      "drapeaux": [
+        "petite"
+      ]
+    },
+    {
+      "fichier": "logo.png",
+      "nom": "logo",
+      "drapeau": null,
+      "largeur": 566,
+      "hauteur": 566,
+      "ratio": "1:1",
+      "ratio_valeur": 1,
+      "orientation": "carre",
+      "format": "png",
+      "poids": 24145,
+      "transparence": true,
+      "sujet": {
+        "x": 34.4,
+        "y": 28.1,
+        "l": 31.3,
+        "h": 18.8,
+        "source": "contrastes"
+      },
+      "visages": 0,
+      "cadrage": [
+        50,
+        37
+      ],
+      "cadrage_css": "50% 37%",
+      "zones_calmes": [
+        {
+          "cote": "bas",
+          "score": 0.88,
+          "ton": "clair",
+          "recouvre_sujet": 0
+        },
+        {
+          "cote": "gauche",
+          "score": 0.84,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "droite",
+          "score": 0.84,
+          "ton": "clair",
+          "recouvre_sujet": 0.03
+        },
+        {
+          "cote": "haut",
+          "score": 0.77,
+          "ton": "clair",
+          "recouvre_sujet": 0.06
+        }
+      ],
+      "qualite": {
+        "nettete": 43.7,
+        "bruit": 0.08,
+        "compression": 1,
+        "faible": true,
+        "raisons": [
+          "566 px de large"
+        ]
+      },
+      "lisible": null,
+      "empreinte": "08044d4d1b270600",
+      "drapeaux": [
+        "petite",
+        "calme bas/gauche/droite/haut"
+      ]
+    }
+  ]
+}

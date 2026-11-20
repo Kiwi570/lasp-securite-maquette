@@ -1,0 +1,13 @@
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "additionalType": "https://schema.org/ProfessionalService",
+  "name": "Lion Agence Sécurité Privée (LASP)",
+  "url": "https://lasp-securite-maquette.vercel.app/",
+  "telephone": ["+33482333999", "+33774342535"],
+  "email": "lasp@laspsecurite.fr",
+  "address": { "@type": "PostalAddress", "streetAddress": "203 rue Marcel Cerdan", "postalCode": "69009", "addressLocality": "Lyon", "addressCountry": "FR" },
+  "areaServed": "Lyon",
+  "slogan": "Votre sécurité, notre priorité.",
+  "description": { "fr": "Sécurité privée à Lyon : agents de sécurité, maîtres-chiens, sécurité incendie SSIAP, événementiel, prévention des vols en magasin, rondes et interventions, 24h/24 et 7j/7." }
+}

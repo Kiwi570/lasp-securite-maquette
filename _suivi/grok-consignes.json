@@ -1,0 +1,247 @@
+{
+  "client": "LASP Sécurité",
+  "activite": "services-b2b",
+  "direction": "Ronde de nuit",
+  "date": "2026-11-20T19:52:34.541Z",
+  "images": [
+    {
+      "nom": "accueil-ouverture",
+      "fichier": "accueil-ouverture.jpg",
+      "page": "Accueil",
+      "emplacement": "ouverture plein cadre (le faisceau de lampe la révèle) (ordinateur)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "mains en trop"
+      ],
+      "consigne": "A wide empty loading yard of a modern logistics warehouse at night after rain, a row of closed grey roller doors along the dock, wet asphalt reflecting cold floodlights, a tall wire mesh fence on the far right, one small red warning light near a door, a single lone security guard standing far away on the right third of the frame, small in the image, holding an unlit flashlight. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. The left half of the frame is dark, calm and empty. No blue flashing lights, no police car, no weapon, no handcuffs. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "accueil-ouverture",
+      "fichier": "accueil-ouverture-mobile.jpg",
+      "page": "Accueil",
+      "emplacement": "ouverture plein cadre (le faisceau de lampe la révèle) (téléphone)",
+      "role": "ouverture",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "mains en trop"
+      ],
+      "consigne": "A wide empty loading yard of a modern logistics warehouse at night after rain, a row of closed grey roller doors along the dock, wet asphalt reflecting cold floodlights, a tall wire mesh fence on the far right, one small red warning light near a door, a single lone security guard standing far away on the right third of the frame, small in the image, holding an unlit flashlight. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. The left half of the frame is dark, calm and empty. No blue flashing lights, no police car, no weapon, no handcuffs. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. Only two hands, both belonging to one single person and clearly attached to the same forearms, no other hand anywhere in the frame. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-agent",
+      "fichier": "prestation-agent.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Agent de sécurité (gardiennage)",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "A security guard standing at the vehicle entrance barrier of an industrial site at dusk, seen from behind at three-quarters, the raised striped barrier arm and a small gatehouse with warm light inside, the site's buildings softly blurred in the background. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-maitre-chien",
+      "fichier": "prestation-maitre-chien.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Maître-chien",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A dog handler and a calm Belgian Malinois on a short leash walking along a tall wire mesh perimeter fence of an industrial site at night, seen from behind, the dog in sharp focus, wet ground reflecting cold lights. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. The dog wears a plain black harness with no text. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-incendie",
+      "fichier": "prestation-incendie.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Sécurité incendie (SSIAP)",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A fire safety officer seen from behind walking down a long, clean corridor of a large modern building at night, a red fire extinguisher and a red fire hose reel cabinet mounted on the wall in the foreground, soft emergency lighting, glossy floor. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-evenementiel",
+      "fichier": "prestation-evenementiel.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Événementiel",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "Two event security staff seen from behind standing at a crowd barrier in front of a concert stage, the audience a soft blur of silhouettes far away, warm stage lights and haze in the background. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-magasin",
+      "fichier": "prestation-magasin.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Magasin (prévention des vols)",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A security guard seen from behind standing just inside the glass entrance of a bright modern retail store in the evening, two plain anti-theft gate pillars at the entrance, softly blurred shelves and warm shop lighting, the dark street visible through the glass. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No product packaging, no brand. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestation-rondier",
+      "fichier": "prestation-rondier.jpg",
+      "page": "Accueil et Prestations",
+      "emplacement": "carte Intervention et rondes",
+      "role": "carte-service",
+      "format": "4:3",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A security guard on a night round inside a dark warehouse, seen from behind between tall pallet racks, the beam of his flashlight cutting through faint dust in the air and lighting the floor ahead, everything else in deep blue shadow. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs. Horizontal composition, aspect ratio 4:3, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "secteur-industrie",
+      "fichier": "secteur-industrie.jpg",
+      "page": "Accueil et Secteurs",
+      "emplacement": "carte Industrie et logistique",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "Low-angle view of a large modern industrial plant at blue hour, steel cladding, pipes and a tall chimney, floodlights switching on, wet concrete yard in the foreground, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "secteur-commerce",
+      "fichier": "secteur-commerce.jpg",
+      "page": "Accueil et Secteurs",
+      "emplacement": "carte Commerces",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "A covered shopping arcade at closing time, warm shop windows with blurred interiors and no readable sign, glossy stone floor reflecting the lights, a few distant blurred passers-by, nobody close. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "secteur-evenement",
+      "fichier": "secteur-evenement.jpg",
+      "page": "Accueil et Secteurs",
+      "emplacement": "carte Événements",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [
+        "visages"
+      ],
+      "consigne": "An empty concert arena just before the doors open, rows of metal crowd barriers lined up in the foreground, stage lights being tested with soft beams in the haze, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. Seen strictly from behind, face never visible, head turned away, or cropped at the shoulders. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "secteur-entreprise",
+      "fichier": "secteur-entreprise.jpg",
+      "page": "Accueil et Secteurs",
+      "emplacement": "carte Entreprises et collectivités",
+      "role": "galerie",
+      "format": "4:5",
+      "grok": "784×1168",
+      "priorite": "Conseillée",
+      "gabarit": "scene-metier",
+      "pieges": [],
+      "consigne": "The glass lobby of a modern office building at night seen from the outside, a lit empty reception desk inside, clean lines, reflections of street lights on the glass, nobody. Vertical composition, aspect ratio 4:5, main subject well inside the central area with generous margins on every side, so the image can be cropped. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "prestations-ouverture",
+      "fichier": "prestations-ouverture.jpg",
+      "page": "Prestations",
+      "emplacement": "ouverture plein cadre",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "Symmetrical view down a long empty underground car park at night, rows of concrete pillars, cold strip lights, a lone security guard walking away from the camera exactly in the centre of the frame, small, the vanishing point in the middle. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. No blue flashing lights, no police car, no weapon, no handcuffs. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, the lower third stays dark and simple for text overlay. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "secteurs-ouverture",
+      "fichier": "secteurs-ouverture.jpg",
+      "page": "Secteurs",
+      "emplacement": "ouverture plein cadre",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "Elevated view at blue hour over a vast logistics and industrial zone on the edge of a large French city, warehouses with flat roofs, lit truck docks, a ring road with light trails, a hill with city lights far in the background, nobody. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "agence-ouverture",
+      "fichier": "agence-ouverture.jpg",
+      "page": "L'agence",
+      "emplacement": "ouverture plein cadre (ordinateur)",
+      "role": "ouverture",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "Two security guards seen from behind walking side by side across the top level of an empty open-air car park at dusk, the lights of a large city spreading in the distance under a deep blue sky with a last line of orange on the horizon. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. Both guards are on the right half of the frame. No blue flashing lights, no police car, no weapon, no handcuffs. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, generous empty space on the left third of the frame for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "agence-ouverture",
+      "fichier": "agence-ouverture-mobile.jpg",
+      "page": "L'agence",
+      "emplacement": "ouverture plein cadre (téléphone)",
+      "role": "ouverture",
+      "format": "9:16",
+      "grok": "784×1168",
+      "priorite": "Indispensable",
+      "gabarit": "ouverture",
+      "pieges": [
+        "véhicules"
+      ],
+      "consigne": "Two security guards seen from behind walking side by side across the top level of an empty open-air car park at dusk, the lights of a large city spreading in the distance under a deep blue sky with a last line of orange on the horizon. Every guard wears plain dark navy workwear with no lettering, no badge, no insignia, no cap, nothing that resembles a police or military uniform,, seen from behind or in silhouette with the face never visible. Both guards are on the right half of the frame. No blue flashing lights, no police car, no weapon, no handcuffs. Vertical composition, aspect ratio 9:16, highest resolution available, at least 1080 pixels wide, main subject well inside the central area with generous margins on every side, so the image can be cropped, main subject in the lower half, quiet uncluttered area in the upper half for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No vehicles visible, only blurred light trails; or a plain unmarked vehicle with no license plate, no badge and no lettering. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    },
+    {
+      "nom": "404",
+      "fichier": "404.jpg",
+      "page": "Page 404",
+      "emplacement": "ouverture de la page introuvable",
+      "role": "404",
+      "format": "16:9",
+      "grok": "1168×784",
+      "priorite": "Conseillée",
+      "gabarit": "404",
+      "pieges": [],
+      "consigne": "Close-up of a heavy closed padlock on a locked metal gate at night, caught in the round spot of a flashlight beam, everything around in deep blue darkness, a gentle touch of humour: a single autumn leaf caught on the gate. Wide horizontal composition, aspect ratio 16:9, main subject well inside the central area with generous margins on every side, so the image can be cropped, quiet uncluttered area in the upper half for a title. Editorial commercial photography, calm and precise, calm, vigilant and reassuring mood, palette of deep night blue, wet asphalt greys, cold white light and a few small touches of signal red, cold white light and soft warm sodium lamps at night, deep shadows, a gentle blue ambient glow, tactile concrete, steel, glass and wet ground, set in a large city in south-eastern France and its outskirts on an autumn night, shallow depth of field, subtle film grain, calm minimal composition with generous empty space, photorealistic, high detail. No screen with readable content, no chart with numbers, no handshake, no puzzle pieces, no thumbs up, nobody looking at the camera, no client logos, no fake document. No text, no letters, no numbers, no logos, no brand names, no signage, no watermark, no signature, no recognizable person, no visible face, no real or famous people, not a specific real building or landmark."
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+ "id": "20261120-212251-standard-cible-partiel",
+ "date": "2026-11-20T21:24:37.323Z",
+ "niveau": "standard",
+ "pages": "/,/404,/devis,/prestations,/secteurs",
+ "etapes": [
+  "fichiers",
+  "mesures"
+ ],
+ "version": "1",
+ "echecs": 0,
+ "aRegarder": 3,
+ "nonLances": 0,
+ "manquants": 0,
+ "statut": "complet"
+}

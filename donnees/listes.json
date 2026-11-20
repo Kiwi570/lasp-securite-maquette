@@ -1,0 +1,36 @@
+{
+ "valeurs": [
+  "Professionnalisme",
+  "Responsabilité",
+  "Efficacité",
+  "Honnêteté",
+  "Confiance"
+ ],
+ "dispositifs": [
+  "Contrôle d'accès",
+  "Rondes de surveillance",
+  "Prévention des risques",
+  "Gestion des incidents",
+  "Interventions rapides"
+ ],
+ "qualifs": [
+  {
+   "sigle": "ADS",
+   "texte": "Agents de sécurité qualifiés"
+  },
+  {
+   "sigle": "SSIAP 1·2·3",
+   "texte": "Agents, chefs d'équipe et chefs de service de sécurité incendie"
+  },
+  {
+   "sigle": "Cynophile",
+   "texte": "Maîtres-chiens"
+  }
+ ],
+ "references": [
+  "SERIS",
+  "JTEKT",
+  "APR",
+  "STEF"
+ ]
+}

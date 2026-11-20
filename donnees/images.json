@@ -1,0 +1,1365 @@
+{
+  "logo": {
+    "nom": "logo",
+    "source": "recu/logo.png",
+    "role": "logo",
+    "alt": "L.A.S.P. sécurité privée",
+    "grok": false,
+    "mention": null,
+    "beaute": 4,
+    "empreinte": "fb217fc5658d9fc6",
+    "ratio": null,
+    "largeurs": [
+      240,
+      480
+    ],
+    "mobile": null,
+    "cadrage": null,
+    "sujet": null,
+    "zones_calmes": null,
+    "zone_texte": null,
+    "recadrage": null,
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "logo-240.webp",
+      "logo-480.webp"
+    ],
+    "poids": {
+      "logo-240.webp": 7802,
+      "logo-480.webp": 17370
+    },
+    "media": "c.media({ nom: 'logo', alt: \"L.A.S.P. sécurité privée\", sizes: '240px' })"
+  },
+  "grok/accueil-ouverture": {
+    "nom": "grok/accueil-ouverture",
+    "source": "recu/grok/accueil-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Cour de chargement d'un entrepôt la nuit, un agent au loin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "59550409554174e7",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "55% 61%"
+    },
+    "cadrage": "64% 50%",
+    "sujet": {
+      "x": 50,
+      "y": 0.6,
+      "l": 28.1,
+      "h": 81.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.92,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.69,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.66,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.46,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 141,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/accueil-ouverture-640.webp",
+      "grok/accueil-ouverture-1280.webp",
+      "grok/accueil-ouverture-1920.webp",
+      "grok/accueil-ouverture-mobile-640.webp",
+      "grok/accueil-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/accueil-ouverture-640.webp": 23720,
+      "grok/accueil-ouverture-1280.webp": 84250,
+      "grok/accueil-ouverture-1920.webp": 135112,
+      "grok/accueil-ouverture-mobile-640.webp": 69070,
+      "grok/accueil-ouverture-mobile-1080.webp": 132798
+    },
+    "media": "c.media({ nom: 'grok/accueil-ouverture', alt: \"Cour de chargement d'un entrepôt la nuit, un agent au loin\", cadrage: '64% 50%', cadrageMobile: '55% 61%', sizes: '100vw', priorite: true })"
+  },
+  "grok/prestation-agent": {
+    "nom": "grok/prestation-agent",
+    "source": "recu/grok/prestation-agent.jpg",
+    "role": "carte-service",
+    "alt": "Agent de sécurité au poste d'entrée d'un site industriel",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "24b78ecb25fec0cb",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "50% 39%",
+    "sujet": {
+      "x": 1.3,
+      "y": 22.7,
+      "l": 97.8,
+      "h": 40.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.67,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.43,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 132,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-agent-640.webp",
+      "grok/prestation-agent-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-agent-640.webp": 21058,
+      "grok/prestation-agent-1168.webp": 46114
+    },
+    "media": "c.media({ nom: 'grok/prestation-agent', alt: \"Agent de sécurité au poste d'entrée d'un site industriel\", cadrage: '50% 39%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-maitre-chien": {
+    "nom": "grok/prestation-maitre-chien",
+    "source": "recu/grok/prestation-maitre-chien.jpg",
+    "role": "carte-service",
+    "alt": "Maître-chien et son chien le long d'une clôture, la nuit",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "53b5086f5b77f144",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "74% 60%",
+    "sujet": {
+      "x": 58.1,
+      "y": 27.3,
+      "l": 38.4,
+      "h": 63.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.81,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.77,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.31,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 168,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-maitre-chien-640.webp",
+      "grok/prestation-maitre-chien-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-maitre-chien-640.webp": 39344,
+      "grok/prestation-maitre-chien-1168.webp": 104600
+    },
+    "media": "c.media({ nom: 'grok/prestation-maitre-chien', alt: \"Maître-chien et son chien le long d'une clôture, la nuit\", cadrage: '74% 60%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-incendie": {
+    "nom": "grok/prestation-incendie",
+    "source": "recu/grok/prestation-incendie.jpg",
+    "role": "carte-service",
+    "alt": "Agent de sécurité incendie dans le couloir d'un grand bâtiment",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "c9f9bb362b6a7b42",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "48% 50%",
+    "sujet": {
+      "x": 9.2,
+      "y": 4.5,
+      "l": 90.8,
+      "h": 90.9
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.52,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.36,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.27,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 118,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-incendie-640.webp",
+      "grok/prestation-incendie-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-incendie-640.webp": 12724,
+      "grok/prestation-incendie-1168.webp": 34608
+    },
+    "media": "c.media({ nom: 'grok/prestation-incendie', alt: \"Agent de sécurité incendie dans le couloir d'un grand bâtiment\", cadrage: '48% 50%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-evenementiel": {
+    "nom": "grok/prestation-evenementiel",
+    "source": "recu/grok/prestation-evenementiel.jpg",
+    "role": "carte-service",
+    "alt": "Agents de sécurité devant la barrière d'une scène de concert",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "bae11901603ab6fd",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "55% 35%",
+    "sujet": {
+      "x": 33.6,
+      "y": 18.2,
+      "l": 38.4,
+      "h": 27.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.76,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.7,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.59,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 168,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-evenementiel-640.webp",
+      "grok/prestation-evenementiel-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-evenementiel-640.webp": 10614,
+      "grok/prestation-evenementiel-1168.webp": 22148
+    },
+    "media": "c.media({ nom: 'grok/prestation-evenementiel', alt: \"Agents de sécurité devant la barrière d'une scène de concert\", cadrage: '55% 35%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-magasin": {
+    "nom": "grok/prestation-magasin",
+    "source": "recu/grok/prestation-magasin.jpg",
+    "role": "carte-service",
+    "alt": "Agent de prévention des vols à l'entrée d'un magasin",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "43ac94eefcfb6848",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "75% 42%",
+    "sujet": {
+      "x": 12.7,
+      "y": 0,
+      "l": 83.8,
+      "h": 86.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.45,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.23,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.08,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 168,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-magasin-640.webp",
+      "grok/prestation-magasin-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-magasin-640.webp": 14916,
+      "grok/prestation-magasin-1168.webp": 34044
+    },
+    "media": "c.media({ nom: 'grok/prestation-magasin', alt: \"Agent de prévention des vols à l'entrée d'un magasin\", cadrage: '75% 42%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/prestation-rondier": {
+    "nom": "grok/prestation-rondier",
+    "source": "recu/grok/prestation-rondier.jpg",
+    "role": "carte-service",
+    "alt": "Ronde de nuit à la lampe entre les rayonnages d'un entrepôt",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "18266f4dc4e16d63",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      1168
+    ],
+    "mobile": null,
+    "cadrage": "50% 79%",
+    "sujet": {
+      "x": 44.4,
+      "y": 59.1,
+      "l": 14,
+      "h": 36.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.87,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.84,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.81,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.71,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 164,
+      "top": 0,
+      "width": 1432,
+      "height": 1074,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [],
+    "fichiers": [
+      "grok/prestation-rondier-640.webp",
+      "grok/prestation-rondier-1168.webp"
+    ],
+    "poids": {
+      "grok/prestation-rondier-640.webp": 17020,
+      "grok/prestation-rondier-1168.webp": 45252
+    },
+    "media": "c.media({ nom: 'grok/prestation-rondier', alt: \"Ronde de nuit à la lampe entre les rayonnages d'un entrepôt\", cadrage: '50% 79%', sizes: '(max-width: 760px) 100vw, 33vw', ratio: '4 / 3' })"
+  },
+  "grok/secteur-industrie": {
+    "nom": "grok/secteur-industrie",
+    "source": "recu/grok/secteur-industrie.jpg",
+    "role": "galerie",
+    "alt": "Site industriel à l'heure bleue",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "c7f08daaddd46bea",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1024,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "45% 57%",
+    "sujet": {
+      "x": 13.6,
+      "y": 21.8,
+      "l": 63.6,
+      "h": 67.1
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.9,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.58,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.34,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 322,
+      "width": 1344,
+      "height": 1680,
+      "source": [
+        1344,
+        2002
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,19 fois (source de 1344 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/secteur-industrie-640.webp",
+      "grok/secteur-industrie-1024.webp",
+      "grok/secteur-industrie-1600.webp"
+    ],
+    "poids": {
+      "grok/secteur-industrie-640.webp": 37384,
+      "grok/secteur-industrie-1024.webp": 68458,
+      "grok/secteur-industrie-1600.webp": 115826
+    },
+    "media": "c.media({ nom: 'grok/secteur-industrie', alt: \"Site industriel à l'heure bleue\", cadrage: '45% 57%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/secteur-commerce": {
+    "nom": "grok/secteur-commerce",
+    "source": "recu/grok/secteur-commerce.jpg",
+    "role": "galerie",
+    "alt": "Galerie commerçante à l'heure de la fermeture",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "b841de4aaa586f37",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1024,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "56% 50%",
+    "sujet": {
+      "x": 18.2,
+      "y": 18.2,
+      "l": 77.3,
+      "h": 70.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.74,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.49,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.31,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.24,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 321,
+      "width": 1344,
+      "height": 1680,
+      "source": [
+        1344,
+        2002
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,19 fois (source de 1344 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/secteur-commerce-640.webp",
+      "grok/secteur-commerce-1024.webp",
+      "grok/secteur-commerce-1600.webp"
+    ],
+    "poids": {
+      "grok/secteur-commerce-640.webp": 39648,
+      "grok/secteur-commerce-1024.webp": 71876,
+      "grok/secteur-commerce-1600.webp": 124898
+    },
+    "media": "c.media({ nom: 'grok/secteur-commerce', alt: \"Galerie commerçante à l'heure de la fermeture\", cadrage: '56% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/secteur-evenement": {
+    "nom": "grok/secteur-evenement",
+    "source": "recu/grok/secteur-evenement.jpg",
+    "role": "galerie",
+    "alt": "Salle de concert vide avant l'ouverture des portes, barrières en place",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "01c46aaa70de8d67",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1024,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "51% 50%",
+    "sujet": {
+      "x": 4.5,
+      "y": 22.7,
+      "l": 90.9,
+      "h": 63.3
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.47,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.42,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.42,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 181,
+      "width": 1344,
+      "height": 1680,
+      "source": [
+        1344,
+        2002
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,19 fois (source de 1344 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/secteur-evenement-640.webp",
+      "grok/secteur-evenement-1024.webp",
+      "grok/secteur-evenement-1600.webp"
+    ],
+    "poids": {
+      "grok/secteur-evenement-640.webp": 55128,
+      "grok/secteur-evenement-1024.webp": 100726,
+      "grok/secteur-evenement-1600.webp": 170078
+    },
+    "media": "c.media({ nom: 'grok/secteur-evenement', alt: \"Salle de concert vide avant l'ouverture des portes, barrières en place\", cadrage: '51% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/secteur-entreprise": {
+    "nom": "grok/secteur-entreprise",
+    "source": "recu/grok/secteur-entreprise.jpg",
+    "role": "galerie",
+    "alt": "Hall d'un immeuble de bureaux la nuit",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "eb4b98c2bd7d8855",
+    "ratio": "4:5",
+    "largeurs": [
+      640,
+      1024,
+      1600
+    ],
+    "mobile": null,
+    "cadrage": "53% 50%",
+    "sujet": {
+      "x": 4.5,
+      "y": 25.5,
+      "l": 68.2,
+      "h": 59.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.81,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.48,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.43,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.4,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 261,
+      "width": 1344,
+      "height": 1680,
+      "source": [
+        1344,
+        2002
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,19 fois (source de 1344 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/secteur-entreprise-640.webp",
+      "grok/secteur-entreprise-1024.webp",
+      "grok/secteur-entreprise-1600.webp"
+    ],
+    "poids": {
+      "grok/secteur-entreprise-640.webp": 47686,
+      "grok/secteur-entreprise-1024.webp": 87214,
+      "grok/secteur-entreprise-1600.webp": 147508
+    },
+    "media": "c.media({ nom: 'grok/secteur-entreprise', alt: \"Hall d'un immeuble de bureaux la nuit\", cadrage: '53% 50%', sizes: '(max-width: 760px) 100vw, 50vw', ratio: '4 / 5' })"
+  },
+  "grok/prestations-ouverture": {
+    "nom": "grok/prestations-ouverture",
+    "source": "recu/grok/prestations-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Agent de sécurité qui s'éloigne dans un parking souterrain",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 5,
+    "empreinte": "05c811d0afd6af23",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 47%"
+    },
+    "cadrage": "50% 40%",
+    "sujet": {
+      "x": 18.8,
+      "y": 0,
+      "l": 59.4,
+      "h": 70.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.69,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.51,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.47,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.32,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "bas",
+    "recadrage": {
+      "left": 0,
+      "top": 146,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/prestations-ouverture-640.webp",
+      "grok/prestations-ouverture-1280.webp",
+      "grok/prestations-ouverture-1920.webp",
+      "grok/prestations-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/prestations-ouverture-640.webp": 18588,
+      "grok/prestations-ouverture-1280.webp": 52652,
+      "grok/prestations-ouverture-1920.webp": 87436,
+      "grok/prestations-ouverture-mobile-640.webp": 35892
+    },
+    "media": "c.media({ nom: 'grok/prestations-ouverture', alt: \"Agent de sécurité qui s'éloigne dans un parking souterrain\", cadrage: '50% 40%', cadrageMobile: '50% 47%', sizes: '100vw', priorite: true })"
+  },
+  "grok/secteurs-ouverture": {
+    "nom": "grok/secteurs-ouverture",
+    "source": "recu/grok/secteurs-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Zone logistique et industrielle à l'heure bleue",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "aeeb5d87c08c91db",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "50% 44%"
+    },
+    "cadrage": "46% 44%",
+    "sujet": {
+      "x": 0,
+      "y": 2.4,
+      "l": 96.9,
+      "h": 97.6
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.29,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.25,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.08,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "haut",
+    "recadrage": {
+      "left": 0,
+      "top": 76,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/secteurs-ouverture-640.webp",
+      "grok/secteurs-ouverture-1280.webp",
+      "grok/secteurs-ouverture-1920.webp",
+      "grok/secteurs-ouverture-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/secteurs-ouverture-640.webp": 40102,
+      "grok/secteurs-ouverture-1280.webp": 113482,
+      "grok/secteurs-ouverture-1920.webp": 176156,
+      "grok/secteurs-ouverture-mobile-640.webp": 72648
+    },
+    "media": "c.media({ nom: 'grok/secteurs-ouverture', alt: \"Zone logistique et industrielle à l'heure bleue\", cadrage: '46% 44%', cadrageMobile: '50% 44%', sizes: '100vw', priorite: true })"
+  },
+  "grok/agence-ouverture": {
+    "nom": "grok/agence-ouverture",
+    "source": "recu/grok/agence-ouverture.jpg",
+    "role": "ouverture",
+    "alt": "Deux agents au crépuscule sur le toit d'un parking",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "6e6b5a1b2a822c0e",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640,
+        1080
+      ],
+      "cadrage": "45% 64%"
+    },
+    "cadrage": "72% 50%",
+    "sujet": {
+      "x": 15.6,
+      "y": 20.6,
+      "l": 43.8,
+      "h": 70.5
+    },
+    "zones_calmes": [
+      {
+        "cote": "haut",
+        "score": 0.73,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.68,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.56,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.42,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": "gauche",
+    "recadrage": {
+      "left": 0,
+      "top": 108,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/agence-ouverture-640.webp",
+      "grok/agence-ouverture-1280.webp",
+      "grok/agence-ouverture-1920.webp",
+      "grok/agence-ouverture-mobile-640.webp",
+      "grok/agence-ouverture-mobile-1080.webp"
+    ],
+    "poids": {
+      "grok/agence-ouverture-640.webp": 20536,
+      "grok/agence-ouverture-1280.webp": 52996,
+      "grok/agence-ouverture-1920.webp": 84960,
+      "grok/agence-ouverture-mobile-640.webp": 35314,
+      "grok/agence-ouverture-mobile-1080.webp": 70584
+    },
+    "media": "c.media({ nom: 'grok/agence-ouverture', alt: \"Deux agents au crépuscule sur le toit d'un parking\", cadrage: '72% 50%', cadrageMobile: '45% 64%', sizes: '100vw', priorite: true })"
+  },
+  "grok/404": {
+    "nom": "grok/404",
+    "source": "recu/grok/404.jpg",
+    "role": "404",
+    "alt": "Cadenas sur un portail fermé, dans le faisceau d'une lampe",
+    "grok": true,
+    "mention": "Illustration générée",
+    "beaute": 4,
+    "empreinte": "73c69dedd3f82bb3",
+    "ratio": "16:9",
+    "largeurs": [
+      640,
+      1280,
+      1920
+    ],
+    "mobile": {
+      "ratio": "9:16",
+      "largeurs": [
+        640
+      ],
+      "cadrage": "61% 55%"
+    },
+    "cadrage": "70% 50%",
+    "sujet": {
+      "x": 46.9,
+      "y": 22.3,
+      "l": 18.8,
+      "h": 43.4
+    },
+    "zones_calmes": [
+      {
+        "cote": "gauche",
+        "score": 0.83,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.81,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.71,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.57,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 141,
+      "width": 1600,
+      "height": 900,
+      "source": [
+        1600,
+        1074
+      ]
+    },
+    "faible": false,
+    "raisons_faible": [],
+    "avertissements": [
+      "version téléphone sans 1080 px (source trop petite)",
+      "agrandie 1,2 fois (source de 1600 px après recadrage)"
+    ],
+    "fichiers": [
+      "grok/404-640.webp",
+      "grok/404-1280.webp",
+      "grok/404-1920.webp",
+      "grok/404-mobile-640.webp"
+    ],
+    "poids": {
+      "grok/404-640.webp": 26330,
+      "grok/404-1280.webp": 78630,
+      "grok/404-1920.webp": 124666,
+      "grok/404-mobile-640.webp": 85198
+    },
+    "media": "c.media({ nom: 'grok/404', alt: \"Cadenas sur un portail fermé, dans le faisceau d'une lampe\", cadrage: '70% 50%', cadrageMobile: '61% 55%', sizes: '100vw', ratio: '16 / 9' })"
+  },
+  "lasp-incendie": {
+    "nom": "lasp-incendie",
+    "source": "recu/lasp-securite-incendie.png",
+    "role": "vignette",
+    "alt": "Agent LASP en polo rouge de sécurité incendie",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "2a9688fabf8226bb",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "55% 41%",
+    "sujet": {
+      "x": 11.3,
+      "y": 0,
+      "l": 76,
+      "h": 79.2
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.3,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.22,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.14,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.09,
+        "ton": "moyen"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 9,
+      "top": 0,
+      "width": 643,
+      "height": 482,
+      "source": [
+        652,
+        482
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "652 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,24 fois (source de 643 px après recadrage)"
+    ],
+    "fichiers": [
+      "lasp-incendie-640.webp",
+      "lasp-incendie-800.webp"
+    ],
+    "poids": {
+      "lasp-incendie-640.webp": 17952,
+      "lasp-incendie-800.webp": 22354
+    },
+    "media": "c.media({ nom: 'lasp-incendie', alt: \"Agent LASP en polo rouge de sécurité incendie\", cadrage: '55% 41%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "lasp-evenementiel": {
+    "nom": "lasp-evenementiel",
+    "source": "recu/lasp-evenementiel.png",
+    "role": "vignette",
+    "alt": "Agent LASP face au public d'un concert",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "67966fbb6fdd8564",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "34% 22%",
+    "sujet": {
+      "x": 3.1,
+      "y": 0,
+      "l": 69.8,
+      "h": 70.8
+    },
+    "zones_calmes": [
+      {
+        "cote": "bas",
+        "score": 0.61,
+        "ton": "sombre"
+      },
+      {
+        "cote": "droite",
+        "score": 0.57,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.13,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.03,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 643,
+      "height": 482,
+      "source": [
+        652,
+        482
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "652 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,24 fois (source de 643 px après recadrage)"
+    ],
+    "fichiers": [
+      "lasp-evenementiel-640.webp",
+      "lasp-evenementiel-800.webp"
+    ],
+    "poids": {
+      "lasp-evenementiel-640.webp": 21386,
+      "lasp-evenementiel-800.webp": 26450
+    },
+    "media": "c.media({ nom: 'lasp-evenementiel', alt: \"Agent LASP face au public d'un concert\", cadrage: '34% 22%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  },
+  "lasp-maitre-chien": {
+    "nom": "lasp-maitre-chien",
+    "source": "recu/lasp-maitre-chien.png",
+    "role": "vignette",
+    "alt": "Maître-chien LASP et son chien, la nuit",
+    "grok": false,
+    "mention": null,
+    "beaute": 3,
+    "empreinte": "f4cf8e96d4060fe1",
+    "ratio": "4:3",
+    "largeurs": [
+      640,
+      800
+    ],
+    "mobile": null,
+    "cadrage": "47% 40%",
+    "sujet": {
+      "x": 22.7,
+      "y": 4.2,
+      "l": 48.6,
+      "h": 91.7
+    },
+    "zones_calmes": [
+      {
+        "cote": "droite",
+        "score": 0.59,
+        "ton": "sombre"
+      },
+      {
+        "cote": "bas",
+        "score": 0.41,
+        "ton": "sombre"
+      },
+      {
+        "cote": "haut",
+        "score": 0.39,
+        "ton": "sombre"
+      },
+      {
+        "cote": "gauche",
+        "score": 0.34,
+        "ton": "sombre"
+      }
+    ],
+    "zone_texte": null,
+    "recadrage": {
+      "left": 0,
+      "top": 0,
+      "width": 632,
+      "height": 474,
+      "source": [
+        655,
+        474
+      ]
+    },
+    "faible": true,
+    "raisons_faible": [
+      "655 px de large"
+    ],
+    "avertissements": [
+      "agrandie 1,27 fois (source de 632 px après recadrage)"
+    ],
+    "fichiers": [
+      "lasp-maitre-chien-640.webp",
+      "lasp-maitre-chien-800.webp"
+    ],
+    "poids": {
+      "lasp-maitre-chien-640.webp": 23994,
+      "lasp-maitre-chien-800.webp": 30666
+    },
+    "media": "c.media({ nom: 'lasp-maitre-chien', alt: \"Maître-chien LASP et son chien, la nuit\", cadrage: '47% 40%', sizes: '(max-width: 760px) 50vw, 25vw', ratio: '4 / 3' })"
+  }
+}

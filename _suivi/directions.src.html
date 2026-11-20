@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LASP · trois directions</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@112..125,700..900&family=Instrument+Sans:wght@400;600&family=JetBrains+Mono:wght@500&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Inter:wght@400;600&family=Big+Shoulders+Display:wght@800&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+/* VOICE planche de travail d'un directeur artistique, sobre
+   IDEA trois cartes de direction comme des fiches de mission
+   PICTURE le premier écran de chaque direction, dessiné
+   COLOUR fond neutre, chaque carte porte sa palette
+   TYPE Inter pour la planche, les polices des directions dans leurs cartes */
+:root{color-scheme:light dark;--bg:light-dark(#f4f4f2,#121315);--ink:light-dark(#16181c,#ecedef);--mute:light-dark(#5b606a,#a4a9b3);--card:light-dark(#fff,#1b1d21);--line:light-dark(#e2e3e6,#2b2e34)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,system-ui,sans-serif;overflow-x:clip}
+header{padding:clamp(24px,4vw,48px) max(5vw,16px) 8px;max-width:1320px;margin:auto}
+h1{font-size:clamp(26px,3.4vw,40px);line-height:1.08;margin:0 0 8px;text-wrap:balance}
+header p{margin:0;color:var(--mute);max-width:68ch}
+.logo{display:flex;align-items:center;gap:14px;margin-bottom:18px}
+.logo span{background:#0a0f1c;border-radius:10px;padding:10px 14px;display:inline-flex}
+.logo img{height:56px;width:auto}
+main{display:grid;gap:28px;padding:20px max(5vw,16px) 56px;max-width:1320px;margin:auto}
+.dir{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+@media(max-width:900px){.dir{grid-template-columns:minmax(0,1fr)}}
+.ecran{position:relative;aspect-ratio:16/10;overflow:hidden}
+.infos{padding:22px 24px 26px}
+.infos h2{margin:0 0 2px;font-size:24px;line-height:1.15}
+.reco{display:inline-block;background:#d7262b;color:#fff;font-size:13px;font-weight:600;border-radius:99px;padding:2px 10px;margin-left:6px;vertical-align:middle}
+.amb{color:var(--mute);margin:4px 0 14px}
+.pal{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}
+.pal div{display:flex;align-items:center;gap:8px;font-size:13px;border:1px solid var(--line);border-radius:10px;padding:5px 9px 5px 5px}
+.pal i{width:26px;height:26px;border-radius:7px;display:block;border:1px solid rgba(127,127,127,.25)}
+dl{margin:0;display:grid;grid-template-columns:7.2em minmax(0,1fr);gap:6px 12px;font-size:15px}
+dt{color:var(--mute)}dd{margin:0}
+ol{margin:0;padding-left:1.2em}
+/* A */
+.a{background:#0a0f1c;color:#eef0f3;font-family:'Instrument Sans',sans-serif}
+.a svg{position:absolute;inset:0;width:100%;height:100%}
+.a .t{position:absolute;left:6%;bottom:16%;right:30%}
+.a .k{font:500 11px 'JetBrains Mono',monospace;color:#9aa3b5;letter-spacing:.04em}
+.a h3{font-family:Archivo,sans-serif;font-stretch:125%;font-weight:900;text-transform:uppercase;font-size:clamp(18px,2.6vw,34px);line-height:1;margin:.3em 0 .5em}
+.a h3 em{font-style:normal;color:#f04a4f}
+.btn{display:inline-block;font-weight:600;font-size:12px;border-radius:999px;padding:7px 14px}
+.a .btn{background:#d7262b;color:#fff}
+.a .nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:12px 5%;font-size:11px;color:#c9cfdb}
+.a .nav img{height:24px}
+/* B */
+.b{background:#f6f5f1;color:#172b66;font-family:Inter,sans-serif;display:grid;grid-template-columns:1fr 1fr}
+.b .t{padding:16% 8% 8%}
+.b h3{font-family:'Source Serif 4',serif;font-weight:700;font-size:clamp(18px,2.4vw,32px);line-height:1.05;margin:0 0 .6em;color:#14161a}
+.b h3 em{font-style:italic;color:#c81e24}
+.b p{font-size:12px;color:#3d4659;margin:0 0 12px}
+.b .btn{background:#172b66;color:#fff}
+.b .sem{background:#172b66;padding:12% 8%;display:grid;grid-template-columns:repeat(7,1fr);gap:4px;align-content:center}
+.b .sem b{font:600 9px Inter;color:#9fb0e0;text-align:center}
+.b .sem span{height:18px;border-radius:3px;background:#24397a}
+.b .sem span.j{background:#eef0f3}.b .sem span.n{background:#c81e24}
+.b .mono{position:absolute;left:8%;top:6%;height:22px}
+/* C */
+.c{background:#e6e7e3;color:#14171c;font-family:'IBM Plex Sans',sans-serif}
+.c svg{position:absolute;right:2%;bottom:4%;width:62%;height:auto}
+.c .t{position:absolute;left:6%;top:14%;width:44%}
+.c h3{font-family:'Big Shoulders Display',sans-serif;font-weight:800;text-transform:uppercase;font-size:clamp(22px,3.4vw,44px);line-height:.95;margin:0 0 .4em}
+.c h3 em{font-style:normal;color:#c81e24}
+.c .chips{display:flex;flex-wrap:wrap;gap:5px}
+.c .chips span{font:500 10px 'IBM Plex Mono',monospace;border:1px solid #14171c;border-radius:99px;padding:3px 8px}
+.c .chips span.on{background:#14171c;color:#fff}
+footer{max-width:1320px;margin:auto;padding:0 max(5vw,16px) 40px;color:var(--mute);font-size:14px}
+@media(prefers-reduced-motion:no-preference){.a .beam{animation:sweep 6s ease-in-out infinite alternate}}
+@keyframes sweep{from{transform:rotate(-14deg)}to{transform:rotate(12deg)}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span><img alt="Logo L.A.S.P. sécurité privée" src="data:image/png;base64,LOGO64"></span></div>
+  <h1>LASP Sécurité : trois directions pour la maquette</h1>
+  <p>Chaque carte montre l'esprit du premier écran, la palette (tirée du rouge et du bleu du logo), les polices et le plan de l'accueil. Textes d'exemple : tous viennent du site actuel.</p>
+</header>
+<main>
+
+<section class="dir">
+  <div class="ecran a">
+    <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <defs>
+        <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(560 40) rotate(90) scale(520 300)"><stop offset="0" stop-color="#fff" stop-opacity=".55"/><stop offset=".6" stop-color="#fff" stop-opacity=".08"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+        <linearGradient id="h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#131a2c"/><stop offset="1" stop-color="#0a0f1c"/></linearGradient>
+      </defs>
+      <rect width="800" height="500" fill="url(#h)"/>
+      <g fill="#1b2438"><rect x="360" y="230" width="420" height="150"/><polygon points="360,230 570,170 780,230"/><rect x="0" y="300" width="380" height="80"/></g>
+      <g fill="#0e1424"><rect x="400" y="290" width="54" height="90"/><rect x="480" y="290" width="54" height="90"/><rect x="560" y="290" width="54" height="90"/><rect x="640" y="290" width="54" height="90"/></g>
+      <rect y="380" width="800" height="120" fill="#0c1220"/>
+      <g class="beam" style="transform-origin:560px 470px"><polygon points="560,470 470,120 650,120" fill="url(#g)"/></g>
+      <circle cx="560" cy="470" r="5" fill="#f04a4f"/>
+    </svg>
+    <div class="nav"><img alt="" src="data:image/png;base64,LOGO64"><span>Prestations · Secteurs · L'agence · Devis</span></div>
+    <div class="t"><div class="k">LYON · 24H/24 · 7J/7</div><h3>Jour et nuit, on veille sur <em>vos sites.</em></h3><span class="btn">Demander un devis</span></div>
+  </div>
+  <div class="infos">
+    <h2>A · Ronde de nuit <span class="reco">Recommandé</span></h2>
+    <p class="amb">Nuit bleue et rouge signal, coupée de sections claires pour tout ce qui est utile (prestations, outil, devis). Net, sérieux, vivant.</p>
+    <div class="pal">
+      <div><i style="background:#0a0f1c"></i>Nuit #0A0F1C</div>
+      <div><i style="background:#eef0f3"></i>Clair #EEF0F3</div>
+      <div><i style="background:#d7262b"></i>Rouge LASP #D7262B</div>
+      <div><i style="background:#22398a"></i>Bleu LASP #22398A</div>
+    </div>
+    <dl>
+      <dt>Polices</dt><dd><b style="font-family:Archivo;font-stretch:125%;font-weight:900">ARCHIVO ÉTENDU</b> titres · <span style="font-family:'Instrument Sans'">Instrument Sans</span> texte · <span style="font-family:'JetBrains Mono'">JetBrains Mono</span> étiquettes</dd>
+      <dt>Idée</dt><dd>Le faisceau de la ronde : une lampe balaie le site de nuit à l'ouverture, suit un peu la souris, et chaque prestation « s'allume » quand on y arrive. Voile de transition en cercle de lumière, monogramme au centre.</dd>
+      <dt>Accueil</dt><dd><ol><li>Ouverture plein cadre de nuit, faisceau</li><li>Engagements : 24/7, agents ADS · SSIAP · cynophiles, PTI radios véhicules, suivi</li><li>Six prestations en grandes cartes photo</li><li>Où on intervient : entreprises, industrie et logistique, événements, commerces</li><li>Outil « votre dispositif » : type de site, plage horaire → agents conseillés → devis prérempli</li><li>Comment ça se passe, en 4 temps</li><li>Ils nous font confiance · carte de Lyon 9e</li><li>Appel final devis et téléphones</li></ol></dd>
+      <dt>Niveau visé</dt><dd>bvcomm (clair et sombre alternés, net et contrasté)</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="dir">
+  <div class="ecran b">
+    <img class="mono" alt="" src="data:image/png;base64,MONO64">
+    <div class="t"><h3>Votre sécurité, <em>notre priorité.</em></h3><p>Gardiennage, maître-chien, sécurité incendie et événementiel à Lyon.</p><span class="btn">Demander un devis</span></div>
+    <div class="sem" aria-hidden="true">
+      <b>L</b><b>M</b><b>M</b><b>J</b><b>V</b><b>S</b><b>D</b>
+      <span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span><span></span><span></span>
+      <span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span><span class="j"></span>
+      <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>
+      <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>
+    </div>
+  </div>
+  <div class="infos">
+    <h2>B · Bleu de garde</h2>
+    <p class="amb">Clair et institutionnel, grandes bandes bleu LASP, rouge pour l'action. Rassurant, très lisible, plus calme.</p>
+    <div class="pal">
+      <div><i style="background:#f6f5f1"></i>Blanc pierre #F6F5F1</div>
+      <div><i style="background:#172b66"></i>Bleu profond #172B66</div>
+      <div><i style="background:#c81e24"></i>Rouge #C81E24</div>
+    </div>
+    <dl>
+      <dt>Polices</dt><dd><b style="font-family:'Source Serif 4'">Source Serif 4</b> titres · <span style="font-family:Inter">Inter</span> texte</dd>
+      <dt>Idée</dt><dd>Le planning de garde : une semaine qui se remplit au défilement, jour en blanc, nuit en rouge, pour montrer la continuité 24/7 (exemple marqué comme tel). L'intro emboîte le L rouge et le A bleu du logo.</dd>
+      <dt>Accueil</dt><dd>Ouverture scindée texte et planning · prestations en liste illustrée · planning 24/7 · secteurs · méthode · références · devis</dd>
+      <dt>Niveau visé</dt><dd>Fit-Tri (un seul système, outils utiles)</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="dir">
+  <div class="ecran c">
+    <div class="t"><h3>Quel site <em>protéger&nbsp;?</em></h3><div class="chips"><span class="on">Entrepôt</span><span>Magasin</span><span>Événement</span><span>Bureaux</span></div></div>
+    <svg viewBox="0 0 420 300" aria-hidden="true">
+      <polygon points="40,200 210,110 380,200 210,290" fill="#d3d5d0" stroke="#14171c" stroke-width="1.2"/>
+      <polygon points="120,170 230,112 330,165 220,224" fill="#fff" stroke="#14171c" stroke-width="1.2"/>
+      <polygon points="120,170 220,224 220,254 120,200" fill="#c9cbc6" stroke="#14171c" stroke-width="1.2"/>
+      <polygon points="220,224 330,165 330,195 220,254" fill="#b9bbb6" stroke="#14171c" stroke-width="1.2"/>
+      <polyline points="70,200 210,126 352,200 210,276 70,200" fill="none" stroke="#c81e24" stroke-width="1.6" stroke-dasharray="5 5"/>
+      <g fill="#c81e24"><circle cx="210" cy="276" r="7"/><circle cx="352" cy="200" r="7"/><circle cx="96" cy="186" r="7"/></g>
+      <g fill="#14171c" font-family="IBM Plex Mono" font-size="10"><text x="222" y="290">ACCÈS</text><text x="300" y="222">QUAIS</text><text x="44" y="178">RONDE</text></g>
+    </svg>
+  </div>
+  <div class="infos">
+    <h2>C · Plan de site</h2>
+    <p class="amb">Gris béton, graphite et rouge signal, esprit plan technique. L'outil est dès le premier écran.</p>
+    <div class="pal">
+      <div><i style="background:#e6e7e3"></i>Béton #E6E7E3</div>
+      <div><i style="background:#14171c"></i>Graphite #14171C</div>
+      <div><i style="background:#c81e24"></i>Rouge #C81E24</div>
+    </div>
+    <dl>
+      <dt>Polices</dt><dd><b style="font-family:'Big Shoulders Display';text-transform:uppercase">Big Shoulders</b> titres · <span style="font-family:'IBM Plex Sans'">IBM Plex Sans</span> texte · <span style="font-family:'IBM Plex Mono'">Plex Mono</span> repères</dd>
+      <dt>Idée</dt><dd>Un site dessiné en perspective : on choisit entrepôt, magasin, événement ou bureaux, les agents viennent se placer aux accès, aux quais et sur la ronde, puis on demande le devis de ce dispositif.</dd>
+      <dt>Accueil</dt><dd>Outil en ouverture · prestations · moyens · références · zone · devis</dd>
+      <dt>Niveau visé</dt><dd>Cool Canyoning (outils pour choisir, titres francs)</dd>
+    </dl>
+  </div>
+</section>
+</main>
+<footer>Planche de travail : premiers écrans esquissés, pas la maquette finale. Photos de la maquette : images générées à la demande (le site actuel n'a que des images de banque ou générées, petites).</footer>
+</body>
+</html>

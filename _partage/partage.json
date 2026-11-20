@@ -1,0 +1,198 @@
+{
+  "avertissements": [],
+  "cartes": [
+    {
+      "page": "accueil",
+      "langue": "fr",
+      "fichier": "assets/partage/accueil-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/accueil-ouverture-1280.webp",
+      "poids": 79115,
+      "sujet": {
+        "x": 744,
+        "y": 4,
+        "l": 315,
+        "h": 513
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 90,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "agence",
+      "langue": "fr",
+      "fichier": "assets/partage/agence-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/prestations-ouverture-1280.webp",
+      "poids": 64050,
+      "sujet": {
+        "x": 600,
+        "y": 0,
+        "l": 600,
+        "h": 444
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "devis",
+      "langue": "fr",
+      "fichier": "assets/partage/devis-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/secteurs-ouverture-1280.webp",
+      "poids": 88461,
+      "sujet": {
+        "x": 600,
+        "y": 15,
+        "l": 600,
+        "h": 615
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "prestations",
+      "langue": "fr",
+      "fichier": "assets/partage/prestations-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/agence-ouverture-1280.webp",
+      "poids": 65965,
+      "sujet": {
+        "x": 655,
+        "y": 130,
+        "l": 491,
+        "h": 444
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 235,
+          "l": 480,
+          "h": 193
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 47,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    },
+    {
+      "page": "secteurs",
+      "langue": "fr",
+      "fichier": "assets/partage/secteurs-fr.jpg",
+      "gabarit": "droite",
+      "image": "grok/secteur-industrie-1600.webp",
+      "poids": 62675,
+      "sujet": {
+        "x": 682,
+        "y": 97,
+        "l": 382,
+        "h": 504
+      },
+      "textes": [
+        {
+          "x": 64,
+          "y": 56,
+          "l": 280,
+          "h": 64
+        },
+        {
+          "x": 64,
+          "y": 267,
+          "l": 480,
+          "h": 129
+        },
+        {
+          "x": 64,
+          "y": 543,
+          "l": 480,
+          "h": 35
+        },
+        {
+          "x": 600,
+          "y": 0,
+          "l": 74,
+          "h": 630
+        }
+      ],
+      "recouvrement": 0
+    }
+  ]
+}
