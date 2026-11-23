@@ -2,11 +2,11 @@
  {
   "nom": "ordinateur",
   "seul": 0,
-  "souris": 45
+  "souris": 44
  },
  {
   "nom": "telephone",
-  "seul": 5,
+  "seul": 10,
   "souris": 0
  }
 ]

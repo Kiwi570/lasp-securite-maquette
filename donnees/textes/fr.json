@@ -33,7 +33,9 @@
   "finTitre2": "Parlons-en maintenant.",
   "finTexte": "Décrivez votre besoin : nous vous proposons un dispositif sur mesure.",
   "finDevis": "Demander un devis",
-  "ou": "ou appelez le"
+  "ou": "ou appelez le",
+  "fil": "Ronde de la page",
+  "filPoint": "Aller à"
  },
  "pages": {
   "accueil": {
@@ -97,7 +99,14 @@
    "titre": "Une présence continue, des agents qui savent quoi faire.",
    "grand": "24/7",
    "grandTexte": "Jour, nuit, week-end : l'agence répond et les agents tiennent leur poste.",
-   "cadran": "Les 24 heures d'une journée de garde"
+   "cadran": "Les 24 heures d'une journée de garde",
+   "heure": "Il est",
+   "heureA": "à Lyon.",
+   "heureTexte": "À cette heure comme à toutes les autres, l'agence reste réactive.",
+   "h00": "0 h",
+   "h06": "6 h",
+   "h12": "12 h",
+   "h18": "18 h"
   },
   "prestations": {
    "surtitre": "Prestations",
@@ -140,7 +149,11 @@
    },
    "resultat": "Prestations conseillées",
    "note": "Suggestion indicative, établie à partir de vos réponses.",
-   "action": "Demander un devis pour ce dispositif"
+   "action": "Demander un devis pour ce dispositif",
+   "bande": "Plage horaire, indicative",
+   "bandeJour": "Journée",
+   "bandeNuit": "Nuit",
+   "bandeContinu": "24 h sur 24"
   },
   "etapes": {
    "surtitre": "Comment ça se passe",
@@ -166,7 +179,9 @@
   "devis": "Demander un devis",
   "missions": "Missions",
   "dispositifsTitre": "Dans chaque dispositif",
-  "dispositifsTexte": "Les prestations de LASP reposent sur ces cinq gestes, du poste d'entrée à la ronde de nuit."
+  "dispositifsTexte": "Cinq gestes, du poste d'entrée à la ronde de nuit.",
+  "pourQui": "Où on l'utilise",
+  "dispositifsIntro": "Chaque prestation de LASP repose sur ces gestes, quel que soit le site."
  },
  "secteurs": {
   "surtitre": "Secteurs",
@@ -180,7 +195,9 @@
   "conseille": "Prestations conseillées",
   "devis": "Devis pour ce secteur",
   "refsTitre": "Ils nous font confiance",
-  "refsTexte": "Des entreprises qui nous confient leurs sites et leurs équipes."
+  "refsTexte": "Des entreprises qui nous confient leurs sites et leurs équipes.",
+  "points": "Points de vigilance sur la photo",
+  "vigilance": "Les points de vigilance s'allument sur la photo."
  },
  "agence": {
   "surtitre": "L'agence",
@@ -247,12 +264,15 @@
   "continuer": "Continuer",
   "envoyer": "Envoyer la demande",
   "merci": "Demande prête",
-  "merciTexte": "Dans la version en ligne, l'agence vous rappelle pour construire le dispositif. Ici, rien n'a été envoyé.",
+  "merciTexte": "Dans la version en ligne, votre demande serait transmise à l'agence. Ici, rien n'a été envoyé.",
   "recommencer": "Nouvelle demande",
   "donnees": "Vos données servent seulement à répondre à votre demande de devis. Politique de confidentialité : à compléter.",
   "accord": "J'accepte d'être recontacté au sujet de ma demande.",
   "carteTitre": "L'agence",
-  "acces": "Lyon 9e arrondissement"
+  "acces": "Lyon 9e arrondissement",
+  "suiteTitre": "La suite",
+  "tampon": "Demande prête",
+  "tamponPetit": "LASP · devis"
  },
  "introuvable": {
   "surtitre": "Erreur 404",

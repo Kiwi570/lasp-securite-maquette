@@ -7,8 +7,9 @@ export default async function ({ contexte, attendrePret, attendre, BASE, R, T })
     await attendrePret(page);
     await page.locator('#dispositif').scrollIntoViewIfNeeded();
     await attendre(900);
-    await page.locator('[data-dispositif] input[name="site"][value="commerces"]').check({ force: true });
-    await page.locator('[data-dispositif] input[name="priorite"][value="vols"]').check({ force: true });
+    const choisir = (sel) => page.evaluate((s) => { const i = document.querySelector(s); i.checked = true; i.dispatchEvent(new Event('change', { bubbles: true })); }, sel);
+    await choisir('[data-dispositif] input[name="site"][value="commerces"]');
+    await choisir('[data-dispositif] input[name="priorite"][value="vols"]');
     await attendre(300);
     const etat = await page.evaluate(() => ({
       href: document.querySelector('[data-dispositif-lien]').getAttribute('href'),
@@ -33,12 +34,12 @@ export default async function ({ contexte, attendrePret, attendre, BASE, R, T })
     if (!erreur) R.echec('devis', 'aucune erreur affichée quand la ville du site manque', { page: '/devis', taille: '390×844' });
     await page.fill('#d-lieu', 'Lyon 7e');
     await page.locator('.fpe [data-suivant]').click(); await attendre(500);
-    await page.locator('.fpe input[name="plage"][value="nuit"]').check({ force: true });
+    await choisir('.fpe input[name="plage"][value="nuit"]');
     await page.locator('.fpe [data-suivant]').click(); await attendre(500);
     await page.fill('#d-nom', 'Camille Martin');
     await page.fill('#d-tel', '04 72 00 00 00');
     await page.fill('#d-email', 'camille@exemple.fr');
-    await page.locator('.fpe input[name="accord"]').check({ force: true });
+    await choisir('.fpe input[name="accord"]');
     await page.locator('.fpe [data-suivant]').click(); await attendre(500);
     const recap = await page.locator('.fpe__recap').innerText();
     if (!/Lyon 7e/.test(recap) || !/Magasin/.test(recap)) R.echec('devis', 'le récapitulatif ne reprend pas la demande', { page: '/devis', taille: '390×844' });

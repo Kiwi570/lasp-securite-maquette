@@ -656,3 +656,139 @@ html:not(.js) :is(section.hero, section.ouv-fuite, section.ouv-vue, section.ouv-
   .ouv-agence-media { height: min(62svh, 560px); }
   .ouv-devis-plan .plan { max-width: 440px; margin-inline: auto; }
 }
+
+/* ======================= v2 : plus de jeu, un fil, des pictogrammes ======================= */
+
+/* Pictogrammes au trait. */
+.picto { width: 24px; height: 24px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.picto .pi-r { stroke: var(--accent-texte); }
+
+/* Pluie dans le faisceau. */
+.hero-pluie { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; pointer-events: none; }
+
+/* Horloge de 24 h et heure de Lyon. */
+.cadran-col { display: grid; justify-items: center; gap: 20px; }
+.cadran-heures { position: absolute; inset: 0; margin: 0; padding: 0; list-style: none; pointer-events: none; }
+.cadran-heures li { position: absolute; translate: -50% -50%; font: 500 13px/1 var(--police-mono); color: #A7AFC0; letter-spacing: .04em; white-space: nowrap; }
+.cadran-marque path { fill: var(--clair); }
+.cadran-maintenant { fill: #FFB3B5; opacity: 0; }
+.cadran-maintenant.actif { animation: pouls-heure 1.8s ease-in-out infinite; }
+@keyframes pouls-heure { 0%, 100% { opacity: .25; } 50% { opacity: .95; } }
+.cadran-grand { font-size: clamp(2.5rem, 6vw, 5.1rem); }
+.cadran-heure { margin: 0; max-width: 32ch; text-align: center; color: var(--texte-doux); font-size: .98rem; }
+.cadran-heure strong { display: block; margin-bottom: 4px; color: var(--clair); font: 800 clamp(1.1rem, 1rem + .4vw, 1.3rem)/1.25 var(--police-titres); font-stretch: 112%; }
+[data-heure-valeur] { color: var(--rouge-vif); white-space: nowrap; font-variant-numeric: tabular-nums; }
+html:not(.js) .cadran-heure { display: none; }
+.engagements-liste li { grid-template-columns: 30px minmax(0, 1fr); column-gap: 12px; }
+.engagements-liste li .picto { grid-row: span 2; margin-top: 2px; color: var(--clair); }
+
+/* Cartes de prestations : pictogramme posé à cheval sur la photo, inclinaison sous la souris. */
+.carte-prestation { perspective: 900px; }
+.carte-corps:has(.carte-picto) { padding-top: 38px; }
+.carte-picto { position: absolute; z-index: 2; left: 18px; top: -24px; width: 48px; height: 48px; border-radius: 50%; display: grid; place-items: center; background: var(--nuit); color: var(--clair); box-shadow: 0 0 0 4px var(--surface); }
+.carte-picto .picto { --accent-texte: var(--rouge-vif); width: 24px; height: 24px; }
+@media (max-width: 640px) {
+  .cartes-prestations { gap: 12px; }
+  .carte-lien { flex-direction: row; align-items: stretch; }
+  .carte-media { width: 124px; flex: none; aspect-ratio: auto; min-height: 124px; }
+  .carte-media .mention-ia { white-space: normal; line-height: 1.15; max-width: calc(100% - 8px); font-size: 12px; }
+  .carte-nuit { width: 124px; aspect-ratio: auto; bottom: 0; }
+  .carte-corps { padding: 14px 16px 16px; gap: 3px; align-content: center; }
+  .carte-corps::before { left: 16px; right: 16px; height: 2px; }
+  .carte-picto, .carte-voir { display: none; }
+}
+
+/* Bande des 24 heures de l'outil. */
+.bande-24 { margin: 6px 0 16px; }
+.bande-titre { margin: 0 0 8px; font: 500 13px/1.4 var(--police-mono); letter-spacing: .06em; color: #A7AFC0; }
+.bande-titre span { color: var(--clair); }
+.bande-cases { display: grid; grid-template-columns: repeat(24, minmax(0, 1fr)); gap: 2px; }
+.bande-cases span { height: 16px; border-radius: 2px; background: rgba(238, 240, 243, .12); transition: background-color .35s; }
+.bande-cases span.on { background: var(--rouge-vif); }
+.bande-reperes { display: flex; justify-content: space-between; margin-top: 6px; font: 500 13px/1 var(--police-mono); color: #A7AFC0; }
+
+/* La ronde : un bip à chaque pointage. */
+.ronde-pastille { position: relative; }
+.ronde-pastille::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--rouge-vif); opacity: 0; pointer-events: none; }
+.ronde-point.bip .ronde-pastille::after { animation: bip .9s cubic-bezier(.2, .6, .3, 1); }
+@keyframes bip { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(2.2); opacity: 0; } }
+
+/* Appel final : le faisceau fait briller le titre en passant. */
+.fin-titre-bloc { position: relative; }
+.fin-lumiere { position: absolute; inset: 0; margin: 0; pointer-events: none; text-wrap: balance; font-family: var(--police-titres); font-stretch: 125%; font-weight: 850; text-transform: uppercase; letter-spacing: -.01em;
+  color: transparent; -webkit-text-fill-color: transparent;
+  background: linear-gradient(105deg, rgba(255, 236, 200, 0) 0%, rgba(255, 236, 200, 0) 41%, rgba(255, 236, 200, .9) 47%, #fff 50%, rgba(255, 236, 200, .9) 53%, rgba(255, 236, 200, 0) 59%, rgba(255, 236, 200, 0) 100%);
+  background-size: 300% 100%; background-position: calc(var(--lum, .9) * 100%) 0; -webkit-background-clip: text; background-clip: text; }
+.fin-lumiere em { font-style: normal; color: transparent; -webkit-text-fill-color: transparent; }
+html:not(.js) .fin-lumiere { display: none; }
+
+/* Prestations : grands numéros, pictogramme, secteurs où l'on utilise la prestation. */
+.rangee-prestation { position: relative; overflow: hidden; overflow: clip; }
+.rp-numero { position: absolute; z-index: 0; right: 2vw; top: 8%; font: 900 clamp(7rem, 20vw, 19rem)/1 var(--police-titres); font-stretch: 125%; letter-spacing: -.04em; color: transparent; -webkit-text-stroke: 1.5px rgba(14, 20, 34, .1); pointer-events: none; user-select: none; }
+.rangee-prestation--inverse .rp-numero { right: auto; left: 2vw; }
+.rp-grille { position: relative; z-index: 1; }
+.rp-tete { display: flex; align-items: center; gap: 14px; margin-bottom: 1.1em; }
+.rp-tete .surtitre { margin: 0; }
+.rp-picto { width: 52px; height: 52px; flex: none; border-radius: 50%; display: grid; place-items: center; background: var(--nuit); color: var(--clair); }
+.rp-picto .picto { width: 26px; height: 26px; --accent-texte: var(--rouge-vif); }
+.rp-ou { margin: 0 0 20px; }
+.rp-ou-titre { margin: 0 0 .6em; font-weight: 700; font-size: .95rem; }
+.jetons--clairs .jeton { background: #fff; color: var(--encre); box-shadow: inset 0 0 0 1px rgba(14, 20, 34, .2); }
+.jetons--clairs .jeton:hover { background: var(--encre); color: #fff; }
+@media (max-width: 860px) { .rp-numero { top: 2%; font-size: clamp(6rem, 34vw, 11rem); } }
+
+/* Secteurs : points de vigilance sur la photo. */
+.secteur-visuel { position: relative; width: min(100%, calc(76svh * .8)); justify-self: center; }
+.secteur--inverse .secteur-visuel { order: 2; }
+@media (max-width: 860px) { .secteur--inverse .secteur-visuel { order: 0; } }
+.secteur-grand-media { aspect-ratio: 4 / 5; max-height: none; }
+@media (max-width: 860px) { .secteur-grand-media { aspect-ratio: 4 / 5; } .secteur-visuel { width: min(100%, 520px); } }
+.vigie { position: absolute; z-index: 2; width: 36px; height: 36px; translate: -50% -50%; border-radius: 50%; display: grid; place-items: center;
+  background: rgba(10, 15, 28, .86); color: #fff; box-shadow: 0 0 0 2px var(--rouge-vif); font: 500 14px/1 var(--police-mono); transition: background-color .3s, box-shadow .3s; }
+.vigie::after { content: ""; position: absolute; inset: -2px; border-radius: 50%; border: 2px solid var(--rouge-vif); opacity: 0; animation: onde 2.6s cubic-bezier(.2, .6, .3, 1) infinite; animation-delay: calc(var(--k, 0) * .4s); }
+.vigie.actif { background: var(--rouge); box-shadow: 0 0 0 2px #fff, 0 0 0 10px rgba(215, 38, 43, .3); }
+.vigilance-liste { list-style: none; margin: 0 0 .6em; padding: 0; display: grid; gap: 8px; }
+.vigilance-liste li { display: grid; grid-template-columns: 28px minmax(0, 1fr); align-items: start; column-gap: 8px; border-radius: 6px; }
+.vl-num { width: 24px; height: 24px; border-radius: 50%; display: grid; place-items: center; box-shadow: inset 0 0 0 1.5px var(--rouge); color: var(--rouge-texte); font: 500 13px/1 var(--police-mono); }
+.vigilance-liste li.actif .vl-num { background: var(--rouge); color: #fff; }
+.vigilance-note { margin: 0 0 1.2em; font: 500 13px/1.4 var(--police-mono); color: var(--texte-doux); }
+html:not(.js) .vigilance-note { display: none; }
+
+/* L'agence : pictogrammes des engagements, écussons des qualifications. */
+.ec-tete { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.ec-picto { width: 30px; height: 30px; color: var(--clair); }
+.qualifs-liste li { border-top: 0; padding-top: 0; }
+.qualif-ecusson { display: block; width: 68px; height: 68px; color: var(--rouge-vif); }
+.ecusson { width: 100%; height: 100%; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; }
+.ecusson path + path { stroke: rgba(238, 240, 243, .35); stroke-width: 1.2; }
+
+/* Devis : la suite, et le tampon LASP qui se pose à l'envoi. */
+.la-suite { margin-top: 28px; padding: 20px 22px; border-radius: 8px; background: #fff; box-shadow: inset 0 0 0 1px rgba(14, 20, 34, .1); }
+.la-suite-titre { margin: 0 0 12px; font: 500 13px/1.4 var(--police-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--rouge-texte); }
+.la-suite ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: suite; }
+.la-suite li { display: grid; grid-template-columns: 30px minmax(0, 1fr); column-gap: 10px; counter-increment: suite; }
+.la-suite li::before { content: counter(suite); grid-row: span 2; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; background: var(--nuit); color: #fff; font: 500 13px/1 var(--police-mono); }
+.la-suite strong { font-size: 1rem; }
+.la-suite span { color: #4B5366; font-size: .95rem; }
+@media (max-width: 860px) { .la-suite { display: none; } }
+.tampon { position: relative; width: 172px; height: 172px; margin: 0 auto 20px; border-radius: 50%; border: 3px solid var(--rouge); color: var(--rouge-texte); display: grid; place-items: center; align-content: center; gap: 4px; transform: rotate(-8deg); text-align: center; }
+.tampon::before { content: ""; position: absolute; inset: 8px; border-radius: 50%; border: 1.5px dashed var(--rouge); }
+.tampon-mono { width: 54px; }
+.tampon-texte { max-width: 116px; font: 900 15px/1.05 var(--police-titres); font-stretch: 110%; text-transform: uppercase; text-wrap: balance; }
+.tampon-petit { font: 500 13px/1 var(--police-mono); letter-spacing: .08em; text-transform: uppercase; }
+
+/* 404 : la lampe cherche la page. */
+.ouv-404-media { z-index: -4; }
+
+/* Fil de la ronde, dans la marge des grands écrans. */
+.fil-ronde { position: fixed; z-index: 600; left: 22px; top: 50%; translate: 0 -50%; display: none; }
+@media (min-width: 1440px) and (min-height: 640px) { html.js:not(.secours) .fil-ronde { display: block; } }
+.fil-ronde ol { position: relative; list-style: none; margin: 0; padding: 0; display: grid; gap: 22px; }
+.fil-ronde ol::before { content: ""; position: absolute; left: 8px; top: 9px; bottom: 9px; border-left: 2px dotted rgba(167, 175, 192, .55); }
+.fil-progres-li { position: absolute; inset: 0; pointer-events: none; }
+.fil-progres { position: absolute; left: 8px; top: 9px; width: 2px; height: calc(100% - 18px); background: var(--rouge); transform-origin: 50% 0; transform: scaleY(var(--p, 0)); }
+.fil-ronde a { position: relative; display: block; width: 18px; height: 18px; border-radius: 50%; background: var(--nuit); box-shadow: 0 0 0 2px #59627A; transition: box-shadow .3s, background-color .3s; }
+.fil-ronde a.passe { box-shadow: 0 0 0 2px var(--rouge); }
+.fil-ronde a.actuel { background: var(--rouge); box-shadow: 0 0 0 2px var(--rouge), 0 0 0 7px rgba(215, 38, 43, .28); }
+.fil-ronde a span { position: absolute; left: 30px; top: 50%; translate: 0 -50%; white-space: nowrap; padding: 5px 10px; border-radius: 4px; background: var(--nuit); color: var(--clair); font: 500 13px/1.2 var(--police-mono); letter-spacing: .04em; visibility: hidden; opacity: 0; transition: opacity .2s, visibility .2s; }
+.fil-ronde a:hover span, .fil-ronde a:focus-visible span { visibility: visible; opacity: 1; }

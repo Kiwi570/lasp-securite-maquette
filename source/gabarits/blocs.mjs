@@ -40,7 +40,10 @@ export function fin(c, { id = 'fin', params = '' } = {}) {
   return html`<section class="fin s-nuit" id="${id}">
   <div class="fin-decor" data-visuel aria-hidden="true">${monogramme(c, 'fin-mono')}<span class="fin-faisceau" data-effet="balayage"></span></div>
   <div class="conteneur fin-contenu">
-    <h2 class="fin-titre" data-anime="lignes">${c.t('commun.finTitre1')}<br><em>${c.t('commun.finTitre2')}</em></h2>
+    <div class="fin-titre-bloc" data-anime>
+      <h2 class="fin-titre">${c.t('commun.finTitre1')}<br><em>${c.t('commun.finTitre2')}</em></h2>
+      <p class="fin-titre fin-lumiere" aria-hidden="true" data-audit-ignorer data-effet="lumiere-titre" data-grille="typo">${c.t('commun.finTitre1')}<br><em>${c.t('commun.finTitre2')}</em></p>
+    </div>
     <p class="fin-texte" data-anime>${c.t('commun.finTexte')}</p>
     <div class="fin-actions" data-anime>
       ${c.lien('devis', { ancre: 'demande', params, classe: 'bouton', texte: c.t('commun.finDevis'), attrs: 'data-survol="magnetique"' })}

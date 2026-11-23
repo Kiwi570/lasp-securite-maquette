@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-titres.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#0A0F1C">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -113,7 +113,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
   <div class="hero-nuit" aria-hidden="true" data-audit-ignorer></div>
-  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-audit-ignorer><span></span></div>
+  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-grille="manipuler" data-audit-ignorer><span></span></div>
   <div class="conteneur hero-contenu">
     <p class="surtitre hero-surtitre">Sécurité privée · Lyon</p>
     <h1 class="hero-titre" data-anime="gsap"><span class="hero-masque"><span class="hero-ligne">Jour et nuit,</span></span><span class="hero-masque"><span class="hero-ligne">on veille sur</span></span><span class="hero-masque"><span class="hero-ligne"><em>vos sites.</em></span></span></h1>
@@ -134,15 +134,19 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 </section>
 <section class="engagements s-nuit" id="engagements">
   <div class="conteneur engagements-grille">
+    <div class="cadran-col">
     <div class="cadran-bloc" data-visuel>
-      <svg class="cadran" viewBox="0 0 200 200" data-effet="cadran" role="img" aria-label="Les 24 heures d&#39;une journée de garde"><path class="cadran-seg" d="M102.76 8.04 A92 92 0 0 1 121.14 10.46 L117.92 24.09 A78 78 0 0 0 102.34 22.04 Z"/><path class="cadran-seg" d="M126.47 11.89 A92 92 0 0 1 143.59 18.98 L136.96 31.31 A78 78 0 0 0 122.44 25.30 Z"/><path class="cadran-seg" d="M148.37 21.74 A92 92 0 0 1 163.07 33.02 L153.48 43.22 A78 78 0 0 0 141.01 33.65 Z"/><path class="cadran-seg" d="M166.98 36.93 A92 92 0 0 1 178.26 51.63 L166.35 58.99 A78 78 0 0 0 156.78 46.52 Z"/><path class="cadran-seg" d="M181.02 56.41 A92 92 0 0 1 188.11 73.53 L174.70 77.56 A78 78 0 0 0 168.69 63.04 Z"/><path class="cadran-seg" d="M189.54 78.86 A92 92 0 0 1 191.96 97.24 L177.96 97.66 A78 78 0 0 0 175.91 82.08 Z"/><path class="cadran-seg" d="M191.96 102.76 A92 92 0 0 1 189.54 121.14 L175.91 117.92 A78 78 0 0 0 177.96 102.34 Z"/><path class="cadran-seg" d="M188.11 126.47 A92 92 0 0 1 181.02 143.59 L168.69 136.96 A78 78 0 0 0 174.70 122.44 Z"/><path class="cadran-seg" d="M178.26 148.37 A92 92 0 0 1 166.98 163.07 L156.78 153.48 A78 78 0 0 0 166.35 141.01 Z"/><path class="cadran-seg" d="M163.07 166.98 A92 92 0 0 1 148.37 178.26 L141.01 166.35 A78 78 0 0 0 153.48 156.78 Z"/><path class="cadran-seg" d="M143.59 181.02 A92 92 0 0 1 126.47 188.11 L122.44 174.70 A78 78 0 0 0 136.96 168.69 Z"/><path class="cadran-seg" d="M121.14 189.54 A92 92 0 0 1 102.76 191.96 L102.34 177.96 A78 78 0 0 0 117.92 175.91 Z"/><path class="cadran-seg" d="M97.24 191.96 A92 92 0 0 1 78.86 189.54 L82.08 175.91 A78 78 0 0 0 97.66 177.96 Z"/><path class="cadran-seg" d="M73.53 188.11 A92 92 0 0 1 56.41 181.02 L63.04 168.69 A78 78 0 0 0 77.56 174.70 Z"/><path class="cadran-seg" d="M51.63 178.26 A92 92 0 0 1 36.93 166.98 L46.52 156.78 A78 78 0 0 0 58.99 166.35 Z"/><path class="cadran-seg" d="M33.02 163.07 A92 92 0 0 1 21.74 148.37 L33.65 141.01 A78 78 0 0 0 43.22 153.48 Z"/><path class="cadran-seg" d="M18.98 143.59 A92 92 0 0 1 11.89 126.47 L25.30 122.44 A78 78 0 0 0 31.31 136.96 Z"/><path class="cadran-seg" d="M10.46 121.14 A92 92 0 0 1 8.04 102.76 L22.04 102.34 A78 78 0 0 0 24.09 117.92 Z"/><path class="cadran-seg" d="M8.04 97.24 A92 92 0 0 1 10.46 78.86 L24.09 82.08 A78 78 0 0 0 22.04 97.66 Z"/><path class="cadran-seg" d="M11.89 73.53 A92 92 0 0 1 18.98 56.41 L31.31 63.04 A78 78 0 0 0 25.30 77.56 Z"/><path class="cadran-seg" d="M21.74 51.63 A92 92 0 0 1 33.02 36.93 L43.22 46.52 A78 78 0 0 0 33.65 58.99 Z"/><path class="cadran-seg" d="M36.93 33.02 A92 92 0 0 1 51.63 21.74 L58.99 33.65 A78 78 0 0 0 46.52 43.22 Z"/><path class="cadran-seg" d="M56.41 18.98 A92 92 0 0 1 73.53 11.89 L77.56 25.30 A78 78 0 0 0 63.04 31.31 Z"/><path class="cadran-seg" d="M78.86 10.46 A92 92 0 0 1 97.24 8.04 L97.66 22.04 A78 78 0 0 0 82.08 24.09 Z"/></svg>
+      <svg class="cadran" viewBox="0 0 200 200" data-effet="cadran" role="img" aria-label="Les 24 heures d&#39;une journée de garde"><path class="cadran-seg" d="M102.76 8.04 A92 92 0 0 1 121.14 10.46 L117.92 24.09 A78 78 0 0 0 102.34 22.04 Z"/><path class="cadran-seg" d="M126.47 11.89 A92 92 0 0 1 143.59 18.98 L136.96 31.31 A78 78 0 0 0 122.44 25.30 Z"/><path class="cadran-seg" d="M148.37 21.74 A92 92 0 0 1 163.07 33.02 L153.48 43.22 A78 78 0 0 0 141.01 33.65 Z"/><path class="cadran-seg" d="M166.98 36.93 A92 92 0 0 1 178.26 51.63 L166.35 58.99 A78 78 0 0 0 156.78 46.52 Z"/><path class="cadran-seg" d="M181.02 56.41 A92 92 0 0 1 188.11 73.53 L174.70 77.56 A78 78 0 0 0 168.69 63.04 Z"/><path class="cadran-seg" d="M189.54 78.86 A92 92 0 0 1 191.96 97.24 L177.96 97.66 A78 78 0 0 0 175.91 82.08 Z"/><path class="cadran-seg" d="M191.96 102.76 A92 92 0 0 1 189.54 121.14 L175.91 117.92 A78 78 0 0 0 177.96 102.34 Z"/><path class="cadran-seg" d="M188.11 126.47 A92 92 0 0 1 181.02 143.59 L168.69 136.96 A78 78 0 0 0 174.70 122.44 Z"/><path class="cadran-seg" d="M178.26 148.37 A92 92 0 0 1 166.98 163.07 L156.78 153.48 A78 78 0 0 0 166.35 141.01 Z"/><path class="cadran-seg" d="M163.07 166.98 A92 92 0 0 1 148.37 178.26 L141.01 166.35 A78 78 0 0 0 153.48 156.78 Z"/><path class="cadran-seg" d="M143.59 181.02 A92 92 0 0 1 126.47 188.11 L122.44 174.70 A78 78 0 0 0 136.96 168.69 Z"/><path class="cadran-seg" d="M121.14 189.54 A92 92 0 0 1 102.76 191.96 L102.34 177.96 A78 78 0 0 0 117.92 175.91 Z"/><path class="cadran-seg" d="M97.24 191.96 A92 92 0 0 1 78.86 189.54 L82.08 175.91 A78 78 0 0 0 97.66 177.96 Z"/><path class="cadran-seg" d="M73.53 188.11 A92 92 0 0 1 56.41 181.02 L63.04 168.69 A78 78 0 0 0 77.56 174.70 Z"/><path class="cadran-seg" d="M51.63 178.26 A92 92 0 0 1 36.93 166.98 L46.52 156.78 A78 78 0 0 0 58.99 166.35 Z"/><path class="cadran-seg" d="M33.02 163.07 A92 92 0 0 1 21.74 148.37 L33.65 141.01 A78 78 0 0 0 43.22 153.48 Z"/><path class="cadran-seg" d="M18.98 143.59 A92 92 0 0 1 11.89 126.47 L25.30 122.44 A78 78 0 0 0 31.31 136.96 Z"/><path class="cadran-seg" d="M10.46 121.14 A92 92 0 0 1 8.04 102.76 L22.04 102.34 A78 78 0 0 0 24.09 117.92 Z"/><path class="cadran-seg" d="M8.04 97.24 A92 92 0 0 1 10.46 78.86 L24.09 82.08 A78 78 0 0 0 22.04 97.66 Z"/><path class="cadran-seg" d="M11.89 73.53 A92 92 0 0 1 18.98 56.41 L31.31 63.04 A78 78 0 0 0 25.30 77.56 Z"/><path class="cadran-seg" d="M21.74 51.63 A92 92 0 0 1 33.02 36.93 L43.22 46.52 A78 78 0 0 0 33.65 58.99 Z"/><path class="cadran-seg" d="M36.93 33.02 A92 92 0 0 1 51.63 21.74 L58.99 33.65 A78 78 0 0 0 46.52 43.22 Z"/><path class="cadran-seg" d="M56.41 18.98 A92 92 0 0 1 73.53 11.89 L77.56 25.30 A78 78 0 0 0 63.04 31.31 Z"/><path class="cadran-seg" d="M78.86 10.46 A92 92 0 0 1 97.24 8.04 L97.66 22.04 A78 78 0 0 0 82.08 24.09 Z"/><path class="cadran-maintenant" data-cadran-maintenant d=""/><g class="cadran-marque" data-cadran-marque><path d="M100 1.5 L106 10 L94 10 Z"/></g></svg>
+      <ul class="cadran-heures" aria-hidden="true"><li style="left:50%;top:19%">0 h</li><li style="left:81%;top:50%">6 h</li><li style="left:50%;top:81%">12 h</li><li style="left:19%;top:50%">18 h</li></ul>
       <p class="cadran-grand" aria-hidden="true">24/7</p>
+    </div>
+    <p class="cadran-heure" data-heure aria-live="off"><strong><span>Il est</span> <span data-heure-valeur>…</span> <span>à Lyon.</span></strong> À cette heure comme à toutes les autres, l&#39;agence reste réactive.</p>
     </div>
     <div class="engagements-texte">
       <p class="surtitre ">Pourquoi LASP</p>
       <h2 data-anime="lignes">Une présence continue, des agents qui savent quoi faire.</h2>
       <p class="intro" data-anime>Jour, nuit, week-end : l&#39;agence répond et les agents tiennent leur poste.</p>
-      <ul class="engagements-liste" data-anime="cascade"><li><strong>Agents qualifiés et opérationnels</strong><span>Agents de sécurité, agents SSIAP et agents cynophiles.</span></li><li><strong>Réactivité 24h/24 et 7j/7</strong><span>Jour, nuit et week-end.</span></li><li><strong>Environnements industriels et sensibles</strong><span>Des sites que nous savons protéger.</span></li><li><strong>PTI, radios, véhicules</strong><span>Des agents équipés, joignables et mobiles.</span></li><li><strong>Suivi et qualité de service</strong><span>Une qualité constante, mission après mission.</span></li></ul>
+      <ul class="engagements-liste" data-anime="cascade"><li><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4L7 21l5-2.6 5 2.6-1.6-7.6"/><path class="pi-r" d="M9.8 9.1l1.5 1.5 2.9-3"/></svg><strong>Agents qualifiés et opérationnels</strong><span>Agents de sécurité, agents SSIAP et agents cynophiles.</span></li><li><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.4 2"/><path class="pi-r" d="M12 2.5v1.6M21.5 12h-1.6M12 21.5v-1.6M2.5 12h1.6"/></svg><strong>Réactivité 24h/24 et 7j/7</strong><span>Jour, nuit et week-end.</span></li><li><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20V10.5l5 3v-3l5 3v-3l5 3V4h3v16z"/><path d="M6.5 17h2M11 17h2M15.5 17h2"/></svg><strong>Environnements industriels et sensibles</strong><span>Des sites que nous savons protéger.</span></li><li><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="8" width="10" height="13" rx="2"/><path d="M9.5 8V3M9.5 12h5M9.5 14.5h5"/><circle class="pi-r" cx="12" cy="18" r="1.2"/></svg><strong>PTI, radios, véhicules</strong><span>Des agents équipés, joignables et mobiles.</span></li><li><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20V4M4 20h16"/><path class="pi-r" d="M7.5 15l3.5-3.6 3 2.6 5-6"/></svg><strong>Suivi et qualité de service</strong><span>Une qualité constante, mission après mission.</span></li></ul>
     </div>
   </div>
 </section>
@@ -154,58 +158,58 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="intro" data-anime>Chaque prestation se combine avec les autres pour former le dispositif qui convient à votre site.</p>
     </div>
     <ul class="cartes-prestations"><li class="carte-prestation">
-      <a href="/prestations#agent" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#agent" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:55% 50%">
   <picture>
     <img src="/assets/images/grok/prestation-agent-1168.webp" srcset="/assets/images/grok/prestation-agent-640.webp 640w, /assets/images/grok/prestation-agent-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Agent de sécurité</span><span class="carte-court">Gardiennage, accueil et contrôle d&#39;accès</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3l7 3v5.2c0 4.4-2.9 7.8-7 9.8-4.1-2-7-5.4-7-9.8V6z"/><path d="M8.8 12.2l2.2 2.2 4.2-4.4"/></svg></span><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Agent de sécurité</span><span class="carte-court">Gardiennage, accueil et contrôle d&#39;accès</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li><li class="carte-prestation">
-      <a href="/prestations#maitre-chien" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#maitre-chien" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:50% 55%">
   <picture>
     <img src="/assets/images/grok/prestation-maitre-chien-1168.webp" srcset="/assets/images/grok/prestation-maitre-chien-640.webp 640w, /assets/images/grok/prestation-maitre-chien-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">Agents cynophiles</span><span class="carte-titre">Maître-chien</span><span class="carte-court">Agent cynophile et son chien</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><ellipse cx="12" cy="15.6" rx="4.2" ry="3.6"/><circle cx="6.2" cy="10.4" r="1.8"/><circle cx="9.6" cy="6.6" r="1.8"/><circle cx="14.4" cy="6.6" r="1.8"/><circle cx="17.8" cy="10.4" r="1.8"/></svg></span><span class="carte-qualif">Agents cynophiles</span><span class="carte-titre">Maître-chien</span><span class="carte-court">Agent cynophile et son chien</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li><li class="carte-prestation">
-      <a href="/prestations#incendie" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#incendie" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/grok/prestation-incendie-1168.webp" srcset="/assets/images/grok/prestation-incendie-640.webp 640w, /assets/images/grok/prestation-incendie-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">SSIAP 1, 2 et 3</span><span class="carte-titre">Sécurité incendie</span><span class="carte-court">Agents SSIAP 1, 2 et 3</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3c.8 3 4.6 5 4.6 9.6a4.6 4.6 0 0 1-9.2 0c0-2.2 1.1-3.6 2.3-4.6 0 1.8.8 3 2 3.2C11.4 8.6 10.8 6 12 3z"/><path class="pi-r" d="M12 14.2c.9.9 1.6 1.8 1.6 2.9a1.6 1.6 0 0 1-3.2 0c0-1 .7-1.9 1.6-2.9z"/></svg></span><span class="carte-qualif">SSIAP 1, 2 et 3</span><span class="carte-titre">Sécurité incendie</span><span class="carte-court">Agents SSIAP 1, 2 et 3</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li><li class="carte-prestation">
-      <a href="/prestations#evenementiel" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#evenementiel" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/grok/prestation-evenementiel-1168.webp" srcset="/assets/images/grok/prestation-evenementiel-640.webp 640w, /assets/images/grok/prestation-evenementiel-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Événementiel</span><span class="carte-court">Accès, filtrage et flux du public</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3.5 8h17v3a2 2 0 0 0 0 4v3h-17v-3a2 2 0 0 0 0-4z"/><path d="M14.5 8v10" stroke-dasharray="1.6 1.8"/></svg></span><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Événementiel</span><span class="carte-court">Accès, filtrage et flux du public</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li><li class="carte-prestation">
-      <a href="/prestations#magasin" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#magasin" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/grok/prestation-magasin-1168.webp" srcset="/assets/images/grok/prestation-magasin-640.webp 640w, /assets/images/grok/prestation-magasin-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Magasin</span><span class="carte-court">Prévention des vols</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5.5 8.5h13l-1.2 11.5H6.7z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg></span><span class="carte-qualif">Agents ADS</span><span class="carte-titre">Magasin</span><span class="carte-court">Prévention des vols</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li><li class="carte-prestation">
-      <a href="/prestations#rondes" data-libelle="Prestations" class="carte-lien" data-effet="allumage">
+      <a href="/prestations#rondes" data-libelle="Prestations" class="carte-lien" data-effet="allumage" data-survol="incline">
         <figure class="media carte-media" data-grok style="--cadrage:50% 50%">
   <picture>
     <img src="/assets/images/grok/prestation-rondier-1168.webp" srcset="/assets/images/grok/prestation-rondier-640.webp 640w, /assets/images/grok/prestation-rondier-1168.webp 1168w" sizes="(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px" alt="" width="1168" height="876" loading="lazy" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
-        <span class="carte-corps"><span class="carte-qualif">Rondiers, intervenants</span><span class="carte-titre">Intervention et rondes</span><span class="carte-court">Rondier, intervenant</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
+        <span class="carte-corps"><span class="carte-picto"><svg class="picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 10h8.5l4-2.8v9.6l-4-2.8H3z"/><path class="pi-r" d="M18.5 8.5l2.5-1.6M18.5 12H21.5M18.5 15.5l2.5 1.6"/></svg></span><span class="carte-qualif">Rondiers, intervenants</span><span class="carte-titre">Intervention et rondes</span><span class="carte-court">Rondier, intervenant</span><span class="carte-voir">Voir le détail <svg class="fleche" viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11M11 5l5 5-5 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></span>
       </a>
     </li></ul>
     <p class="centre" data-anime><a href="/prestations" class="bouton bouton--contour" data-libelle="Prestations">Toutes les prestations</a></p>
@@ -274,6 +278,11 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <div class="dispositif-resultat" data-visuel data-effet="dispositif">
       <p class="dispositif-titre">Prestations conseillées</p>
       <ul class="dispositif-liste" aria-live="polite"><li data-prestation="agent"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Agent de sécurité</span><span class="dl-etat"></span></li><li data-prestation="maitre-chien"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Maître-chien</span><span class="dl-etat"></span></li><li data-prestation="incendie"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Sécurité incendie</span><span class="dl-etat"></span></li><li data-prestation="evenementiel"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Événementiel</span><span class="dl-etat"></span></li><li data-prestation="magasin"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Magasin</span><span class="dl-etat"></span></li><li data-prestation="rondes"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">Intervention et rondes</span><span class="dl-etat"></span></li></ul>
+      <div class="bande-24" data-bande aria-hidden="true">
+        <p class="bande-titre">Plage horaire, indicative · <span data-bande-libelle>Nuit</span></p>
+        <div class="bande-cases"><span data-h="0"></span><span data-h="1"></span><span data-h="2"></span><span data-h="3"></span><span data-h="4"></span><span data-h="5"></span><span data-h="6"></span><span data-h="7"></span><span data-h="8"></span><span data-h="9"></span><span data-h="10"></span><span data-h="11"></span><span data-h="12"></span><span data-h="13"></span><span data-h="14"></span><span data-h="15"></span><span data-h="16"></span><span data-h="17"></span><span data-h="18"></span><span data-h="19"></span><span data-h="20"></span><span data-h="21"></span><span data-h="22"></span><span data-h="23"></span></div>
+        <div class="bande-reperes"><span>0 h</span><span>6 h</span><span>12 h</span><span>18 h</span><span>24 h</span></div>
+      </div>
       <p class="dispositif-note">Suggestion indicative, établie à partir de vos réponses.</p>
       <a class="bouton" href="/devis#demande" data-libelle="Devis &amp; contact" data-dispositif-lien>Demander un devis pour ce dispositif</a>
     </div>
@@ -323,7 +332,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="fin s-nuit" id="fin">
   <div class="fin-decor" data-visuel aria-hidden="true"><svg class="monogramme fin-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span class="fin-faisceau" data-effet="balayage"></span></div>
   <div class="conteneur fin-contenu">
-    <h2 class="fin-titre" data-anime="lignes">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+    <div class="fin-titre-bloc" data-anime>
+      <h2 class="fin-titre">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+      <p class="fin-titre fin-lumiere" aria-hidden="true" data-audit-ignorer data-effet="lumiere-titre" data-grille="typo">Un site à protéger ?<br><em>Parlons-en maintenant.</em></p>
+    </div>
     <p class="fin-texte" data-anime>Décrivez votre besoin : nous vous proposons un dispositif sur mesure.</p>
     <div class="fin-actions" data-anime>
       <a href="/devis#demande" class="bouton" data-libelle="Devis &amp; contact" data-survol="magnetique">Demander un devis</a>
@@ -332,6 +344,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<nav class="fil-ronde" aria-label="Ronde de la page" data-fil="Aller à" data-grille="fil"><ol><li class="fil-progres-li" aria-hidden="true"><span class="fil-progres"></span></li></ol></nav>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">
     <div class="pied-marque">

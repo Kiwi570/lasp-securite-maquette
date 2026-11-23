@@ -1,22 +1,27 @@
 [
  {
   "titre": "Agents qualifiés et opérationnels",
-  "texte": "Agents de sécurité, agents SSIAP et agents cynophiles."
+  "texte": "Agents de sécurité, agents SSIAP et agents cynophiles.",
+  "icone": "qualifies"
  },
  {
   "titre": "Réactivité 24h/24 et 7j/7",
-  "texte": "Jour, nuit et week-end."
+  "texte": "Jour, nuit et week-end.",
+  "icone": "horloge"
  },
  {
   "titre": "Environnements industriels et sensibles",
-  "texte": "Des sites que nous savons protéger."
+  "texte": "Des sites que nous savons protéger.",
+  "icone": "usine"
  },
  {
   "titre": "PTI, radios, véhicules",
-  "texte": "Des agents équipés, joignables et mobiles."
+  "texte": "Des agents équipés, joignables et mobiles.",
+  "icone": "radio"
  },
  {
   "titre": "Suivi et qualité de service",
-  "texte": "Une qualité constante, mission après mission."
+  "texte": "Une qualité constante, mission après mission.",
+  "icone": "suivi"
  }
 ]

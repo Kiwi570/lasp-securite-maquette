@@ -34,7 +34,10 @@ export default (c) => {
 
 ${S.map((s, i) => html`<section class="secteur s-clair${i % 2 ? ' secteur--inverse' : ''}" id="${s.id}">
   <div class="conteneur secteur-grille">
-    ${c.media({ nom: s.image, alt: s.titre, classe: 'secteur-grand-media', sizes: '(max-width: 760px) 100vw, 40vw', attrs: 'data-anime="rideau"' })}
+    <div class="secteur-visuel" data-vigilance>
+      ${c.media({ nom: s.image, alt: s.titre, classe: 'secteur-grand-media', sizes: '(max-width: 760px) 100vw, 40vw', attrs: 'data-anime="rideau"' })}
+      ${s.points.map(([x, y], k) => html`<span class="vigie" style="left:${x}%;top:${y}%" data-vigie="${k}" data-effet="vigilance" aria-hidden="true" data-superpose><span>${k + 1}</span></span>`)}
+    </div>
     <div class="secteur-texte">
       ${surtitre(s.court)}
       <h2 data-anime="lignes">${s.titre}</h2>
@@ -42,7 +45,8 @@ ${S.map((s, i) => html`<section class="secteur s-clair${i % 2 ? ' secteur--inver
       <div class="secteur-colonnes">
         <div>
           <h3>${T('besoins')}</h3>
-          <ul class="coches" data-anime="cascade">${s.besoins.map((b) => html`<li>${b}</li>`)}</ul>
+          <ol class="vigilance-liste" data-anime="cascade">${s.besoins.map((b, k) => html`<li data-vigie-lien="${k}"><span class="vl-num" aria-hidden="true">${k + 1}</span>${b}</li>`)}</ol>
+          <p class="vigilance-note">${T('vigilance')}</p>
         </div>
         <div>
           <h3>${T('conseille')}</h3>

@@ -2,12 +2,15 @@
    en grandes rangées photo et texte, la bande des cinq gestes, l'appel final. */
 import { html } from '../../outils/gabarit.mjs';
 import { surtitre, fin, fleche, apercu } from '../gabarits/blocs.mjs';
+import { icone } from '../gabarits/icones.mjs';
 
 export const page = { cle: 'prestations', fichier: 'prestations' };
 
 export default (c) => {
   const T = (k) => c.t(`prestations.${k}`);
   const P = c.donnees.prestations;
+  /* Secteurs où chaque prestation est conseillée (lecture inverse de secteurs.json). */
+  const ou = (id) => c.donnees.secteurs.filter((s) => s.prestations.includes(id));
   return html`
 <section class="ouv-fuite s-nuit" id="debut" data-plein-ecran>
   <div class="ouv-fuite-cadre" data-effet="point-de-fuite">
@@ -31,14 +34,16 @@ export default (c) => {
 </nav>
 
 ${P.map((p, i) => html`<section class="rangee-prestation s-clair${i % 2 ? ' rangee-prestation--inverse' : ''}" id="${p.id}">
+  <span class="rp-numero" aria-hidden="true" data-audit-ignorer data-effet="numero">${String(i + 1).padStart(2, '0')}</span>
   <div class="conteneur rp-grille">
-    ${c.media({ nom: p.image, alt: c.s('prestations.missions') + ' : ' + p.titre, cadrage: p.cadrage, classe: 'rp-media', sizes: '(max-width: 760px) 100vw, 50vw', attrs: 'data-anime="rideau"' })}
+    ${c.media({ nom: p.image, alt: c.s('prestations.missions') + ' : ' + p.titre, cadrage: p.cadrage, classe: 'rp-media', sizes: '(max-width: 760px) 100vw, 50vw', attrs: 'data-anime="rideau"' })}
     <div class="rp-texte">
-      ${surtitre(p.qualif)}
+      <div class="rp-tete"><span class="rp-picto" data-anime>${icone(p.id)}</span>${surtitre(p.qualif)}</div>
       <h2 data-anime="lignes">${p.titre}</h2>
       <p class="rp-court">${p.court}</p>
       <p data-anime>${p.texte}</p>
       <ul class="coches" data-anime="cascade">${p.points.map((x) => html`<li>${x}</li>`)}</ul>
+      <div class="rp-ou"><p class="rp-ou-titre">${T('pourQui')}</p><ul class="jetons jetons--clairs">${ou(p.id).map((s) => html`<li>${c.lien('secteurs', { ancre: s.id, texte: s.titre, classe: 'jeton' })}</li>`)}</ul></div>
       <p>${c.lien('devis', { ancre: 'demande', params: `prestation=${p.id}`, classe: 'lien-fleche', texte: html`${T('devis')} : ${p.titre} ${fleche()}` })}</p>
     </div>
   </div>
@@ -49,6 +54,7 @@ ${P.map((p, i) => html`<section class="rangee-prestation s-clair${i % 2 ? ' rang
     <div>
       ${surtitre(T('dispositifsTitre'))}
       <h2 data-anime="lignes">${T('dispositifsTexte')}</h2>
+      <p class="intro" data-anime>${T('dispositifsIntro')}</p>
     </div>
     <ol class="gestes-liste" data-visuel>${c.donnees.listes.dispositifs.map((d, i) => html`<li style="--i:${i}" data-effet="gestes"><span class="geste-trait" aria-hidden="true"></span>${d}</li>`)}</ol>
   </div>

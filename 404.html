@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-titres.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#0A0F1C">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -112,6 +112,8 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
     <img src="/assets/images/grok/404-1280.webp" srcset="/assets/images/grok/404-640.webp 640w, /assets/images/grok/404-1280.webp 1280w, /assets/images/grok/404-1920.webp 1920w" sizes="100vw" alt="Cadenas sur un portail fermé, dans le faisceau d&#39;une lampe" width="1280" height="720" fetchpriority="high" loading="eager" decoding="async">
   </picture><figcaption class="mention-ia">Illustration générée</figcaption>
 </figure>
+  <div class="hero-nuit" aria-hidden="true" data-audit-ignorer></div>
+  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-audit-ignorer><span></span></div>
   <span class="spot-404" data-iris-centre="disque" aria-hidden="true"></span>
   <div class="conteneur ouv-404-contenu">
     <p class="surtitre ouv-surtitre">Erreur 404</p>
@@ -122,6 +124,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<nav class="fil-ronde" aria-label="Ronde de la page" data-fil="Aller à" data-grille="fil"><ol><li class="fil-progres-li" aria-hidden="true"><span class="fil-progres"></span></li></ol></nav>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">
     <div class="pied-marque">

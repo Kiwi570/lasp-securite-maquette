@@ -40,7 +40,10 @@ Adresse de la maquette : https://lasp-securite-maquette.vercel.app
 ## Outils de la maquette (simulés)
 
 - « Votre dispositif » (accueil) : suggestion indicative de prestations selon le site, les horaires et la priorité ; elle préremplit la demande de devis.
-- Demande de devis en trois étapes : l'envoi est simulé, rien n'est transmis.
+- Demande de devis en trois étapes : l'envoi est simulé, rien n'est transmis ; le tampon « Demande prête » est un retour visuel.
+- Horloge de 24 heures (accueil) : l'heure affichée est l'heure réelle de Lyon, lue dans le navigateur du visiteur.
+- Points de vigilance (Secteurs) : posés sur des illustrations ; à repositionner (fichier `donnees/secteurs.json`, champ `points`) quand les vraies photos des sites remplaceront les illustrations.
+- Bande des 24 heures de l'outil « Votre dispositif » : plages indicatives (journée 7 h – 19 h, nuit 19 h – 7 h), à ajuster si le client a ses propres créneaux.
 
 ## À la mise en ligne définitive
 

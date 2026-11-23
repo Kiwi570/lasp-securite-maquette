@@ -5,8 +5,8 @@
    cadran (24 segments qui s'allument), allumage (cartes qui s'allument), rangee (secteurs qui glissent),
    dispositif (outil, voyants qui balaient puis se posent), pointage (ronde en quatre temps), carte (plan qui pulse),
    balayage (faisceau de l'appel final), point-de-fuite, vue-descend, radar, valeurs, gestes, trace-ville. */
-import { demarrer, boucle, versObjet } from './socle/index.js?v=1';
-import { init as initFormulaire } from './modules/formulaire-par-etapes/module.js?v=1';
+import { demarrer, boucle, versObjet } from './socle/index.js?v=2';
+import { init as initFormulaire } from './modules/formulaire-par-etapes/module.js?v=2';
 
 const gsap = window.gsap;
 const ST = window.ScrollTrigger;
@@ -15,76 +15,127 @@ const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 const souris = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 const borne = (v, a, b) => Math.min(b, Math.max(a, v));
 
-/* ---------- Faisceau de l'ouverture ---------- */
-const F = { hero: null, nuit: null, cone: null, sceau: null, W: 0, H: 0, ox: 0, oy: 0, repos: { x: 0, y: 0 }, p: { x: 0, y: 0 }, descente: 0, qx: null, qy: null, pret: false };
-
-function mesurerFaisceau() {
-  const h = F.hero; if (!h) return;
-  const r = h.getBoundingClientRect(), s = F.sceau.getBoundingClientRect();
-  F.W = r.width; F.H = r.height;
-  F.ox = s.left - r.left + s.width / 2; F.oy = s.top - r.top + s.height / 2;
-  const tel = F.W < 761;
-  F.repos = tel ? { x: F.W * 0.42, y: F.H * 0.42 } : { x: F.W * 0.6, y: F.H * 0.48 };
-  F.base = Math.max(window.innerWidth, window.innerHeight);
-}
-
-function rendreFaisceau() {
-  if (!F.hero || !gsap) return;
-  const x = F.p.x, y = F.p.y + F.descente;
-  gsap.set(F.nuit, { x: x - F.W / 2, y: y - F.H / 2 });
-  const dx = x - F.ox, dy = y - F.oy, d = Math.hypot(dx, dy);
-  gsap.set(F.cone, { x: F.ox, y: F.oy, rotation: (Math.atan2(dy, dx) * 180) / Math.PI, scaleX: Math.max(0.05, (d * 1.12) / F.base) });
-}
-
-function preparerFaisceau() {
-  F.hero = $('.hero'); if (!F.hero || !gsap) return;
-  F.nuit = $('.hero-nuit', F.hero); F.cone = $('.hero-faisceau', F.hero); F.sceau = $('.sceau', F.hero);
-  mesurerFaisceau();
-  F.p = { ...F.repos };
-  rendreFaisceau();
-  const proxy = F.p;
-  F.qx = gsap.quickTo(proxy, 'x', { duration: 0.9, ease: 'power3.out', onUpdate: rendreFaisceau });
-  F.qy = gsap.quickTo(proxy, 'y', { duration: 0.9, ease: 'power3.out', onUpdate: rendreFaisceau });
-  /* La lampe descend avec la page : le faisceau glisse vers le bas quand on quitte l'ouverture. */
-  ST && ST.create({ trigger: F.hero, start: 'top top', end: 'bottom top', scrub: 0.4,
-    onUpdate: (st) => { F.descente = st.progress * F.H * 0.35; rendreFaisceau(); } });
-  window.addEventListener('resize', () => { mesurerFaisceau(); if (!F.suit) { F.p.x = F.repos.x; F.p.y = F.repos.y; } rendreFaisceau(); });
-  /* Ordinateur : le faisceau suit la souris (et s'arrête avec elle). */
+/* ---------- Faisceau : la lampe de la ronde (accueil et 404) ----------
+   Un voile de nuit percé d'un halo (translation seule) et un cône de lumière (rotation et étirement) partent d'une origine
+   (le sceau de l'accueil, le coin bas de la 404). Il balaie seul tant que la souris ne l'a pas pris ; sur ordinateur il suit
+   la souris et s'arrête avec elle ; sur écran tactile, toucher la photo l'y dirige. Une pluie fine n'est visible que dans le cône. */
+const lampes = [];
+function creerLampe(section, { origine, repos, pluie = true }) {
+  const L = { section, nuit: $('.hero-nuit', section), cone: $('.hero-faisceau', section), W: 0, H: 0, ox: 0, oy: 0, base: 1,
+    repos: { x: 0, y: 0 }, p: { x: 0, y: 0 }, descente: 0, pret: false, suit: false, angle: 0, longueur: 0, pluie: null };
+  const mesurer = () => {
+    const r = section.getBoundingClientRect();
+    L.W = r.width; L.H = r.height; L.base = Math.max(window.innerWidth, window.innerHeight);
+    const o = origine(r); L.ox = o.x; L.oy = o.y;
+    L.repos = repos(r);
+  };
+  const rendre = () => {
+    const x = L.p.x, y = L.p.y + L.descente;
+    gsap.set(L.nuit, { x: x - L.W / 2, y: y - L.H / 2 });
+    const dx = x - L.ox, dy = y - L.oy, d = Math.hypot(dx, dy);
+    L.angle = Math.atan2(dy, dx); L.longueur = d * 1.12;
+    gsap.set(L.cone, { x: L.ox, y: L.oy, rotation: (L.angle * 180) / Math.PI, scaleX: Math.max(0.05, L.longueur / L.base) });
+  };
+  L.mesurer = mesurer; L.rendre = rendre;
+  mesurer(); L.p = { ...L.repos }; rendre();
+  const qx = gsap.quickTo(L.p, 'x', { duration: 0.9, ease: 'power3.out', onUpdate: rendre });
+  const qy = gsap.quickTo(L.p, 'y', { duration: 0.9, ease: 'power3.out', onUpdate: rendre });
+  const viser = (x, y) => { qx(borne(x, L.W * 0.06, L.W * 0.96)); qy(borne(y - L.descente, L.H * 0.1, L.H * 0.94)); };
+  ST && ST.create({ trigger: section, start: 'top top', end: 'bottom top', scrub: 0.4, onUpdate: (st) => { L.descente = st.progress * L.H * 0.35; rendre(); } });
+  window.addEventListener('resize', () => { mesurer(); rendre(); });
   if (souris) {
-    F.hero.addEventListener('pointermove', (e) => {
-      if (!F.pret) return;
-      const r = F.hero.getBoundingClientRect();
-      if (!F.suit) { F.suit = true; F.qx(F.p.x, F.p.x); F.qy(F.p.y, F.p.y); }
-      F.qx(borne(e.clientX - r.left, F.W * 0.08, F.W * 0.95));
-      F.qy(borne(e.clientY - r.top - F.descente, F.H * 0.12, F.H * 0.92));
+    section.addEventListener('pointermove', (e) => {
+      if (!L.pret || e.pointerType !== 'mouse') return;
+      const r = section.getBoundingClientRect();
+      L.suit = true; viser(e.clientX - r.left, e.clientY - r.top);
+    });
+    /* La souris quitte la photo : l'agent reprend sa ronde. */
+    section.addEventListener('pointerleave', (e) => { if (e.pointerType === 'mouse') L.suit = false; });
+  }
+  /* Écran tactile : toucher la photo y dirige la lampe, qui reprend sa ronde 3,5 s plus tard. */
+  let reprise = 0;
+  section.addEventListener('pointerdown', (e) => {
+    if (!L.pret || e.pointerType === 'mouse' || e.target.closest('a, button, input, label')) return;
+    const r = section.getBoundingClientRect();
+    L.suit = true; viser(e.clientX - r.left, e.clientY - r.top);
+    clearTimeout(reprise); reprise = setTimeout(() => { L.suit = false; }, 3500);
+  });
+  /* Ronde lente tant que personne ne tient la lampe (boucle arrêtée hors écran et onglet caché). */
+  let t0 = null;
+  /* Une boucle par élément (le socle en garde une seule par élément) : la ronde sur le voile, la pluie sur sa toile. */
+  boucle(L.nuit, (dt, t) => {
+    if (!L.pret || L.suit) return;
+    if (t0 === null) t0 = t;
+    const u = t - t0, amorce = Math.min(1, u / 1.5), tel = L.W < 761;
+    viser(L.repos.x + Math.sin(u * 0.42) * L.W * (tel ? 0.26 : 0.16) * amorce, L.repos.y + L.descente + Math.sin(u * 0.29) * L.H * 0.07 * amorce);
+  });
+  if (pluie) L.pluie = creerPluie(L);
+  L.balayer = () => {
+    mesurer(); L.p.x = L.W * 0.08; L.p.y = L.H * 0.78;
+    gsap.to(L.cone, { opacity: 1, duration: 0.35, ease: 'power1.out' });
+    gsap.to(L.p, { x: L.repos.x, y: L.repos.y, duration: 1.25, ease: 'power2.inOut', onUpdate: rendre, onComplete: () => { L.pret = true; } });
+  };
+  L.final = () => { mesurer(); L.p.x = L.repos.x; L.p.y = L.repos.y; L.pret = true; gsap.set(L.cone, { opacity: 1 }); rendre(); };
+  lampes.push(L);
+  return L;
+}
+
+/* Pluie fine : des traits obliques qui tombent partout, mais qu'on ne voit que dans le cône de la lampe. */
+function creerPluie(L) {
+  const toile = document.createElement('canvas');
+  toile.className = 'hero-pluie'; toile.setAttribute('aria-hidden', 'true');
+  toile.setAttribute('data-effet', 'pluie'); toile.setAttribute('data-audit-ignorer', '');
+  L.cone.after(toile);
+  const ctx = toile.getContext('2d');
+  let gouttes = [];
+  const dimensionner = () => {
+    toile.width = Math.round(L.W); toile.height = Math.round(L.H);
+    const n = L.W < 761 ? 100 : 210;
+    gouttes = Array.from({ length: n }, () => ({ x: Math.random() * L.W, y: Math.random() * L.H, v: 620 + Math.random() * 420, l: 9 + Math.random() * 12 }));
+  };
+  dimensionner();
+  window.addEventListener('resize', dimensionner);
+  const demi = (17 * Math.PI) / 180, vent = -0.16;
+  boucle(toile, (dt) => {
+    if (!gsap.getProperty(L.cone, 'opacity')) return;
+    ctx.clearRect(0, 0, toile.width, toile.height);
+    ctx.lineWidth = 1.5; ctx.lineCap = 'round';
+    const pas = Math.min(dt, 0.05);
+    for (const g of gouttes) {
+      g.y += g.v * pas; g.x += g.v * pas * vent;
+      if (g.y > L.H + 20) { g.y = -20; g.x = Math.random() * L.W * 1.15; }
+      const dx = g.x - L.ox, dy = g.y - L.oy, d = Math.hypot(dx, dy);
+      if (d > L.longueur || d < 30) continue;
+      let ecart = Math.abs(Math.atan2(dy, dx) - L.angle); if (ecart > Math.PI) ecart = 2 * Math.PI - ecart;
+      if (ecart > demi) continue;
+      const a = Math.min(1, (1 - ecart / demi) * (1.15 - d / L.longueur) * 0.95);
+      ctx.strokeStyle = `rgba(255, 244, 222, ${a.toFixed(3)})`;
+      ctx.beginPath(); ctx.moveTo(g.x, g.y); ctx.lineTo(g.x - g.l * vent, g.y - g.l); ctx.stroke();
+    }
+  });
+  return toile;
+}
+
+function preparerLampes() {
+  const hero = $('.hero');
+  if (hero) {
+    const sceau = $('.sceau', hero);
+    creerLampe(hero, {
+      origine: (r) => { const s = sceau.getBoundingClientRect(); return { x: s.left - r.left + s.width / 2, y: s.top - r.top + s.height / 2 }; },
+      repos: (r) => (r.width < 761 ? { x: r.width * 0.42, y: r.height * 0.42 } : { x: r.width * 0.6, y: r.height * 0.48 }),
     });
   }
-  /* Tant que la souris n'a pas pris la lampe (et toujours sur écran tactile), le faisceau balaie seul, lentement :
-     la ronde continue. Boucle arrêtée hors écran et onglet caché ; elle s'efface dès que la souris bouge. */
-  let t0 = null;
-  boucle(F.hero, (dt, t) => {
-    if (!F.pret || F.suit) return;
-    if (t0 === null) t0 = t;
-    const u = t - t0, amorce = Math.min(1, u / 1.5);
-    F.p.x = F.repos.x + Math.sin(u * 0.42) * F.W * (F.W < 761 ? 0.26 : 0.16) * amorce;
-    F.p.y = F.repos.y + Math.sin(u * 0.29) * F.H * 0.07 * amorce;
-    rendreFaisceau();
-  });
+  const s404 = $('.ouv-404');
+  if (s404) {
+    const spot = $('.spot-404', s404);
+    creerLampe(s404, {
+      origine: (r) => ({ x: r.width * 0.97, y: r.height * 1.04 }),
+      repos: (r) => { const b = spot.getBoundingClientRect(); return b.width ? { x: b.left - r.left + b.width / 2, y: b.top - r.top + b.height / 2 } : { x: r.width * 0.5, y: r.height * 0.4 }; },
+    });
+  }
 }
-
-/* Balayage d'arrivée : la lampe s'allume et passe de gauche à droite jusqu'à sa position de repos. */
-function balayer() {
-  if (!F.hero || !gsap) return;
-  mesurerFaisceau();
-  F.p.x = F.W * 0.08; F.p.y = F.H * 0.78;
-  gsap.to(F.cone, { opacity: 1, duration: 0.35, ease: 'power1.out' });
-  gsap.to(F.p, { x: F.repos.x, y: F.repos.y, duration: 1.25, ease: 'power2.inOut', onUpdate: rendreFaisceau, onComplete: () => { F.pret = true; } });
-}
-function faisceauFinal() {
-  if (!F.hero || !gsap) return;
-  mesurerFaisceau(); F.p.x = F.repos.x; F.p.y = F.repos.y; F.pret = true;
-  gsap.set(F.cone, { opacity: 1 }); rendreFaisceau();
-}
+const balayer = () => lampes.forEach((L) => L.balayer());
+const lampesFinal = () => lampes.forEach((L) => L.final());
 
 /* ---------- Entrée du premier écran (intro, voile) ---------- */
 function premierEcran() {
@@ -182,6 +233,7 @@ function preparerDispositif() {
     const ids = conseil(v.site, v.plage, v.priorite);
     items.forEach((li) => { const on = ids.includes(li.dataset.prestation); li.classList.toggle('allume', on); $('.dl-etat', li).textContent = on ? 'Conseillé' : ''; });
     lien.href = `${base}?site=${v.site}&plage=${v.plage}&conseil=${ids.join(',')}#demande`;
+    majBande(form);
   };
   form.addEventListener('change', maj);
   /* À l'entrée dans l'écran, les voyants balaient la liste puis se posent sur le conseil. */
@@ -205,7 +257,9 @@ function preparerPointage() {
     const p = st.progress;
     if (progres) progres.style.strokeDashoffset = String(1 - p);
     r.style.setProperty('--p', p.toFixed(3));
-    points.forEach((pt, i) => { if (p >= 0.1 + 0.25 * i) pt.classList.add('pointe'); });
+    points.forEach((pt, i) => {
+      if (p >= 0.1 + 0.25 * i && !pt.classList.contains('pointe')) { pt.classList.add('pointe', 'bip'); setTimeout(() => pt.classList.remove('bip'), 950); }
+    });
   } });
 }
 function pointageFinal() { const p = $('.ronde-progres'); if (p) p.style.strokeDashoffset = '0'; $$('.ronde-point').forEach((pt) => pt.classList.add('pointe')); }
@@ -243,6 +297,85 @@ function preparerOuvertures() {
 }
 function ouverturesFinal() { $$('.valeurs-mots li, .gestes-liste li').forEach((li) => li.classList.add('allume')); }
 
+
+/* ---------- v2 : heure de Lyon, bande des 24 h, numéros, vigilance, lumière du titre, tampon, fil ---------- */
+function heureLyon() {
+  const parts = new Intl.DateTimeFormat('fr-FR', { timeZone: 'Europe/Paris', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' }).formatToParts(new Date());
+  const v = (t) => +(parts.find((p) => p.type === t) || { value: 0 }).value;
+  return { h: v('hour') % 24, m: v('minute') };
+}
+function preparerHeure() {
+  const c = $('.cadran'); if (!c) return;
+  const segs = $$('.cadran-seg', c), maintenant = $('[data-cadran-maintenant]', c), marque = $('[data-cadran-marque]', c), val = $('[data-heure-valeur]');
+  const maj = () => {
+    const { h, m } = heureLyon();
+    if (val) val.textContent = `${h} h ${String(m).padStart(2, '0')}`;
+    if (maintenant && segs[h]) { maintenant.setAttribute('d', segs[h].getAttribute('d')); maintenant.classList.add('actif'); }
+    if (marque) marque.setAttribute('transform', `rotate(${(((h + m / 60) / 24) * 360).toFixed(2)} 100 100)`);
+  };
+  maj(); setInterval(maj, 30000);
+}
+
+const PLAGES = { jour: (h) => h >= 7 && h < 19, nuit: (h) => h >= 19 || h < 7, continu: () => true };
+function majBande(form) {
+  const bande = $('[data-bande]'); if (!bande || !form) return;
+  const plage = (form.querySelector('input[name="plage"]:checked') || {}).value || 'nuit';
+  const lib = form.querySelector('input[name="plage"]:checked + span');
+  $$('[data-h]', bande).forEach((c, i) => setTimeout(() => c.classList.toggle('on', PLAGES[plage](+c.dataset.h)), i * 14));
+  const l = $('[data-bande-libelle]', bande); if (l && lib) l.textContent = lib.textContent;
+}
+
+function preparerNumeros() {
+  $$('.rp-numero').forEach((n) => gsap.fromTo(n, { yPercent: 22 }, { yPercent: -22, ease: 'none', scrollTrigger: { trigger: n.parentElement, start: 'top bottom', end: 'bottom top', scrub: 0.5 } }));
+}
+
+/* Secteurs : les points de vigilance se posent un à un sur la photo, puis la ronde les allume dans l'ordre ;
+   survoler ou toucher une ligne de la liste allume son point. */
+function preparerVigilance() {
+  $$('[data-vigilance]').forEach((v) => {
+    const sec = v.closest('section'), pins = $$('.vigie', v), items = $$('[data-vigie-lien]', sec);
+    pins.forEach((p, k) => p.style.setProperty('--k', k));
+    const allumer = (k, on) => { pins[k] && pins[k].classList.toggle('actif', on); items[k] && items[k].classList.toggle('actif', on); };
+    items.forEach((li, k) => {
+      li.addEventListener('pointerenter', () => allumer(k, true));
+      li.addEventListener('pointerleave', () => allumer(k, false));
+      li.addEventListener('click', () => { pins.forEach((_, j) => allumer(j, j === k)); });
+    });
+    gsap.set(pins, { scale: 0 });
+    ST.create({ trigger: v, start: 'top 70%', once: true, onEnter: () => {
+      const tl = gsap.timeline({ delay: 0.55 });
+      tl.to(pins, { scale: 1, duration: 0.5, stagger: 0.16, ease: 'back.out(2.4)' });
+      pins.forEach((_, k) => tl.call(() => allumer(k, true), null, 0.75 + k * 0.42).call(() => allumer(k, false), null, 1.1 + k * 0.42));
+    } });
+  });
+}
+function vigilanceFinal() { $$('.vigie').forEach((p) => gsap.set(p, { scale: 1 })); }
+
+function preparerLumiereTitre() {
+  $$('.fin').forEach((fin) => {
+    const l = $('.fin-lumiere', fin); if (!l) return;
+    gsap.fromTo(l, { '--lum': 0.92 }, { '--lum': 0.08, ease: 'none', scrollTrigger: { trigger: fin, start: 'top 85%', end: 'bottom 35%', scrub: 0.6 } });
+  });
+}
+
+/* Fil de la ronde : un point de pointage par section, allumé à mesure de la lecture (grands écrans). */
+function preparerFil() {
+  const nav = $('.fil-ronde'); if (!nav || !ST) return;
+  const sections = $$('main > section[id]');
+  if (sections.length < 3) { nav.remove(); return; }
+  const ol = $('ol', nav), aller = nav.dataset.fil || '';
+  const liens = sections.map((sec) => {
+    const nom = ((sec.querySelector('.surtitre') || sec.querySelector('h1, h2') || {}).textContent || sec.id).trim();
+    const li = document.createElement('li'), a = document.createElement('a'), sp = document.createElement('span');
+    a.href = `#${sec.id}`; a.setAttribute('aria-label', `${aller} ${nom}`); sp.textContent = nom; sp.setAttribute('aria-hidden', 'true');
+    a.append(sp); li.append(a); ol.append(li);
+    return a;
+  });
+  ST.create({ start: 0, end: 'max', onUpdate: (st) => ol.style.setProperty('--p', st.progress.toFixed(3)) });
+  sections.forEach((sec, i) => ST.create({ trigger: sec, start: 'top 55%', end: 'bottom 55%',
+    onToggle: (st) => { if (st.isActive) liens.forEach((a, j) => { a.classList.toggle('actuel', j === i); a.classList.toggle('passe', j < i); }); } }));
+}
+
 /* ---------- Demande de devis : préremplie par l'adresse, module formulaire-par-etapes ---------- */
 function preparerDevis() {
   const fpe = $('.fpe'); if (!fpe) return;
@@ -253,20 +386,22 @@ function preparerDevis() {
   (q.get('conseil') || q.get('prestation') || '').split(',').filter(Boolean).forEach((p) => cocher('prestations', p));
   initFormulaire(fpe, { sujet: 'Demande de devis LASP' }).catch((err) => console.error('[devis]', err));
   fpe.addEventListener('formulaire:envoye', () => {
-    const fin = $('.fpe__fin', fpe);
+    const fin = $('.fpe__fin', fpe), tampon = $('.tampon', fpe), carton = $('.fpe__carton', fpe);
+    if (tampon) gsap.fromTo(tampon, { scale: 2.6, rotation: -26, opacity: 0 }, { scale: 1, rotation: -8, opacity: 1, duration: 0.42, ease: 'power4.in', delay: 0.2,
+      onComplete: () => carton && gsap.fromTo(carton, { y: 0 }, { y: 5, duration: 0.06, yoyo: true, repeat: 1, ease: 'power1.out' }) });
     requestAnimationFrame(() => { if (fin) window.scrollTo({ top: window.scrollY + fin.getBoundingClientRect().top - (parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--entete-h')) || 72) - 24 }); });
   });
 }
 
 function toutFinal() {
-  faisceauFinal(); allumageFinal(); dispositifFinal(); pointageFinal(); plansFinal(); ouverturesFinal();
+  lampesFinal(); vigilanceFinal(); allumageFinal(); dispositifFinal(); pointageFinal(); plansFinal(); ouverturesFinal();
 }
 
 demarrer({
   preparer() {
     if (!gsap) return;
-    const etapes = [preparerFaisceau, preparerSceau, preparerCadran, preparerAllumage, preparerRangee, preparerDispositif,
-      preparerPointage, preparerPlans, preparerBalayage, preparerOuvertures, preparerDevis];
+    const etapes = [preparerLampes, preparerSceau, preparerCadran, preparerHeure, preparerAllumage, preparerRangee, preparerDispositif,
+      preparerPointage, preparerPlans, preparerBalayage, preparerOuvertures, preparerDevis, preparerNumeros, preparerVigilance, preparerLumiereTitre, preparerFil];
     etapes.forEach((f) => { try { f(); } catch (err) { console.error('[site]', f.name, err); } });
   },
   /* Intro (≈ 2,4 s) : le L rouge et le A bleu s'emboîtent, le monogramme glisse vers l'objet d'ouverture de la page
@@ -282,7 +417,7 @@ demarrer({
       .to('.ouverture-trait, .ouverture-ligne', { opacity: 0, duration: 0.22 }, 0.82);
     versObjet(tl, { a: 0.95 });
     entree(tl, 1.42);
-    if (F.hero) tl.call(balayer, null, 1.45);
+    if (lampes.length) tl.call(balayer, null, 1.45);
     return tl;
   },
   etatFinal() {
@@ -296,6 +431,6 @@ demarrer({
   arrivee() {
     if (!gsap) return;
     entree(gsap.timeline({ delay: 0.12 }), 0);
-    if (F.hero) balayer();
+    if (lampes.length) balayer();
   },
 });

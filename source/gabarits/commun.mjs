@@ -157,6 +157,7 @@ ${entete(c)}
 <main id="contenu" tabindex="-1"${c.page.sansAction ? brut(' data-sans-action') : ''}${c.page.sansEffet ? brut(' data-sans-effet') : ''}>
 ${contenu}
 </main>
+<nav class="fil-ronde" aria-label="${c.s('commun.fil')}" data-fil="${c.s('commun.filPoint')}" data-grille="fil"><ol><li class="fil-progres-li" aria-hidden="true"><span class="fil-progres"></span></li></ol></nav>
 ${pied(c)}
 ${barre(c)}
 </body>

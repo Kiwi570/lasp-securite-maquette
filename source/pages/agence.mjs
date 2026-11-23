@@ -3,6 +3,7 @@
 import { html, brut } from '../../outils/gabarit.mjs';
 import { monogramme } from '../gabarits/commun.mjs';
 import { surtitre, plan, fin, apercu } from '../gabarits/blocs.mjs';
+import { icone, ecusson } from '../gabarits/icones.mjs';
 
 export const page = { cle: 'agence', fichier: 'agence' };
 
@@ -51,7 +52,7 @@ export default (c) => {
       ${surtitre(T('engagementsTitre'))}
       <h2 data-anime="lignes">${c.t('accueil.engagements.titre')}</h2>
     </div>
-    <ul class="engagements-cartes" data-anime="cascade">${c.donnees.engagements.map((e, i) => html`<li><span class="ec-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span><strong>${e.titre}</strong><span>${e.texte}</span></li>`)}</ul>
+    <ul class="engagements-cartes" data-anime="cascade" data-visuel>${c.donnees.engagements.map((e, i) => html`<li><span class="ec-tete"><span class="ec-num" aria-hidden="true">${String(i + 1).padStart(2, '0')}</span>${icone(e.icone, 'picto ec-picto')}</span><strong>${e.titre}</strong><span>${e.texte}</span></li>`)}</ul>
   </div>
 </section>
 
@@ -70,7 +71,7 @@ export default (c) => {
 <section class="qualifs s-nuit" id="qualifications">
   <div class="conteneur qualifs-grille">
     <div>${surtitre(T('qualifsSurtitre'))}<h2 data-anime="lignes">${T('qualifsTitre')}</h2></div>
-    <ul class="qualifs-liste" data-anime="cascade">${L.qualifs.map((q) => html`<li><span class="qualif-sigle">${q.sigle}</span><span>${q.texte}</span></li>`)}</ul>
+    <ul class="qualifs-liste">${L.qualifs.map((q) => html`<li><span class="qualif-ecusson" data-fx="trace" data-visuel>${ecusson()}</span><span class="qualif-sigle" data-anime>${q.sigle}</span><span data-anime>${q.texte}</span></li>`)}</ul>
   </div>
 </section>
 

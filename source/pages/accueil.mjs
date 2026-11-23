@@ -4,6 +4,7 @@
 import { html, brut } from '../../outils/gabarit.mjs';
 import { monogramme } from '../gabarits/commun.mjs';
 import { surtitre, plan, references, fin, fleche, apercu } from '../gabarits/blocs.mjs';
+import { icone } from '../gabarits/icones.mjs';
 
 export const page = { cle: 'accueil', fichier: 'index' };
 
@@ -27,7 +28,7 @@ export default (c) => {
   ${apercu(c, 'grok/accueil-ouverture', '64% 55%')}
   ${c.media({ nom: 'grok/accueil-ouverture', alt: c.s('accueil.hero.alt'), cadrage: '64% 55%', cadrageMobile: '62% 50%', priorite: true, classe: 'hero-media' })}
   <div class="hero-nuit" aria-hidden="true" data-audit-ignorer></div>
-  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-audit-ignorer><span></span></div>
+  <div class="hero-faisceau" aria-hidden="true" data-effet="faisceau" data-souris data-grille="manipuler" data-audit-ignorer><span></span></div>
   <div class="conteneur hero-contenu">
     ${surtitre(T('hero.surtitre'), 'hero-surtitre')}
     <h1 class="hero-titre" data-anime="gsap"><span class="hero-masque"><span class="hero-ligne">${T('hero.ligne1')}</span></span><span class="hero-masque"><span class="hero-ligne">${T('hero.ligne2')}</span></span><span class="hero-masque"><span class="hero-ligne"><em>${T('hero.ligne3')}</em></span></span></h1>
@@ -49,15 +50,19 @@ export default (c) => {
 
 <section class="engagements s-nuit" id="engagements">
   <div class="conteneur engagements-grille">
+    <div class="cadran-col">
     <div class="cadran-bloc" data-visuel>
-      <svg class="cadran" viewBox="0 0 200 200" data-effet="cadran" role="img" aria-label="${c.s('accueil.engagements.cadran')}">${segments()}</svg>
+      <svg class="cadran" viewBox="0 0 200 200" data-effet="cadran" role="img" aria-label="${c.s('accueil.engagements.cadran')}">${segments()}${brut('<path class="cadran-maintenant" data-cadran-maintenant d=""/><g class="cadran-marque" data-cadran-marque><path d="M100 1.5 L106 10 L94 10 Z"/></g>')}</svg>
+      <ul class="cadran-heures" aria-hidden="true"><li style="left:50%;top:19%">${T('engagements.h00')}</li><li style="left:81%;top:50%">${T('engagements.h06')}</li><li style="left:50%;top:81%">${T('engagements.h12')}</li><li style="left:19%;top:50%">${T('engagements.h18')}</li></ul>
       <p class="cadran-grand" aria-hidden="true">${T('engagements.grand')}</p>
+    </div>
+    <p class="cadran-heure" data-heure aria-live="off"><strong><span>${T('engagements.heure')}</span> <span data-heure-valeur>…</span> <span>${T('engagements.heureA')}</span></strong> ${T('engagements.heureTexte')}</p>
     </div>
     <div class="engagements-texte">
       ${surtitre(T('engagements.surtitre'))}
       <h2 data-anime="lignes">${T('engagements.titre')}</h2>
       <p class="intro" data-anime>${T('engagements.grandTexte')}</p>
-      <ul class="engagements-liste" data-anime="cascade">${c.donnees.engagements.map((e) => html`<li><strong>${e.titre}</strong><span>${e.texte}</span></li>`)}</ul>
+      <ul class="engagements-liste" data-anime="cascade">${c.donnees.engagements.map((e) => html`<li>${icone(e.icone)}<strong>${e.titre}</strong><span>${e.texte}</span></li>`)}</ul>
     </div>
   </div>
 </section>
@@ -70,9 +75,9 @@ export default (c) => {
       <p class="intro" data-anime>${T('prestations.texte')}</p>
     </div>
     <ul class="cartes-prestations">${P.map((p) => html`<li class="carte-prestation">
-      <a href="${c.url('prestations', p.id)}" data-libelle="${c.libelle('prestations')}" class="carte-lien" data-effet="allumage">
+      <a href="${c.url('prestations', p.id)}" data-libelle="${c.libelle('prestations')}" class="carte-lien" data-effet="allumage" data-survol="incline">
         ${c.media({ nom: p.image, alt: '', cadrage: p.cadrage, classe: 'carte-media', sizes: '(max-width: 760px) 100vw, (max-width: 1100px) 50vw, 400px' })}
-        <span class="carte-corps"><span class="carte-qualif">${p.qualif}</span><span class="carte-titre">${p.titre}</span><span class="carte-court">${p.court}</span><span class="carte-voir">${T('prestations.voir')} ${fleche()}</span></span>
+        <span class="carte-corps"><span class="carte-picto">${icone(p.id)}</span><span class="carte-qualif">${p.qualif}</span><span class="carte-titre">${p.titre}</span><span class="carte-court">${p.court}</span><span class="carte-voir">${T('prestations.voir')} ${fleche()}</span></span>
       </a>
     </li>`)}</ul>
     <p class="centre" data-anime>${c.lien('prestations', { classe: 'bouton bouton--contour', texte: T('prestations.tout') })}</p>
@@ -112,6 +117,11 @@ export default (c) => {
     <div class="dispositif-resultat" data-visuel data-effet="dispositif">
       <p class="dispositif-titre">${T('dispositif.resultat')}</p>
       <ul class="dispositif-liste" aria-live="polite">${P.map((p) => html`<li data-prestation="${p.id}"><span class="voyant" aria-hidden="true"></span><span class="dl-titre">${p.titre}</span><span class="dl-etat"></span></li>`)}</ul>
+      <div class="bande-24" data-bande aria-hidden="true">
+        <p class="bande-titre">${T('dispositif.bande')} · <span data-bande-libelle>${T('dispositif.bandeNuit')}</span></p>
+        <div class="bande-cases">${brut(Array.from({ length: 24 }, (_, h) => `<span data-h="${h}"></span>`).join(''))}</div>
+        <div class="bande-reperes"><span>0 h</span><span>6 h</span><span>12 h</span><span>18 h</span><span>24 h</span></div>
+      </div>
       <p class="dispositif-note">${T('dispositif.note')}</p>
       <a class="bouton" href="${c.url('devis', 'demande')}" data-libelle="${c.libelle('devis')}" data-dispositif-lien>${T('dispositif.action')}</a>
     </div>

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-titres.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#0A0F1C">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -147,8 +147,12 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <h2 class="fpe__h2" data-anime="lignes">Votre demande de devis</h2>
       <p class="fpe__intro" data-anime>Votre devis en trois étapes.</p>
       <p class="fpe__note">Maquette : l&#39;envoi est simulé, rien n&#39;est transmis.</p>
+      <div class="la-suite" data-anime>
+        <p class="la-suite-titre">La suite</p>
+        <ol><li><strong>Nous proposons un dispositif</strong><span>Sur mesure : quelles prestations, combien d&#39;agents, à quelles heures.</span></li><li><strong>Les agents prennent leur poste</strong><span>Qualifiés et équipés : PTI, radios et véhicules selon la mission.</span></li><li><strong>Nous suivons la prestation</strong><span>Un suivi régulier, pour une qualité de service constante.</span></li></ol>
+      </div>
     </div>
-    <div class="fpe__carton" data-anime>
+    <div class="fpe__carton" data-anime data-visuel>
       <form class="fpe__form" action="#" novalidate>
         <fieldset class="fpe__etape" data-etape="Votre site">
           <legend class="fpe__legende"><h3 class="fpe__titre" tabindex="-1">Quel type de site faut-il protéger ?</h3></legend>
@@ -192,9 +196,9 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
         </div>
       </form>
       <div class="fpe__fin" hidden>
-        <svg class="fpe__coche" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-18"/></svg>
+        <div class="tampon" aria-hidden="true" data-grille="retour" data-effet="tampon"><svg class="monogramme tampon-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span class="tampon-texte">Demande prête</span><span class="tampon-petit">LASP · devis</span></div>
         <h3 tabindex="-1">Demande prête</h3>
-        <p>Dans la version en ligne, l&#39;agence vous rappelle pour construire le dispositif. Ici, rien n&#39;a été envoyé.</p>
+        <p>Dans la version en ligne, votre demande serait transmise à l&#39;agence. Ici, rien n&#39;a été envoyé.</p>
         <p data-resume></p>
         <div class="fpe__fin-actions"><button type="button" class="fpe__bouton fpe__bouton--ligne" data-recommencer>Nouvelle demande</button></div>
       </div>
@@ -204,7 +208,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="fin s-nuit" id="appel">
   <div class="fin-decor" data-visuel aria-hidden="true"><svg class="monogramme fin-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span class="fin-faisceau" data-effet="balayage"></span></div>
   <div class="conteneur fin-contenu">
-    <h2 class="fin-titre" data-anime="lignes">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+    <div class="fin-titre-bloc" data-anime>
+      <h2 class="fin-titre">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+      <p class="fin-titre fin-lumiere" aria-hidden="true" data-audit-ignorer data-effet="lumiere-titre" data-grille="typo">Un site à protéger ?<br><em>Parlons-en maintenant.</em></p>
+    </div>
     <p class="fin-texte" data-anime>Décrivez votre besoin : nous vous proposons un dispositif sur mesure.</p>
     <div class="fin-actions" data-anime>
       <a href="/devis#demande" class="bouton" data-libelle="Devis &amp; contact" data-survol="magnetique">Demander un devis</a>
@@ -213,6 +220,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<nav class="fil-ronde" aria-label="Ronde de la page" data-fil="Aller à" data-grille="fil"><ol><li class="fil-progres-li" aria-hidden="true"><span class="fil-progres"></span></li></ol></nav>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">
     <div class="pied-marque">

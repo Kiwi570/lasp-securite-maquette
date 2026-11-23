@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr" data-v="1">
+<html lang="fr" data-v="2">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -35,14 +35,14 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 })();</script>
 <link rel="preload" href="/assets/fonts/archivo-titres.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/socle.css?v=1">
-<link rel="stylesheet" href="/assets/css/site.css?v=1">
-<link rel="modulepreload" href="/assets/js/site.js?v=1">
-<link rel="modulepreload" href="/assets/js/socle/index.js?v=1">
+<link rel="stylesheet" href="/assets/css/socle.css?v=2">
+<link rel="stylesheet" href="/assets/css/site.css?v=2">
+<link rel="modulepreload" href="/assets/js/site.js?v=2">
+<link rel="modulepreload" href="/assets/js/socle/index.js?v=2">
 <script src="/assets/vendor/gsap.min.js" defer></script>
 <script src="/assets/vendor/ScrollTrigger.min.js" defer></script>
 <script src="/assets/vendor/SplitText.min.js" defer></script>
-<script type="module" src="/assets/js/site.js?v=1"></script>
+<script type="module" src="/assets/js/site.js?v=2"></script>
 <meta name="theme-color" content="#0A0F1C">
 <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
@@ -142,7 +142,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
       <p class="surtitre ">Nos engagements</p>
       <h2 data-anime="lignes">Une présence continue, des agents qui savent quoi faire.</h2>
     </div>
-    <ul class="engagements-cartes" data-anime="cascade"><li><span class="ec-num" aria-hidden="true">01</span><strong>Agents qualifiés et opérationnels</strong><span>Agents de sécurité, agents SSIAP et agents cynophiles.</span></li><li><span class="ec-num" aria-hidden="true">02</span><strong>Réactivité 24h/24 et 7j/7</strong><span>Jour, nuit et week-end.</span></li><li><span class="ec-num" aria-hidden="true">03</span><strong>Environnements industriels et sensibles</strong><span>Des sites que nous savons protéger.</span></li><li><span class="ec-num" aria-hidden="true">04</span><strong>PTI, radios, véhicules</strong><span>Des agents équipés, joignables et mobiles.</span></li><li><span class="ec-num" aria-hidden="true">05</span><strong>Suivi et qualité de service</strong><span>Une qualité constante, mission après mission.</span></li></ul>
+    <ul class="engagements-cartes" data-anime="cascade" data-visuel><li><span class="ec-tete"><span class="ec-num" aria-hidden="true">01</span><svg class="picto ec-picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="9" r="5.5"/><path d="M8.6 13.4L7 21l5-2.6 5 2.6-1.6-7.6"/><path class="pi-r" d="M9.8 9.1l1.5 1.5 2.9-3"/></svg></span><strong>Agents qualifiés et opérationnels</strong><span>Agents de sécurité, agents SSIAP et agents cynophiles.</span></li><li><span class="ec-tete"><span class="ec-num" aria-hidden="true">02</span><svg class="picto ec-picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.4 2"/><path class="pi-r" d="M12 2.5v1.6M21.5 12h-1.6M12 21.5v-1.6M2.5 12h1.6"/></svg></span><strong>Réactivité 24h/24 et 7j/7</strong><span>Jour, nuit et week-end.</span></li><li><span class="ec-tete"><span class="ec-num" aria-hidden="true">03</span><svg class="picto ec-picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 20V10.5l5 3v-3l5 3v-3l5 3V4h3v16z"/><path d="M6.5 17h2M11 17h2M15.5 17h2"/></svg></span><strong>Environnements industriels et sensibles</strong><span>Des sites que nous savons protéger.</span></li><li><span class="ec-tete"><span class="ec-num" aria-hidden="true">04</span><svg class="picto ec-picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="7" y="8" width="10" height="13" rx="2"/><path d="M9.5 8V3M9.5 12h5M9.5 14.5h5"/><circle class="pi-r" cx="12" cy="18" r="1.2"/></svg></span><strong>PTI, radios, véhicules</strong><span>Des agents équipés, joignables et mobiles.</span></li><li><span class="ec-tete"><span class="ec-num" aria-hidden="true">05</span><svg class="picto ec-picto" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20V4M4 20h16"/><path class="pi-r" d="M7.5 15l3.5-3.6 3 2.6 5-6"/></svg></span><strong>Suivi et qualité de service</strong><span>Une qualité constante, mission après mission.</span></li></ul>
   </div>
 </section>
 <section class="moyens s-clair" id="moyens">
@@ -165,7 +165,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="qualifs s-nuit" id="qualifications">
   <div class="conteneur qualifs-grille">
     <div><p class="surtitre ">Qualifications</p><h2 data-anime="lignes">Des qualifications reconnues</h2></div>
-    <ul class="qualifs-liste" data-anime="cascade"><li><span class="qualif-sigle">ADS</span><span>Agents de sécurité qualifiés</span></li><li><span class="qualif-sigle">SSIAP 1·2·3</span><span>Agents, chefs d&#39;équipe et chefs de service de sécurité incendie</span></li><li><span class="qualif-sigle">Cynophile</span><span>Maîtres-chiens</span></li></ul>
+    <ul class="qualifs-liste"><li><span class="qualif-ecusson" data-fx="trace" data-visuel><svg class="ecusson" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4l24 9v15c0 15-10.4 27-24 32C18.4 55 8 43 8 28V13z"/><path d="M32 12l17 6.4v10.2c0 10.6-7.3 19-17 22.6-9.7-3.6-17-12-17-22.6V18.4z"/></svg></span><span class="qualif-sigle" data-anime>ADS</span><span data-anime>Agents de sécurité qualifiés</span></li><li><span class="qualif-ecusson" data-fx="trace" data-visuel><svg class="ecusson" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4l24 9v15c0 15-10.4 27-24 32C18.4 55 8 43 8 28V13z"/><path d="M32 12l17 6.4v10.2c0 10.6-7.3 19-17 22.6-9.7-3.6-17-12-17-22.6V18.4z"/></svg></span><span class="qualif-sigle" data-anime>SSIAP 1·2·3</span><span data-anime>Agents, chefs d&#39;équipe et chefs de service de sécurité incendie</span></li><li><span class="qualif-ecusson" data-fx="trace" data-visuel><svg class="ecusson" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M32 4l24 9v15c0 15-10.4 27-24 32C18.4 55 8 43 8 28V13z"/><path d="M32 12l17 6.4v10.2c0 10.6-7.3 19-17 22.6-9.7-3.6-17-12-17-22.6V18.4z"/></svg></span><span class="qualif-sigle" data-anime>Cynophile</span><span data-anime>Maîtres-chiens</span></li></ul>
   </div>
 </section>
 <section class="tenue s-clair" id="tenue">
@@ -219,7 +219,10 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
 <section class="fin s-nuit" id="fin">
   <div class="fin-decor" data-visuel aria-hidden="true"><svg class="monogramme fin-mono" viewBox="0 0 173 98" aria-hidden="true" focusable="false"><path class="mono-l" fill="#DB2222" d="M108.5 61.5 L86.5 61.5 L77.5 79.5 L37.5 79.5 L2.5 98.5 L90.5 98.5 Z M69.5 1.5 L47.5 1.5 L1.5 93.5 L32.5 76.5 Z"/><path class="mono-a" fill="#2A47A8" d="M101.5 31.5 L92.5 50.5 L114.5 50.5 L123.5 31.5 Z M173.5 1.5 L82.5 1.5 L49.5 67.5 L72.5 66.5 L95.5 20.5 L140.5 20.5 L141.5 23.5 L103.5 97.5 L125.5 98.5 Z"/></svg><span class="fin-faisceau" data-effet="balayage"></span></div>
   <div class="conteneur fin-contenu">
-    <h2 class="fin-titre" data-anime="lignes">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+    <div class="fin-titre-bloc" data-anime>
+      <h2 class="fin-titre">Un site à protéger ?<br><em>Parlons-en maintenant.</em></h2>
+      <p class="fin-titre fin-lumiere" aria-hidden="true" data-audit-ignorer data-effet="lumiere-titre" data-grille="typo">Un site à protéger ?<br><em>Parlons-en maintenant.</em></p>
+    </div>
     <p class="fin-texte" data-anime>Décrivez votre besoin : nous vous proposons un dispositif sur mesure.</p>
     <div class="fin-actions" data-anime>
       <a href="/devis#demande" class="bouton" data-libelle="Devis &amp; contact" data-survol="magnetique">Demander un devis</a>
@@ -228,6 +231,7 @@ setTimeout(function () { if (!d.classList.contains('demarre')) d.classList.add('
   </div>
 </section>
 </main>
+<nav class="fil-ronde" aria-label="Ronde de la page" data-fil="Aller à" data-grille="fil"><ol><li class="fil-progres-li" aria-hidden="true"><span class="fil-progres"></span></li></ol></nav>
 <footer class="pied" id="pied">
   <div class="conteneur pied-grille">
     <div class="pied-marque">

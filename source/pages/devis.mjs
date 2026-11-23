@@ -2,6 +2,7 @@
    téléphones en grand, puis la demande de devis en trois étapes et son récapitulatif (module formulaire-par-etapes). */
 import { html, brut } from '../../outils/gabarit.mjs';
 import { surtitre, plan, fin } from '../gabarits/blocs.mjs';
+import { monogramme } from '../gabarits/commun.mjs';
 
 export const page = { cle: 'devis', fichier: 'devis' };
 
@@ -47,8 +48,12 @@ export default (c) => {
       <h2 class="fpe__h2" data-anime="lignes">${T('formTitre')}</h2>
       <p class="fpe__intro" data-anime>${c.t('pages.devis.accroche')}</p>
       <p class="fpe__note">${T('simule')}</p>
+      <div class="la-suite" data-anime>
+        <p class="la-suite-titre">${T('suiteTitre')}</p>
+        <ol>${c.donnees.etapes.slice(1).map((e) => html`<li><strong>${e.titre}</strong><span>${e.texte}</span></li>`)}</ol>
+      </div>
     </div>
-    <div class="fpe__carton" data-anime>
+    <div class="fpe__carton" data-anime data-visuel>
       <form class="fpe__form" action="#" novalidate>
         <fieldset class="fpe__etape" data-etape="${c.s('devis.etape1')}">
           <legend class="fpe__legende"><h3 class="fpe__titre" tabindex="-1">${T('q1')}</h3></legend>
@@ -92,7 +97,7 @@ export default (c) => {
         </div>
       </form>
       <div class="fpe__fin" hidden>
-        <svg class="fpe__coche" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28"/><path d="M20 33l8 8 16-18"/></svg>
+        <div class="tampon" aria-hidden="true" data-grille="retour" data-effet="tampon">${monogramme(c, 'tampon-mono')}<span class="tampon-texte">${T('tampon')}</span><span class="tampon-petit">${T('tamponPetit')}</span></div>
         <h3 tabindex="-1">${T('merci')}</h3>
         <p>${T('merciTexte')}</p>
         <p data-resume></p>

@@ -1,15 +1,16 @@
 {
- "id": "20261120-213228-complet-cible-partiel",
- "date": "2026-11-20T21:35:29.851Z",
+ "id": "20261123-140324-complet-partiel",
+ "date": "2026-11-23T14:13:15.667Z",
  "niveau": "complet",
- "pages": "/,/agence,/devis",
+ "pages": "toutes",
  "etapes": [
   "fichiers",
-  "mesures"
+  "mesures",
+  "parcours"
  ],
- "version": "1",
+ "version": "2",
  "echecs": 0,
- "aRegarder": 4,
+ "aRegarder": 6,
  "nonLances": 0,
  "manquants": 0,
  "statut": "complet"

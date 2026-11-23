@@ -1,5 +1,31 @@
 # Journal des versions — maquette LASP Sécurité
 
+## v2 — 23 novembre 2026
+
+Une version plus vivante et plus joueuse, avec le même système, sur toutes les pages.
+
+**Accueil**
+- Ouverture : une pluie fine n'apparaît que dans le faisceau de la lampe. La lampe suit la souris puis reprend sa ronde quand la souris quitte la photo ; sur téléphone, toucher la cour l'éclaire.
+- L'anneau « 24/7 » devient une horloge de 24 heures : repères 0 h, 6 h, 12 h, 18 h, et une marque à l'heure réelle de Lyon (« Il est … à Lyon »), mise à jour toutes les 30 secondes.
+- Engagements illustrés de pictogrammes.
+- Prestations : un pictogramme par métier, des cartes qui s'inclinent sous la souris. Sur téléphone, une liste compacte remplace les six grandes cartes.
+- « Votre dispositif » : une bande des 24 heures s'allume selon la plage choisie (indicative).
+- La ronde en quatre temps : un « bip » lumineux à chaque pointage.
+
+**Toutes les pages**
+- Fil de la ronde dans la marge des grands écrans : un point par section, allumé à mesure de la lecture, cliquable.
+- Appel final : le faisceau fait briller le titre en passant.
+
+**Prestations** : grands numéros 01 à 06 en fond, pictogrammes, et les secteurs où chaque prestation est conseillée (liens vers Secteurs). Le titre des cinq gestes est raccourci.
+
+**Secteurs** : points de vigilance numérotés posés sur chaque photo, qui s'allument dans l'ordre et répondent au survol de la liste. Les photos alternent à gauche et à droite.
+
+**L'agence** : pictogrammes des engagements, écussons dessinés pour les qualifications.
+
+**Devis & contact** : encart « La suite » ; à l'envoi simulé, un tampon LASP se pose sur la demande. Texte de fin plus neutre (« votre demande serait transmise à l'agence »).
+
+**404** : on cherche la page avec la lampe, qui suit la souris.
+
 ## v1 — 20 novembre 2026
 
 Première version : la base de la maquette.
